@@ -109,7 +109,7 @@ Ala i Jacek - matematycy - umówili się w kawiarni, ale nie umówili się co do
 
 Rozwiązanie:
 
-Podobnie jak w poprzednich zadaniach rozwiązanie będzie sprowadzało się do narysowania odpowiedniego wykresu. Ponieważ Ala i Jacek mogą przyjść do kawiarni pomiędzy godziną 12:00 a 13:00 to wykresem będzie kwadrat o wymiarze 60x60. Każdy punkt $(x, y)$ wykresu przedstawia możliwe kombinacje godzin przyjścia pary matematyków do kawiarni. Na przykład punkt $A = (10, 40)$ oznacza, że Ala przyjdzie do kawiarni o godzinie 12:10 a Jacek o godzinie 12:40. Nas interesuje taka sytacja gdzie współrzędne punktu nie różnią się od siebie o więcej niż 20. Możemy zapisać taką sytuację w następujący sposób:
+Podobnie jak w poprzednich zadaniach rozwiązanie będzie sprowadzało się do narysowania odpowiedniego wykresu. Ponieważ Ala i Jacek mogą przyjść do kawiarni pomiędzy godziną 12:00 a 13:00 to wykresem będzie kwadrat o wymiarze 60x60. Każdy punkt $(x, y)$ wykresu przedstawia możliwe kombinacje godzin przyjścia pary matematyków do kawiarni. Na przykład punkt $A = (10, 40)$ oznacza, że Ala przyjdzie do kawiarni o godzinie 12:10 a Jacek o godzinie 12:40. Nas interesuje taka sytuacja gdzie współrzędne punktu nie różnią się od siebie o więcej niż 20. Możemy zapisać taką sytuację w następujący sposób:
 
 $|y - x| \le 20,$
 
@@ -131,7 +131,7 @@ Sytuację taką ilustruje poniższy wykres:
 <img src="img/prawdopodobienstwo_geometryczne/05.jpg" width="40%">
 </p>
 
-Pole zacieniowaniego obszaru to różnica pola kwadratu i dwóch białych trójkątów, stąd szukane prawdopodobieństwo to:
+Pole zacieniowanego obszaru to różnica pola kwadratu i dwóch białych trójkątów, stąd szukane prawdopodobieństwo to:
 
 $P = \frac{(3600 - 2 * 800)}{3600} = \frac{2000}{3600} = \frac{5}{9} \approx 0.56$
 
@@ -471,7 +471,7 @@ Rysuję stosowny rysunek:
 <img src="img/prawdopodobienstwo_geometryczne/13.jpg" width="30%">
 </p>
 
-Zacienionie pole to moc zbioru zdarzeń sprzyjających, obliczam stosowną całkę i prawdopodobieństwo:
+Zacienione pole to moc zbioru zdarzeń sprzyjających, obliczam stosowną całkę i prawdopodobieństwo:
 
 ```python
 from scipy.integrate import quad
@@ -602,7 +602,7 @@ $P = \frac{\frac{1}{2} \cdot 10^2 + 2 \cdot 10}{10 \cdot 12} = \frac{7}{12} \app
 b)\
 $P = \frac{2}{10} = 0.2,$
 
-ponieważ głębokość większa niż 8 znajduje się w przedziale $(8, 10)$ a jego długość wyosi 2.
+ponieważ głębokość większa niż 8 znajduje się w przedziale $(8, 10)$ a jego długość wynosi 2.
 
 c)\
 $P = \frac{4}{12} \approx 0.33,$

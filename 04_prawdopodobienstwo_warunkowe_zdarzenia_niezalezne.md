@@ -6,7 +6,7 @@ $$P(A|B) = \frac{P(A \cap B)}{P(B)}.$$
 
 $$P(A_1∩A_2∩⋯∩A_n)=P(A_1)P(A_2|A_1)P(A_3|A_2,A_1)...P(A_n|A_{n−1}A_{n−2}...A_1)$$
 
-## Zarzenia niezależne
+## Zdarzenia niezależne
 Zdarzenia $A$ i $B$ są niezależne gdy:
 
 $$P(A \cap B) = P(A)P(B)$$
@@ -157,8 +157,8 @@ Zdarzenia nie są niezależne.
 
 ### Zadanie 7
 Z talii 52 kart wyciągamy losowo jedną. Czy zdarzenia:\
-$A$ - wyciagnięcie asa,\
-$B$ - wyciagnięcie karty koloru czerwonego\
+$A$ - wyciągnięcie asa,\
+$B$ - wyciągnięcie karty koloru czerwonego\
 są niezależne?
 
 

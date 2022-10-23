@@ -34,7 +34,7 @@ $$P(A′) = 1 − P(A).$$
 
 $$P(A \cup B) = P(A) + P(B) − P(A \cap B).$$
       
-       Ogólnie:
+Ogólnie:
 
 $$P\left(\bigcup\limits_{i=1}^nA_i\right) = 
 \sum\limits_{i=1}^nP(A_i) -
@@ -58,11 +58,12 @@ $$A \cup (B \cap C) = (A \cup B) \cap (A \cup C).$$
 
 * Kombinacja pozwala policzyć na ile sposobów można wybrać k elementów z n-elementowego zbioru. Wzór na kombinację jest następujący:
 $$C^k_n = \frac{n!}{k!(n − k)!}.$$
-       Kombinacje zapisujemy krótko za pomocą symbolu Newtona:
+
+Kombinacje zapisujemy krótko za pomocą symbolu Newtona:
 
 $${n \choose k} = \frac{n!}{k!(n − k)!}.$$
 
-* Kombinacje z powtórzeniami pozwala policzyć na ile sposobów można wybrać k-elementowy multizbiór złożony z elementów danego zbioru n-elentowego. Liczba k-elementowych kombinacji z powtórzeniami zbioru n-elementowego wyraża się wzorem:
+* Kombinacje z powtórzeniami pozwala policzyć na ile sposobów można wybrać k-elementowy multizbiór złożony z elementów danego zbioru n-elementowego. Liczba k-elementowych kombinacji z powtórzeniami zbioru n-elementowego wyraża się wzorem:
 
 $$\bar{C}_n^k = {k + n - 1 \choose k} = \frac{(k + n - 1)!}{k!(n-1)!}$$
 
@@ -83,14 +84,14 @@ $$W^k_n = n^k.$$
 $$V^k_n = \frac{n!}{(n − k)!}.$$
 
 ## Metoda bootstrap
-Jest to metoda estymacji polegająca na wielokrotnym losowaniu ze zwracaniem z próby. Jest przydatna gdy nie wiemy z jakiego rozkładu pochodzą zmienne losowe. Przykład użycia tej metody do oszacowania prawdopodobieństwa będzie pokazny w kilku zadaniach.
+Jest to metoda estymacji polegająca na wielokrotnym losowaniu ze zwracaniem z próby. Jest przydatna gdy nie wiemy z jakiego rozkładu pochodzą zmienne losowe. Przykład użycia tej metody do oszacowania prawdopodobieństwa będzie pokazany w kilku zadaniach.
 
 # Zadania
 
 ### Zadanie 1.
 
 Wykonano 3 rzuty symetryczną monetą.\
-a) Określ przestrzeń zdarzeń elementarych $\Omega$.\
+a) Określ przestrzeń zdarzeń elementarnych $\Omega$.\
 b) Określ zdarzenia:\
 i) $E$ = "w pierwszym rzucie orzeł",\
 ii) $F$ = "w drugim rzucie orzeł".\
@@ -113,7 +114,7 @@ $P(F') = 1 - P(F) = 1 - \frac{1}{2} = \frac{1}{2}$.
 
 ### Zadanie 2
 
-Doświdczenie polega na rzucie dwiema symetryznymi kostkami. Oblicz prawdopodobieństwo, że suma wyrzuconych oczek będzie parzysta.
+Doświadczenie polega na rzucie dwiema symetrycznymi kostkami. Oblicz prawdopodobieństwo, że suma wyrzuconych oczek będzie parzysta.
 
 Rozwiązanie:
 
@@ -200,7 +201,7 @@ a) 0.3 * 0.4 * 0.5 = 0.06\
 b) 0.7 * 0.6 * 0.5 + 0.7 * 0.4 * 0.5 + 0.3 * 0.6 * 0.5 = 0.44\
 c) 0.44 + 0.7 * 0.6 * 0.5 = 0.65
 
-Sytuację taką można zasymulować i rozwiązać zadanie używając metody bootstrap:
+Sytuację taką można symulować i rozwiązać zadanie używając metody bootstrap:
 
 ```python
 import numpy as np
@@ -298,7 +299,7 @@ Do windy w 10-cio piętrowym domu wsiada 5 nieznanych sobie osób. Oblicz prawdo
 
 Rozwiązanie:
 
-W tym zadaniu należy skorzystać z wariacji w powtórzeniami i bez powtórzeń. Pierwsz osoba może wybrać 10 pięter, druga również 10, itd. Musimy więc znaleźć liczbę 5-cio elementowych ciągów zbioru 10-cio elementowego jest to wariacja z powtórzeniami:
+W tym zadaniu należy skorzystać z wariacji w powtórzeniami i bez powtórzeń. Pierwsza osoba może wybrać 10 pięter, druga również 10, itd. Musimy więc znaleźć liczbę 5-cio elementowych ciągów zbioru 10-cio elementowego jest to wariacja z powtórzeniami:
 
 $|\Omega| = 10 * 10 * 10 * 10 * 10 = 10^5.$
 
@@ -312,7 +313,7 @@ $P = \frac{6 \cdot 7 \cdot 8 \cdot 9 \cdot 10}{10^5} = \frac{6 \cdot 7 \cdot 8 \
 
 ### Zadanie 9
 
-Egzaminator przygotował 20 pytań, z których zdąjacy losuje 3. Jakie jest prawdopodobieństwo, że uczeń dobrze odpowie na 3 pytania, jeżeli umie odpowiedzieć na połowę pytań.
+Egzaminator przygotował 20 pytań, z których zdający losuje 3. Jakie jest prawdopodobieństwo, że uczeń dobrze odpowie na 3 pytania, jeżeli umie odpowiedzieć na połowę pytań.
 
 Rozwiązanie:
 
@@ -355,7 +356,7 @@ b) $P = \frac{13}{20} \cdot \frac{12}{19} = \frac{39}{95} \approx 0.4105.$
 
 ### Zadanie 11
 
-Z grupy studenckiej liczącej 30 osób w tym 20 chłopców wybrano delegację złożona z 5 osób, przy czym rozważano różne możliwości liczby chłopców i dziewcząt w delegacji, w każdym razie liczby różne od zera. Obliczyć prawdopodobienstwo, że do delegacji będą wybrane najwyżej 3 dziewczyny.
+Z grupy studenckiej liczącej 30 osób w tym 20 chłopców wybrano delegację złożona z 5 osób, przy czym rozważano różne możliwości liczby chłopców i dziewcząt w delegacji, w każdym razie liczby różne od zera. Obliczyć prawdopodobieństwo, że do delegacji będą wybrane najwyżej 3 dziewczyny.
 
 Rozwiązanie:
 
@@ -407,7 +408,7 @@ $P = 0.25 + 0.4 = 0.65.$
 
 ### Zadanie 16
 
-Wykonujemy jeden rzut kostką sześcienną do gry. Jakie jest prawdopodobieństwo zdarzenia przeciwnego do zdarzenia polegąjacego na tym, że otrzymaliśmy jedno lub trzy oczka?
+Wykonujemy jeden rzut kostką sześcienną do gry. Jakie jest prawdopodobieństwo zdarzenia przeciwnego do zdarzenia polegającego na tym, że otrzymaliśmy jedno lub trzy oczka?
 
 Rozwiązanie:
 
@@ -418,9 +419,9 @@ $P(A) = \frac{1}{3}$
 $P(A') = 1 - P(A) = 1 - \frac{1}{3} = \frac{2}{3}$
 
 ### Zadanie 17
-Z cyfr $1, 2, . . . , 9$ losujemy bez zwracania trzy cyfry $x, y, z$ i tworzymy liczbe trzycyfrowa $xyz$. Obliczyc prawdopodobieństwo, że otrzymamy liczbę mniejszą od $555$.
+Z cyfr $1, 2, . . . , 9$ losujemy bez zwracania trzy cyfry $x, y, z$ i tworzymy liczbę trzycyfrową $xyz$. Obliczyć prawdopodobieństwo, że otrzymamy liczbę mniejszą od $555$.
 
-Roziwązanie:
+Rozwiązanie:
 
 W pierwszym losowaniu mamy do dyspozycji 9, w drugim 8, w trzecim 7, więc:
 
@@ -449,7 +450,7 @@ Liczba wszystkich możliwych ułożeń klocków jest równa liczbie permutacji c
 
 $|\Omega| = 10!$
 
-Liczba zdarzeń sprzyjających może być obliczona w następujący sposób: na pierwsze miejsce można wybrać jeden klocek z literą $s$ spośród dwóch, na drugie miejsce może zostać wybrana jednek klocek z literą $t$ spośród trzech itd. (należy pamiętać o znmniejszającej się liczbie klocków więc ostatnie pieć miejsc to same jedynki):
+Liczba zdarzeń sprzyjających może być obliczona w następujący sposób: na pierwsze miejsce można wybrać jeden klocek z literą $s$ spośród dwóch, na drugie miejsce może zostać wybrana jedne klocek z literą $t$ spośród trzech itd. (należy pamiętać o zmniejszającej się liczbie klocków więc ostatnie pięć miejsc to same jedynki):
 
 $|A| = 2\cdot3\cdot2\cdot2\cdot2\cdot1\cdot1\cdot1\cdot1\cdot1 = 48,$
 
@@ -471,7 +472,7 @@ W fizyce statystycznej rozważa się rozkład (rozmieszczenie) $k$ cząstek w $n
 3. cząstki nie różnią się między sobą i w każdej komórce może znajdować się co najwyżej jedna cząstka.
 
 Stosownie od przyjętych założeń mówi się odpowiednio o statystyce: Maxwella-Boltzmanna, Bosego-Einsteina, Fermiego-Diraca. Zakładamy, ponadto, że wszystkie dopuszczalne rozmieszczenia są jednakowo prawdopodobne. Znaleźć prawdopodobieństwo tego, że:\
-a) $k$ cząstek rozmieśći się po jednej w $k$ ustalonych komórkach dla każdej z rozważanych statystyk,\
+a) $k$ cząstek rozmieścić się po jednej w $k$ ustalonych komórkach dla każdej z rozważanych statystyk,\
 b) w przypadku statystyki Bosego-Einsteina znajdzie się dokładnie $m$ cząstek\
 b1) w ustalonej komórce,\
 b2) w jednej z $n$ komórek\
@@ -508,7 +509,7 @@ $$P = \frac{{k-m+n-1-1 \choose k-m}}{{k + n - 1 \choose k}} =
 b2) Sytuacja jest podobna do powyższej jednak komórka nie jest ustalona a wybrać ją można na $n$ sposobów co daje:
 $$P = \frac{n{k+n-m-2 \choose k-m}}{{k + n - 1 \choose k}}$$
 
-c) Jeżeli każda komórka ma być zapełniona to $k \ge n$, najpierw zapełniamy $n$ komórek po jednej cząstce można to zrobić dokłądnie w jeden sposób ponieważ cząstki są nierozróżnialne. Pozostaje rozmieścić $k - n$ cząstek w $n$ komórkach:
+c) Jeżeli każda komórka ma być zapełniona to $k \ge n$, najpierw zapełniamy $n$ komórek po jednej cząstce można to zrobić dokładnie w jeden sposób ponieważ cząstki są nierozróżnialne. Pozostaje rozmieścić $k - n$ cząstek w $n$ komórkach:
 
 $$P = \frac{1\cdot{k-n+n-1 \choose k-n}}{{k + n - 1 \choose k}} = 
 \frac{{k-1 \choose k-n}}{{k + n - 1 \choose k}},$$

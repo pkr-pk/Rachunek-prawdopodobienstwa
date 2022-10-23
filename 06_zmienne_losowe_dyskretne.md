@@ -26,7 +26,7 @@ Dystrybuantą zmiennej losowej $X$ nazywamy funkcję $F(x)$ określoną na zbior
 
 $$F(x) = P(X \le x)$$
 
-Dla zmennej dyskretnej:
+Dla zmiennej dyskretnej:
 
 $$F(x) = P(X \le x) = \sum_{x_i<x}{P(X = x_i) } =  \sum_{x_i<x}p_i$$
 
@@ -77,7 +77,7 @@ Kwantyl rzędu $\frac{1}{2}$ to inaczej mediana.
 Dominanta to statystyka dla zmiennych o rozkładzie dyskretnym, wskazująca na wartość o największym prawdopodobieństwie wystąpienia.
 
 ## Rozkład dwumianowy, rozkład Bernoulliego
-Dyskretny rozkład prawdopodobieństwa opisujący liczbę sukcesów $k$ w ciągu $n$ niezależnych prób, z których każda ma stałe prawdopodobieństwo sukcesu równe $p$. Pojedynczy eksperyment nosi nazwę próby Bernoulliego. Jeżeli zmienna losowa $X$ pochodzi z rokładu dwumianowego to oznaczamy $X \sim B(n, p)$
+Dyskretny rozkład prawdopodobieństwa opisujący liczbę sukcesów $k$ w ciągu $n$ niezależnych prób, z których każda ma stałe prawdopodobieństwo sukcesu równe $p$. Pojedynczy eksperyment nosi nazwę próby Bernoulliego. Jeżeli zmienna losowa $X$ pochodzi z rozkładu dwumianowego to oznaczamy $X \sim B(n, p)$
 
 Funkcja rozkładu prawdopodobieństwa:
 
@@ -92,7 +92,7 @@ Wariancja:
 $$D^2(X) = np(1 - p).$$
 
 ## Rozkład Poissona
-Dyskretny rozkład prawdopodobieństwa, wyrażający prawdopodobieństwo szeregu wydarzeń mających miejsce w określonym czasie, gdy te wydarzenia występują ze znaną średnią częstotliwością $\lambda$ i w sposób niezależny od czasu jaki upłynął od ostatniego zajścia takiego zdarzenia. Rozkład Poissona można również stosować w odniesieniu do liczby zdarzeń w innych określonych przedziałach, takich jak odległość, powierzchnia lub objętość. Jeżeli zmienna losowa $X$ pochodzi z rokładu Poissona to oznaczamy $X \sim Pois(\lambda)$ lub $X \sim P(\lambda)$
+Dyskretny rozkład prawdopodobieństwa, wyrażający prawdopodobieństwo szeregu wydarzeń mających miejsce w określonym czasie, gdy te wydarzenia występują ze znaną średnią częstotliwością $\lambda$ i w sposób niezależny od czasu jaki upłynął od ostatniego zajścia takiego zdarzenia. Rozkład Poissona można również stosować w odniesieniu do liczby zdarzeń w innych określonych przedziałach, takich jak odległość, powierzchnia lub objętość. Jeżeli zmienna losowa $X$ pochodzi z rozkładu Poissona to oznaczamy $X \sim Pois(\lambda)$ lub $X \sim P(\lambda)$
 
 Funkcja rozkładu prawdopodobieństwa:
 
@@ -283,7 +283,7 @@ py.show()
 Najbardziej prawdopodobne jest 4 lub 5 huraganów.
 
 ### Zadanie 4
-Liczba polis ubezpieczeniowych, któreposiada losowo wybrany mieszkaniec dużego miasta jest zmienną losową $X$. Funkcję prawdopodobieństwa zmiennej losowej $X$ przedstawia tabela:
+Liczba polis ubezpieczeniowych, które posiada losowo wybrany mieszkaniec dużego miasta jest zmienną losową $X$. Funkcję prawdopodobieństwa zmiennej losowej $X$ przedstawia tabela:
 
 ||||||
 |---|---|---|---|---|
@@ -450,7 +450,7 @@ c)
 |$p_i$|0.1|0.2|0.1|0.6|
 
 ### Zadanie 9
-Załóżmy, że prawdopodobieństwo, że losowo wybrany łabędź ma wirusa typu H5 wynosi 0.001. Oblicz przybliżone prawdopodobieństwo, że wsród 500 losowo wybranych łabędzi znajdą się 2 z tym wirusem.
+Załóżmy, że prawdopodobieństwo, że losowo wybrany łabędź ma wirusa typu H5 wynosi 0.001. Oblicz przybliżone prawdopodobieństwo, że wśród 500 losowo wybranych łabędzi znajdą się 2 z tym wirusem.
 
 Rozwiązanie:
 
@@ -571,7 +571,7 @@ Rzucamy 5 razy moneta. Niech zmienna losowa $X$ przyjmuje wartości równe liczb
 
 Rozwiązanie:
 
-Zmienna losowa $X$ pochodzi z rozkładu dwumianowego, ponieważ mamy tutaj sumę 5 doświadczeń Beroulliego.
+Zmienna losowa $X$ pochodzi z rozkładu dwumianowego, ponieważ mamy tutaj sumę 5 doświadczeń Bernoulliego.
 
 $n = 5,$
 
@@ -653,7 +653,7 @@ Zmienna losowa $X$ ma rozkład dwumianowy z wartością oczekiwaną 40 i warianc
 
 Rozwiązanie:
 
-Wiadomo, że w rokładzie dwumianowym:
+Wiadomo, że w rozkładzie dwumianowym:
 
 $E(X) =np,$
 
@@ -674,7 +674,7 @@ Zmienna losowa $X$ ma rozkład Poissona z parametrem $\lambda = 2$. Znaleźć wa
 
 Rozwiązanie:
 
-Wiadomo, że w rokładzie dwumianowym:
+Wiadomo, że w rozkładzie dwumianowym:
 
 $D^2(Z) = D^2(2X-3) = 4D^2(X) = 4\cdot2=8.$
 
@@ -763,7 +763,7 @@ c)$P(X > 2)$, $P(X = 3)$, $P(0 < X \le 4)$.
 Rozwiązanie:
 
 a)\
-Funkcia prawdopodobieństwa w tym przypadku to:
+Funkcja prawdopodobieństwa w tym przypadku to:
 
 $P(X=k) = \begin{cases}
 p^k(1-p) & \text{dla } k \in \{0, 1, 2, 3\}  \\
@@ -1078,7 +1078,7 @@ F(x) =
 \end{cases}
 $
 
-Wyznaczyc rozkład, obliczyc $E(X)$, $D^2(X)$, $D(X)$, $P(X > 1)$, $P(X ­\ge 0.5)$, $P(−1 < X < 2)$, $P(X \ge­ 7)$.
+Wyznaczyć rozkład, obliczyć $E(X)$, $D^2(X)$, $D(X)$, $P(X > 1)$, $P(X ­\ge 0.5)$, $P(−1 < X < 2)$, $P(X \ge­ 7)$.
 
 Rozwiązanie:
 

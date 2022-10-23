@@ -2,14 +2,14 @@
 Jeżeli zdarzenia $B_1, B_2, ... ,B_n$ są parami rozłączne oraz mają prawdopodobieństwa dodatnie, które sumują się do jedynki, to dla dowolnego zdarzenia $A$ zachodzi wzór:
 $$P(A)=P(A|B_1)⋅P(B_1)+P(A|B_2)⋅P(B_2)+...+P(A|B_n)⋅P(B_n)$$
 
-###Wzór Bayesa
+### Wzór Bayesa
 Jeżeli zdarzenia $B_1, B_2,...,B_n$ są parami rozłączne oraz mają prawdopodobieństwa dodatnie, które sumują się do jedynki, to dla dowolnego zdarzenia $A$ zachodzi wzór:
 $$P(B_k|A) = \frac{P(A|B_k)⋅P(B_k)}{P(A)}$$
 
 # Zadania
 
 ### Zadanie 1
-Z jednej z trzech urn wylosowano jedną kulę. W urnie I są 4 kule białe i 1 kula czarna, w urnie II są 2 kule białe i 3 kule czarne, a w urnie III są 4 kule białe i 2 kule czarne. Prawdopodobieństwo wybrania do losowania urny I wyosi 3/10, urny II 2/10, a urny III 5/10. Oblicz prawdopodoieństwo, że wylosowana kula jest biała.
+Z jednej z trzech urn wylosowano jedną kulę. W urnie I są 4 kule białe i 1 kula czarna, w urnie II są 2 kule białe i 3 kule czarne, a w urnie III są 4 kule białe i 2 kule czarne. Prawdopodobieństwo wybrania do losowania urny I wynosi 3/10, urny II 2/10, a urny III 5/10. Oblicz prawdopodobieństwo, że wylosowana kula jest biała.
 
 Rozwiązanie:
 
@@ -20,7 +20,7 @@ $A$ - zdarzenie polegające na wylosowaniu kuli białej.
 Należy skorzystać ze wzoru na prawdopodobieństwo całkowite. Dobrze też narysować diagram jak poniżej.
 
 <p align="center">
-<img src="img/prawdopodobienstwo_geometryczne/20.jpg" width="80%">
+<img src="img/prawdopodobieństwo_geometryczne/20.jpg" width="80%">
 </p>
 
 Korzystając z diagramu mamy:
@@ -62,13 +62,13 @@ c)$P(A) = \frac{1}{3} \cdot \frac{4}{7} \cdot \frac{3}{6} +
 
 ### Zadanie 3
 
-W konferencji naukowej bierze udział 80% mężczyzn i 20% kobiet. Wsród kobiet jest 60% matematyczek i 40% informatyczek, a wśród mężczyzn jest 30% matematyków i 70% infornatyków. Oblicz prawdopodobieństwo, że losowo wybrana osoba jest matematykiem.
+W konferencji naukowej bierze udział 80% mężczyzn i 20% kobiet. Wśród kobiet jest 60% matematyczek i 40% informatyczek, a wśród mężczyzn jest 30% matematyków i 70% informatyków. Oblicz prawdopodobieństwo, że losowo wybrana osoba jest matematykiem.
 
 Rozwiązanie:
 
-$B_1$ - zdarzenie polegające na tym, że wylosowa osoba będzie mężczyzną.
+$B_1$ - zdarzenie polegające na tym, że wylosowana osoba będzie mężczyzną.
 
-$B_2$ - zdarzenie polegające na tym, że wylosowa osoba będzie kobietą.
+$B_2$ - zdarzenie polegające na tym, że wylosowana osoba będzie kobietą.
 
 $A$ - zdarzenie polegające na wylosowaniu matematyka.
 
@@ -89,11 +89,11 @@ b) Wybrany losowo właściciel polisy miał szkodę. Oblicz prawdopodobieństwo 
 
 Rozwiązanie:
 
-$B_1$ - zdarzenie polegające na wylosowaniu polisu typu A.
+$B_1$ - zdarzenie polegające na wylosowaniu polisy typu A.
 
-$B_2$ - zdarzenie polegające na wylosowaniu polisu typu B.
+$B_2$ - zdarzenie polegające na wylosowaniu polisy typu B.
 
-$B_3$ - zdarzenie polegające na wylosowaniu polisu typu C.
+$B_3$ - zdarzenie polegające na wylosowaniu polisy typu C.
 
 $A$ - zdarzenie polegające na wygenerowaniu szkody.
 
@@ -405,7 +405,7 @@ $P(B_2|A) = \frac{0.7 \cdot \frac{6}{15}}{0.79} \approx 0.35$
 
 $P(B_3|A) = \frac{0.8 \cdot \frac{5}{15}}{0.79} \approx 0.34$
 
-Studen był najprawdopodobniej z II roku.
+Student był najprawdopodobniej z II roku.
 
 ### Zadanie 15
 W zakładzie znajdują się maszyny typu A, B, C produkujące odpowiednio 5%, 3% i 1% braków. Z całej masy towarowej wybieramy losowo jedna sztukę. Obliczyć prawdopodobieństwo,

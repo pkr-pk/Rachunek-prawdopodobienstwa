@@ -111,7 +111,7 @@ co najmniej jedna reszka, a zdarzenie $B$, ze wypadły same reszki. Znaleźć $P
 
 Rozwiązanie:
 
-Obliczam $P(A)$ czyli różnicę 1 i tego, że wypadłu 3 orły:
+Obliczam $P(A)$ czyli różnicę 1 i tego, że wypadły 3 orły:
 
 $P(A) = 1 - {3 \choose 3} 0.5^{3} = 1 - \frac{1}{8} = \frac{7}{8}.$
 
