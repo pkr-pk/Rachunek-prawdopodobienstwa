@@ -39,11 +39,10 @@ Ogólnie:
 $$P\left(\bigcup\limits_{i=1}^n A_i\right) = 
 \sum\limits_{i=1}^nP(A_i) - $$
 
-$$i < j$$
 
-$$\sum\limits_{i<j} P(A_i \cap A_j) +$$
+$$\sum\limits_{i < j} P(A_i \cap A_j) +$$
 
-$$\sum\limits_{i<j<k} P(A_i \cap A_j \cap A_k) - ... +$$
+$$\sum\limits_{i < j < k} P(A_i \cap A_j \cap A_k) - ... +$$
 
 $$(-1)^{n-1}P\left(\bigcap\limits_{i=1}^n A_i\right)$$
 
