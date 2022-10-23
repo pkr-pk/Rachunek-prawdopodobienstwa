@@ -22,6 +22,8 @@ Zadanie jest podobne do zadań z podwójnym rzutem kostką do gry tylko tam nale
 
 Ponieważ oba tramwaje powinny przyjechać w ciągu najbliższych 20 minut, ilustracją całej sytuacji będzie kwadrat o wierzchołkach w punktach $(0,0), (20,0), (20,20)$ i $(0,20)$. Dwie współrzędne każdego punktu tego kwadratu będą oznaczały, za ile minut mogą przyjechać tramwaje dwóch linii (np. punkt $(7,12)$ jest ilustracją sytuacji, gdy tramwaj jednej linii przybywa za 7 minut a tramwaj drugiej linii za 12 minut).
 
+![](img/prawdopodobienstwo_geometryczne/01.png)
+
 <p align="center">
 <img src="img/prawdopodobienstwo_geometryczne/01.png" width="40%">
 </p>
