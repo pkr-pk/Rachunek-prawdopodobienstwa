@@ -3,6 +3,8 @@ W przestrzeni jednowymiarowej $(R^1)$ mamy długość jako jednostkę miary, w p
 
 $$P(A) = \frac{miara(A)}{miara(\Omega)}$$
 
+# Zadania
+
 ### Zadanie 1
 
 Podróżny przybywa na przystanek tramwajowy. Nie ma świadomości, która jest godzina. Wie, że na tym przystanku zatrzymują się tramwaje tylko jednej linii i że kursują one co 20 minut, jednak nie wie, jak dawno temu ostatni raz przejeżdżał tramwaj. Jakie jest prawdopodobieństwo, że jeśli nie wystąpią żadne nieprzewidziane okoliczności, kolejny tramwaj nadjedzie w ciągu najbliższych 5 minut?
