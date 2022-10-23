@@ -39,7 +39,7 @@ Rozwiązanie:
 Tym razem ilustracją dla opisanej sytuacji będzie kwadrat o wierzchołkach w punktach $(0,0), (60,0), (60,60)$ i $(0,60)$. Współrzędne każdego punktu w tym kwadracie oznaczają liczbę minut po godzinie 7:00, gdy każdy z dwóch kolegów przybywa na przystanek (np. punkt $(32,48)$ oznacza sytuację, gdy jeden z kolegów przybywa na przystanek o godzinie 7:32 a drugi o godz. 7:48).
 
 <p align="center">
-<img src="img/prawdopodobienstwo_geometryczne/02.png" width="40%">
+<img src="img/prawdopodobienstwo_geometryczne/02.jpg" width="40%">
 </p>
 
 Pole tego kwadratu wynosi $60^2=3600$. Jeśli obaj koledzy przyjdą na przystanek w tym samym kwadransie, to pojadą do pracy tym samym tramwajem, w przeciwnym razie pojadą różnymi tramwajami. W takim razie sytuację, gdy obaj koledzy jadą jednym tramwajem, ilustrują cztery zaciemnione kwadraty. Suma pól tych kwadratów wynosi $4·15^2=900$. Wobec tego prawdopodobieństwo tego, że obaj koledzy jadą jednym tramwajem, wynosi:
@@ -55,7 +55,7 @@ Wystarczy rozważyć tylko jedno pole szachownicy.
 Aby moneta znajdowała się całkowicie w polu szachownicy jej środek musi znajdować się w kwadracie mniejszym od pola szachownicy. Dowolny bok mniejszego kwadratu musi być oddalony od pola szachownicy o promień monety. Sytuację taką widać na poniższym rysunku.
 
 <p align="center">
-<img src="img/prawdopodobienstwo_geometryczne/03.png" width="40%">
+<img src="img/prawdopodobienstwo_geometryczne/03.jpg" width="40%">
 </p>
 
 Szukane prawdopodobieństwo to pole pole mniejszego kwadratu podzielone przez pole kwadratu szachownicy:
@@ -91,7 +91,7 @@ Aby $x$ było dodatnie to liczba $a$ lub $b$ musi być ujemna, ponieważ $a \in 
 Przedstawię losowanie opisane w zadaniu na poniższym wykresie, gdzie zacieniowany obszar to zbiór punktów dla których $b \in (-1, 0)$.
 
 <p align="center">
-<img src="img/prawdopodobienstwo_geometryczne/04.png" width="20%">
+<img src="img/prawdopodobienstwo_geometryczne/04.jpg" width="20%">
 </p>
 
 Pole zacieniowanej części przez pole całkowite to szukane prawdopodobieństwo:
@@ -126,7 +126,7 @@ $y = x + 20.$
 Sytuację taką ilustruje poniższy wykres:
 
 <p align="center">
-<img src="img/prawdopodobienstwo_geometryczne/05.png" width="40%">
+<img src="img/prawdopodobienstwo_geometryczne/05.jpg" width="40%">
 </p>
 
 Pole zacieniowaniego obszaru to różnica pola kwadratu i dwóch białych trójkątów, stąd szukane prawdopodobieństwo to:
@@ -142,7 +142,7 @@ Rozwiązanie:
 Rozumowanie jest analogiczne do zadania 4 jednak rozwiązanie jest trudniejsze. Sytuację z zadania prezentuje poniższy wykres:
 
 <p align="center">
-<img src="img/prawdopodobienstwo_geometryczne/06.png" width="50%">
+<img src="img/prawdopodobienstwo_geometryczne/06.jpg" width="50%">
 </p>
 
 Aby obliczyć pole mniejszego trójkąta należy znaleźć $a'$ co jest długością podstawy trójkąta. Aby wyznaczyć $a'$ należy wyznaczyć współrzędną $x$ punktu $A$. W tym celu wyznaczę równanie prostej równoległej do prostej o równaniu $y = -x + a$ i przechodzącej przez punkt $A$:
@@ -232,7 +232,7 @@ plt.show()
 ```
 
 <p align="center">
-<img src="img/prawdopodobienstwo_geometryczne/25.png" width="50%">
+<img src="img/prawdopodobienstwo_geometryczne/25.jpg" width="50%">
 </p>
 
 Jak można odczytać z zacieniowanego wykresu wyróżnik jest większy od zera gdy $m \in (-3, -1) \cup (2, 3)$. Szukane prawdopodobieństwo to:
@@ -283,7 +283,7 @@ Rozwiązanie:
 Należy znaleźć pole pod wykresem danej funkcji i części wspólnej z danym kwadratem. Sytuację przedstawia niższy rysunek.
 
 <p align="center">
-<img src="img/prawdopodobienstwo_geometryczne/07.png" width="40%">
+<img src="img/prawdopodobienstwo_geometryczne/07.jpg" width="40%">
 </p>
 
 Jak widać na rysunku należy obliczyć pole pod wykresem funkcji w przedziale $[0, 1]$. Funkcja jest parabolą więc aby dokładnie obliczyć pole pod jej wykresem należy użyć całki:
@@ -315,7 +315,7 @@ Rozwiązanie:
 Należy zastanowić się gdzie w którym miejscu można wybrać punkt $B$ aby spełnione zostały warunki zadania. Zobaczmy rysunek:
 
 <p align="center">
-<img src="img/prawdopodobienstwo_geometryczne/08.png" width="40%">
+<img src="img/prawdopodobienstwo_geometryczne/08.jpg" width="40%">
 </p>
 
 Jeżeli punkt $B$ będzie leżał pomiędzy $0$ a $\frac{1}{3}L$ to mniejszy z odcinków $OB$, $BA$ nie będzie miał długości większej niż $\frac{1}{3}L$. Jeżeli punkt $B$ będzie leżał pomiędzy $\frac{1}{3}L$ a $\frac{2}{3}L$ to mniejszy z odcinków $OB$, $BA$ zawsze będzie miał długości większą niż $\frac{1}{3}L$ co spełnia założenia w zadaniu. Ostatni przedział jest analogiczny do pierwszego i nie spełnia wymagań zadania.
@@ -348,7 +348,7 @@ $y = x + \frac{1}{3}a.$
 Ponieważ punkt $x$ wybieramy na lewo od połowy odcinka a punkt $y$ na prawo to punktu $A$ musi znajdować się dodatkowo w odpowiednim kwadracie co przedstawione zostało na poniższym rysunku.
 
 <p align="center">
-<img src="img/prawdopodobienstwo_geometryczne/09.png" width="50%">
+<img src="img/prawdopodobienstwo_geometryczne/09.jpg" width="50%">
 </p>
 
 Wszystkie możliwości wyboru punktu $A$ przedstawia zaznaczony kwadrat, nas interesują jednak punkty z zacieniowanej części gdyż należą do kwadratu a dodatkowo leżą pomiędzy wyznaczonymi prostymi. Pole zacieniowanego trójkąta to:
@@ -371,7 +371,7 @@ Rozwiązanie:
 Zadanie jest prawie takie samo jak zadanie poprzednie, inna jest tylko możliwość wyboru dwóch punktów bo możemy to zrobić na całej długości odcinka więc kwadrat na rysunku będzie 4 razy większy, proste pomiędzy którymi może znajdować się punkt $A$ mają takie same równania jak w poprzednim zadaniu.
 
 <p align="center">
-<img src="img/prawdopodobienstwo_geometryczne/10.png" width="50%">
+<img src="img/prawdopodobienstwo_geometryczne/10.jpg" width="50%">
 </p>
 
 Pole zacieniowanej części to:
@@ -390,7 +390,7 @@ Rozwiązanie:
 Zacznę od narysowania rysunku.
 
 <p align="center">
-<img src="img/prawdopodobienstwo_geometryczne/11.png" width="60%">
+<img src="img/prawdopodobienstwo_geometryczne/11.jpg" width="60%">
 </p>
 
 W tym zadaniu wystarczy rozpatrzeć odpowiedni obszar z jednej strony wybranej prostej (oczywiście jest ich na płaszczyźnie nieskończenie wiele. W tego typu zadaniach zawsze dobrze oznaczyć środek rzucanego przedmiotu (w poprzednich zadaniach był to środek monety). Oznaczmy odległość środka igły od wybranej prostej jako $x$, ponieważ rozpatrujemy obszar z jednej strony prostej to środek igły może upaść od prostej do maksymalnej odległości $\frac{d}{2}$, daje to warunek dla $x$:
@@ -412,7 +412,7 @@ $0 \le x \le \frac{l}{2}sin(\alpha)$.
 Narysuję teraz odpowiedni wykres korzystając z wszystkich 3 warunków:
 
 <p align="center">
-<img src="img/prawdopodobienstwo_geometryczne/12.png" width="60%">
+<img src="img/prawdopodobienstwo_geometryczne/12.jpg" width="60%">
 </p>
 
 Moc zbioru zdarzeń sprzyjających to zacienione pole:
@@ -466,7 +466,7 @@ $c \le b^2$
 Rysuję stosowny rysunek:
 
 <p align="center">
-<img src="img/prawdopodobienstwo_geometryczne/13.png" width="30%">
+<img src="img/prawdopodobienstwo_geometryczne/13.jpg" width="30%">
 </p>
 
 Zacienionie pole to moc zbioru zdarzeń sprzyjających, obliczam stosowną całkę i prawdopodobieństwo:
@@ -510,7 +510,7 @@ $b^2 - 4a \ge 0,$
 $a \le \frac{1}{4}b^2$
 
 <p align="center">
-<img src="img/prawdopodobienstwo_geometryczne/14.png" width="50%">
+<img src="img/prawdopodobienstwo_geometryczne/14.jpg" width="50%">
 </p>
 
 Należy znaleźć zacienione pole:
@@ -556,7 +556,7 @@ wiemy że $a > 0$ więc z powyższego równania wynika, że $b < 0$.
 Uwzględniając wszystkie warunki można narysować rysunek:
 
 <p align="center">
-<img src="img/prawdopodobienstwo_geometryczne/15.png" width="50%">
+<img src="img/prawdopodobienstwo_geometryczne/15.jpg" width="50%">
 </p>
 
 Szukane pole to:
@@ -590,7 +590,7 @@ a)\
 $H < L$
 
 <p align="center">
-<img src="img/prawdopodobienstwo_geometryczne/16.png" width="50%">
+<img src="img/prawdopodobienstwo_geometryczne/16.jpg" width="50%">
 </p>
 
 Szukane prawdopodobieństwo to:
@@ -620,7 +620,7 @@ $A + B > 2000,$
 $B > 2000 - A.$
 
 <p align="center">
-<img src="img/prawdopodobienstwo_geometryczne/17.png" width="40%">
+<img src="img/prawdopodobienstwo_geometryczne/17.jpg" width="40%">
 </p>
 
 Szukane prawdopodobieństwo to:
@@ -637,7 +637,7 @@ $sin(x) ­ \ge 2y,$
 $y \le \frac{1}{2}sin(x)$
 
 <p align="center">
-<img src="img/prawdopodobienstwo_geometryczne/18.png" width="40%">
+<img src="img/prawdopodobienstwo_geometryczne/18.jpg" width="40%">
 </p>
 
 Rozwiązanie w pythonie:
@@ -667,7 +667,7 @@ $\alpha - \frac{\pi}{4} < \beta < \alpha + \frac{\pi}{4}$
 Ponieważ punkty wybrane są z I ćwiartki układu to kąty mieszczą się w przedziale $(0, \frac{\pi}{2})$, kąt $\beta$ leży natomiast pomiędzy prostymi wyznaczonymi powyżej.
 
 <p align="center">
-<img src="img/prawdopodobienstwo_geometryczne/19.png" width="40%">
+<img src="img/prawdopodobienstwo_geometryczne/19.jpg" width="40%">
 </p>
 
 Szukane prawdopodobieństwo to:
