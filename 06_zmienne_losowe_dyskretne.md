@@ -947,10 +947,7 @@ Aby obliczyć powyższą sumę można skorzystać z metody różniczkowania szer
 
 $x = 1 - p$
 
-$\sum\limits_{k=1}^\infty kx^{k-1} = 
-\sum\limits_{k=1}^\infty \left( k\frac{x^k}{k} \right)' = 
-\left( \sum\limits_{k=1}^\infty x^k \right)' =
-\left( \frac{x}{1-x} \right)' = \frac{1-x+x}{(1-x)^2}=\frac{1}{(1-x)^2} = \frac{1}{(1-1+p)^2} = \frac{1}{p^2},$
+$\sum\limits_{k=1}^\infty kx^{k-1} = \sum\limits_{k=1}^\infty \left( k\frac{x^k}{k} \right)' = \left( \sum\limits_{k=1}^\infty x^k \right)' = \left( \frac{x}{1-x} \right)' = \frac{1-x+x}{(1-x)^2}=\frac{1}{(1-x)^2} = \frac{1}{(1-1+p)^2} = \frac{1}{p^2},$
 
 $E(X) = p\frac{1}{p^2} = \frac{1}{p}.$
 
