@@ -47,8 +47,7 @@ Najlepiej narysować sobie diagram z wszystkimi możliwościami z danego podpunk
 
 a) $P(A) = \frac{1}{3} \cdot \frac{3}{7} \cdot \frac{2}{6} + \frac{2}{3} \cdot \frac{4}{9} \cdot \frac{3}{8} \approx 0.16$
 
-b) $P(A) = \frac{1}{3} \cdot \frac{4}{7} \cdot \frac{3}{6} + \frac{1}{3} \cdot \frac{3}{7} \cdot \frac{4}{6} +$
-$\frac{2}{3} \cdot \frac{5}{9} \cdot \frac{4}{8} + \frac{2}{3} \cdot \frac{4}{9} \cdot \frac{5}{8} \approx 0.56$
+b) $P(A) = \frac{1}{3} \cdot \frac{4}{7} \cdot \frac{3}{6} + \frac{1}{3} \cdot \frac{3}{7} \cdot \frac{4}{6} + \frac{2}{3} \cdot \frac{5}{9} \cdot \frac{4}{8} + \frac{2}{3} \cdot \frac{4}{9} \cdot \frac{5}{8} \approx 0.56$
 
 c) $P(A) = \frac{1}{3} \cdot \frac{4}{7} \cdot \frac{3}{6} + \frac{1}{3} \cdot \frac{4}{7} \cdot \frac{3}{6} + \frac{1}{3} \cdot \frac{3}{7} \cdot \frac{4}{6} + \frac{2}{3} \cdot \frac{5}{9} \cdot \frac{4}{8} + \frac{2}{3} \cdot \frac{5}{9} \cdot \frac{4}{8} + \frac{2}{3} \cdot \frac{4}{9} \cdot \frac{5}{8} \approx 0.84$
 
