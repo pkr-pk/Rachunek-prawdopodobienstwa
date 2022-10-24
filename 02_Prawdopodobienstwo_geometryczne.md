@@ -186,9 +186,8 @@ $a' = a - \frac{d \sqrt{2}}{2} - d.$
 
 Szukane prawdopodobieństwo to pole mniejszego trójkąta przez pole większego trójkąta, stąd:
 
-$P = \frac{\frac{1}{2} \left(a - \frac{d \sqrt{2}}{2} - d \right)^2}{\frac{1}{2} a^2} =$
-
-$\frac{\left(a - \frac{d \sqrt{2}}{2} - d \right)^2}{a^2} = $
+$P = \frac{\frac{1}{2} \left(a - \frac{d \sqrt{2}}{2} - d \right)^2}{\frac{1}{2} a^2} =
+\frac{\left(a - \frac{d \sqrt{2}}{2} - d \right)^2}{a^2} = $
 
 $\frac{\frac{1}{2} \left(a \sqrt{2} - d - d \sqrt{2} \right)^2}{a^2} = $
 
