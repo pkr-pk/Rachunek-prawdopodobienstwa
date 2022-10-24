@@ -720,8 +720,8 @@ Najlepiej narysować tabelkę i odejmować kolejne oczka od siebie.
 
 $|\Omega| = 6\cdot6=36$
 
-|$x_i$|0|1|2|3|4|5|
-|---|---|---|---|---|---|---|---|
+|$x_i$|0             |1              |2             |3             |4             |5             |
+|---  |---           |---            |---           |---           |---           |---           |
 |$p_i$|$\frac{6}{36}$|$\frac{10}{36}$|$\frac{8}{36}$|$\frac{6}{36}$|$\frac{4}{36}$|$\frac{2}{36}$|
 
 b)\
