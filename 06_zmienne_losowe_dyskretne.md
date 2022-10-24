@@ -962,24 +962,17 @@ $P(X = n) = (1-p)^{n-1}p = p^n = 0.5^n$ dla $n = 1, 2, 3,...$
 
 Dystrybuanta:
 
-$P(X \le x) = 
-\sum\limits_{i = 1}^n p_i =
-\sum\limits_{i = 1}^n p^i = p\frac{1-p^n}{1-p}=1-0.5^n,$
+$P(X \le x) = \sum\limits_{i = 1}^n p_i = \sum\limits_{i = 1}^n p^i = p\frac{1-p^n}{1-p}=1-0.5^n,$
 
-$F(x)=
+$$F(x)=
 \begin{cases}
-0       & \text{dla $x \in (-\infty, 1]$} \\
-1-0.5^n & \text{dla $x \in (n, n+1], n=1, 2, 3...$} \\
-\end{cases}$
+0       & \text{dla } x \in (-\infty, 1] \\
+1-0.5^n & \text{dla } x \in (n, n+1], n=1, 2, 3... \\
+\end{cases}$$
 
 Wartość oczekiwana:
 
-$E(X) = \sum\limits_{k=1}^{\infty} kp^k =
-p \sum\limits_{k=1}^{\infty} kp^{k-1} =
-p \sum\limits_{k=1}^{\infty} \left( k\frac{p^k}{k} \right)' =
-p \left( \sum\limits_{k=1}^{\infty} p^k \right)' =
-p \left( \frac{p}{1-p} \right)' =
-p \frac{1-p+p}{(1-p)^2} = \frac{p}{(1-p)^2} = \frac{1}{0.5} = 2.$
+$E(X) = \sum\limits_{k=1}^{\infty} kp^k = p \sum\limits_{k=1}^{\infty} kp^{k-1} = p \sum\limits_{k=1}^{\infty} \left( k\frac{p^k}{k} \right)' = p \left( \sum\limits_{k=1}^{\infty} p^k \right)' = p \left( \frac{p}{1-p} \right)' = p \frac{1-p+p}{(1-p)^2} = \frac{p}{(1-p)^2} = \frac{1}{0.5} = 2.$
 
 ### Zadanie 30
 Dana jest funkcja prawdopodobieństwa pewnej zmiennej $X$:
