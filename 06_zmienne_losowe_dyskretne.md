@@ -389,14 +389,14 @@ c)
 
 d)
 
-$`
+```math
 F_Y(y) = \begin{cases}
 0   & \text{dla } x \le -10,       \\
 0.5 & \text{dla } -10 < x \le 80,  \\
 0.8 & \text{dla } 80 < x \le 170,  \\
 1   & \text{dla } x > 170.         \\
 \end{cases}
-`$
+```
 
 e)
 <p align="center">
