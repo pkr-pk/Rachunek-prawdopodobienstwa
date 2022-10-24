@@ -28,11 +28,11 @@ $$F(x) = P(X \le x)$$
 
 Dla zmiennej dyskretnej:
 
-$$F(x) = P(X \le x) = \sum_{x_i < x}{P(X = x_i) } =  \sum_{x_i < x}p_i$$
+$$F(x) = P(X \le x) = \sum\limits_{x_i < x}{P(X = x_i) } =  \sum\limits_{x_i < x}p_i$$
 
 ## Wartość oczekiwana
 Wartość oczekiwana zmiennej losowej $X$ określona jest wzorem:
-$$E(X) = \sum_{i=1}^n x_ip_i.$$
+$$E(X) = \sum\limits_{i=1}^n x_ip_i.$$
 
 ## Własności wartości oczekiwanej
 * $E(c) = c,$
@@ -48,7 +48,7 @@ $$E[g(X)]=\sum\limits_{x_k∈R_X}g(x_k)P_X(x_k).$$
 ## Wariancja
 Wariancja zmiennej losowej $X$ określona jest wzorem:
 
-$$D^2(X) = \sum_{i=1}^n [x_i - E(X)]^2 p_i,$$
+$$D^2(X) = \sum\limits_{i=1}^n [x_i - E(X)]^2 p_i,$$
 
 można zapisać również:
 
@@ -207,24 +207,24 @@ $E(Y) = \sum\limits_{k=1}^\infty x_k \cdot 10p^{k-1}(1-p) = 10(1-p)\sum\limits_{
 
 ponieważ $x_1 = 1, x_2 = 2,...,x_n = n$, to można zapisać:
 
-$E(Y) = 10(1-p)\sum_{k=1}^\infty kp^{k-1}.$
+$E(Y) = 10(1-p)\sum\limits_{k=1}^\infty kp^{k-1}.$
 
 Korzystając z metody różniczkowania szeregu geometrycznego mamy:
 
-$\sum_{k=1}^\infty kp^{k-1} =
-\sum_{k=1}^\infty \left( k \frac{p^k}{k} \right)'=
-\left( \sum_{k=0}^\infty p^k \right)'$
+$\sum\limits_{k=1}^\infty kp^{k-1} =
+\sum\limits_{k=1}^\infty \left( k \frac{p^k}{k} \right)'=
+\left( \sum\limits_{k=0}^\infty p^k \right)'$
 
 Wzór na sumę szeregu geometrycznego to:
 
-$\sum_{k=1}^\infty aq^k = \frac{a_1}{1-q},$
+$\sum\limits_{k=1}^\infty aq^k = \frac{a_1}{1-q},$
 
 gdzie $a_1$ to pierwszy wyraz szeregu, $q$ to iloraz szeregu.
 
 Korzystając z powyższego wzoru:
 
-$\sum_{k=1}^\infty kp^{k-1} =
-\left( \sum_{k=1}^\infty p^k \right)'=
+$\sum\limits_{k=1}^\infty kp^{k-1} =
+\left( \sum\limits_{k=1}^\infty p^k \right)'=
 \left( \frac{p}{1-p} \right)' = \frac{1-p+p}{(1-p)^2} = \frac{1}{(1-p)^2},$
 
 stąd:
@@ -325,7 +325,7 @@ Dla danych z zadania 4 oblicz $E(X|X>0)$, czyli wartość oczekiwaną liczby pol
 
 Rozwiązanie:
 
-$E(X|X>0) = \sum_{i=1}^n x_i \frac{P(X = x_i \cap X>0)}{P(X>0)}$
+$E(X|X>0) = \sum\limits_{i=1}^n x_i \frac{P(X = x_i \cap X>0)}{P(X>0)}$
 
 $E(X|X>0) =  0\cdot\frac{0}{0.9} + 1\cdot\frac{0.3}{0.9} + 2\cdot\frac{0.4}{0.9} + 3\cdot\frac{0.2}{0.9} \approx 1.89$
 
@@ -423,7 +423,7 @@ Rozwiązanie:
 a)\
 $E(Y) = E(X^2 - 1) = E(X^2) - 1,$
 
-$E(X^2) = \sum_{i=1}^n x_i^2 p_i,$
+$E(X^2) = \sum\limits_{i=1}^n x_i^2 p_i,$
 
 $E(X^2) = 4\cdot0.1 + 1\cdot0.2 + 0\cdot0.1 + 9\cdot0.6 = 6,$
 
@@ -785,7 +785,7 @@ $P(X = 4) = 0.8^4 = 0.4096.$
 b)\
 Moment centralny rzędu $k$ (gdzie $k=1,2,...$) jest zdefiniowany następująco:
 
-$E\{[X - E(X)]^k\} = \sum_{i=1}^n [x_i-E(X)]^kp_i.$
+$E\{[X - E(X)]^k\} = \sum\limits_{i=1}^n [x_i-E(X)]^kp_i.$
 
 Kod w Pythonie:
 
@@ -964,15 +964,15 @@ Rozwiązanie:
 
 $P(X = n) = (1-p)^{n-1}p$ dla $n = 1, 2, 3,...$
 
-$E(X) = \sum_{k=1}^\infty k(1-p)^{k-1}p = p \sum_{k=1}^\infty k(1-p)^{k-1},$
+$E(X) = \sum\limits_{k=1}^\infty k(1-p)^{k-1}p = p \sum\limits_{k=1}^\infty k(1-p)^{k-1},$
 
 Aby obliczyć powyższą sumę można skorzystać z metody różniczkowania szeregu geometrycznego:
 
 $x = 1 - p$
 
-$\sum_{k=1}^\infty kx^{k-1} = 
-\sum_{k=1}^\infty \left( k\frac{x^k}{k} \right)' = 
-\left( \sum_{k=1}^\infty x^k \right)' =
+$\sum\limits_{k=1}^\infty kx^{k-1} = 
+\sum\limits_{k=1}^\infty \left( k\frac{x^k}{k} \right)' = 
+\left( \sum\limits_{k=1}^\infty x^k \right)' =
 \left( \frac{x}{1-x} \right)' = \frac{1-x+x}{(1-x)^2}=\frac{1}{(1-x)^2} = \frac{1}{(1-1+p)^2} = \frac{1}{p^2},$
 
 $E(X) = p\frac{1}{p^2} = \frac{1}{p}.$
@@ -989,8 +989,8 @@ $P(X = n) = (1-p)^{n-1}p = p^n = 0.5^n$ dla $n = 1, 2, 3,...$
 Dystrybuanta:
 
 $P(X \le x) = 
-\sum_{i = 1}^n p_i =
-\sum_{i = 1}^n p^i = p\frac{1-p^n}{1-p}=1-0.5^n,$
+\sum\limits_{i = 1}^n p_i =
+\sum\limits_{i = 1}^n p^i = p\frac{1-p^n}{1-p}=1-0.5^n,$
 
 $F(x)=
 \begin{cases}
@@ -1000,10 +1000,10 @@ $F(x)=
 
 Wartość oczekiwana:
 
-$E(X) = \sum_{k=1}^{\infty} kp^k =
-p \sum_{k=1}^{\infty} kp^{k-1} =
-p \sum_{k=1}^{\infty} \left( k\frac{p^k}{k} \right)' =
-p \left( \sum_{k=1}^{\infty} p^k \right)' =
+$E(X) = \sum\limits_{k=1}^{\infty} kp^k =
+p \sum\limits_{k=1}^{\infty} kp^{k-1} =
+p \sum\limits_{k=1}^{\infty} \left( k\frac{p^k}{k} \right)' =
+p \left( \sum\limits_{k=1}^{\infty} p^k \right)' =
 p \left( \frac{p}{1-p} \right)' =
 p \frac{1-p+p}{(1-p)^2} = \frac{p}{(1-p)^2} = \frac{1}{0.5} = 2.$
 
