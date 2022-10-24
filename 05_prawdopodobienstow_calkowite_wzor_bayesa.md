@@ -20,7 +20,7 @@ $A$ - zdarzenie polegające na wylosowaniu kuli białej.
 Należy skorzystać ze wzoru na prawdopodobieństwo całkowite. Dobrze też narysować diagram jak poniżej.
 
 <p align="center">
-<img src="img/prawdopodobieństwo_geometryczne/20.jpg" width="80%">
+<img src="img/prawdopodobienstwo_calkowite_wzor_bayesa/01.jpg" width="80%">
 </p>
 
 Korzystając z diagramu mamy:
@@ -45,20 +45,11 @@ Rozwiązanie:
 
 Najlepiej narysować sobie diagram z wszystkimi możliwościami z danego podpunktu. Trzeba zwrócić uwagę, że najpierw wylosowano urnę a później dwie kule z tej urny.
 
-a) $P(A) = \frac{1}{3} \cdot \frac{3}{7} \cdot \frac{2}{6} +
-\frac{2}{3} \cdot \frac{4}{9} \cdot \frac{3}{8} \approx 0.16$
+a) $P(A) = \frac{1}{3} \cdot \frac{3}{7} \cdot \frac{2}{6} + \frac{2}{3} \cdot \frac{4}{9} \cdot \frac{3}{8} \approx 0.16$
 
-b)$P(A) = \frac{1}{3} \cdot \frac{4}{7} \cdot \frac{3}{6} +
-\frac{1}{3} \cdot \frac{3}{7} \cdot \frac{4}{6} +
-\frac{2}{3} \cdot \frac{5}{9} \cdot \frac{4}{8} +
-\frac{2}{3} \cdot \frac{4}{9} \cdot \frac{5}{8} \approx 0.56$
+b)$P(A) = \frac{1}{3} \cdot \frac{4}{7} \cdot \frac{3}{6} + \frac{1}{3} \cdot \frac{3}{7} \cdot \frac{4}{6} + \frac{2}{3} \cdot \frac{5}{9} \cdot \frac{4}{8} + \frac{2}{3} \cdot \frac{4}{9} \cdot \frac{5}{8} \approx 0.56$
 
-c)$P(A) = \frac{1}{3} \cdot \frac{4}{7} \cdot \frac{3}{6} +
-\frac{1}{3} \cdot \frac{4}{7} \cdot \frac{3}{6} +
-\frac{1}{3} \cdot \frac{3}{7} \cdot \frac{4}{6} +
-\frac{2}{3} \cdot \frac{5}{9} \cdot \frac{4}{8} +
-\frac{2}{3} \cdot \frac{5}{9} \cdot \frac{4}{8} +
-\frac{2}{3} \cdot \frac{4}{9} \cdot \frac{5}{8} \approx 0.84$
+c)$P(A) = \frac{1}{3} \cdot \frac{4}{7} \cdot \frac{3}{6} + \frac{1}{3} \cdot \frac{4}{7} \cdot \frac{3}{6} + \frac{1}{3} \cdot \frac{3}{7} \cdot \frac{4}{6} + \frac{2}{3} \cdot \frac{5}{9} \cdot \frac{4}{8} + \frac{2}{3} \cdot \frac{5}{9} \cdot \frac{4}{8} + \frac{2}{3} \cdot \frac{4}{9} \cdot \frac{5}{8} \approx 0.84$
 
 ### Zadanie 3
 
