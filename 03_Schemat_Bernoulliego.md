@@ -3,10 +3,10 @@ W schemacie Bernoulliego prawdopodobieństwo uzyskania $k$ sukcesów w $n$ prób
 $$P_n(k)={n \choose k} p^k (1−p)^{n−k},$$
 gdzie $p$ - to prawdopodobieństwo sukcesu w jednej próbie.
 
-###Prawo małych liczb Poissona
+### Prawo małych liczb Poissona
 Dla dużego $n$ oraz małego $p$ rozkład Bernoulliego $B(n, p)$ (rozkład ten opisuje schemat Bernoulliego) może zostać przybliżony rozkładem Poissona $Pois(np)$.
 
-###Funkcja rozkładu Poissona
+### Funkcja rozkładu Poissona
 
 $$f(k,\lambda )={\frac {\lambda ^{k}e^{-\lambda }}{k!}},$$
 
