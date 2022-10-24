@@ -748,10 +748,10 @@ Rozwiązanie:
 a)\
 Funkcja prawdopodobieństwa w tym przypadku to:
 
-$P(X=k) = \begin{cases}
+$$P(X=k) = \begin{cases}
 p^k(1-p) & \text{dla } k \in \{0, 1, 2, 3\}  \\
 p^k & \text{dla } k \in \{4\},\\
-\end{cases}$
+\end{cases}$$
 
 bo szukamy prawdopodobieństwa, że pociąg przejedzie przez $k$ semaforów i zostanie zatrzymany na kolejnym semaforze ale po 4 semaforze nie ma kolejnego żeby go zatrzymać.
 
