@@ -186,11 +186,7 @@ $a' = a - \frac{d \sqrt{2}}{2} - d.$
 
 Szukane prawdopodobieństwo to pole mniejszego trójkąta przez pole większego trójkąta, stąd:
 
-$P = \frac{\frac{1}{2} \left(a - \frac{d \sqrt{2}}{2} - d \right)^2}{\frac{1}{2} a^2} = \frac{\left(a - \frac{d \sqrt{2}}{2} - d \right)^2}{a^2} = $
-
-$\frac{\frac{1}{2} \left(a \sqrt{2} - d - d \sqrt{2} \right)^2}{a^2} = $
-
-$\frac{\left(a \sqrt{2} - d - d \sqrt{2} \right)^2}{2a^2}$
+$P = \frac{\frac{1}{2} \left(a - \frac{d \sqrt{2}}{2} - d \right)^2}{\frac{1}{2} a^2} = \frac{\left(a - \frac{d \sqrt{2}}{2} - d \right)^2}{a^2} = \frac{\frac{1}{2} \left(a \sqrt{2} - d - d \sqrt{2} \right)^2}{a^2} = \frac{\left(a \sqrt{2} - d - d \sqrt{2} \right)^2}{2a^2}$
 
 ### Zadanie 9
 Z przedziału $(-3,3)$ losujemy liczbę $m$. Oblicz prawdopodobieństwo, że trójmian kwadratowy $x^2+2mx+m+2$ ma dwa pierwiastki.
