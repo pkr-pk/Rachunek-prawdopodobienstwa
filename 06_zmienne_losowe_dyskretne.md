@@ -211,9 +211,7 @@ $E(Y) = 10(1-p)\sum\limits_{k=1}^\infty kp^{k-1}.$
 
 Korzystając z metody różniczkowania szeregu geometrycznego mamy:
 
-$\sum\limits_{k=1}^\infty kp^{k-1} =
-\sum\limits_{k=1}^\infty \left( k \frac{p^k}{k} \right)'=
-\left( \sum\limits_{k=0}^\infty p^k \right)'$
+$\sum\limits_{k=1}^\infty kp^{k-1} = \sum\limits_{k=1}^\infty \left( k \frac{p^k}{k} \right)'= \left( \sum\limits_{k=0}^\infty p^k \right)'$
 
 Wzór na sumę szeregu geometrycznego to:
 
@@ -223,9 +221,7 @@ gdzie $a_1$ to pierwszy wyraz szeregu, $q$ to iloraz szeregu.
 
 Korzystając z powyższego wzoru:
 
-$\sum\limits_{k=1}^\infty kp^{k-1} =
-\left( \sum\limits_{k=1}^\infty p^k \right)'=
-\left( \frac{p}{1-p} \right)' = \frac{1-p+p}{(1-p)^2} = \frac{1}{(1-p)^2},$
+$\sum\limits_{k=1}^\infty kp^{k-1} = \left( \sum\limits_{k=1}^\infty p^k \right)'= \left( \frac{p}{1-p} \right)' = \frac{1-p+p}{(1-p)^2} = \frac{1}{(1-p)^2},$
 
 stąd:
 
