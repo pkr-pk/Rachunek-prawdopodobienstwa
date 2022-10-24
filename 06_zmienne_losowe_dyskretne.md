@@ -28,7 +28,7 @@ $$F(x) = P(X \le x)$$
 
 Dla zmiennej dyskretnej:
 
-$$F(x) = P(X \le x) = \sum_{x_i<x}{P(X = x_i) } =  \sum_{x_i<x}p_i$$
+$$F(x) = P(X \le x) = \sum_{x_i < x}{P(X = x_i) } =  \sum_{x_i < x}p_i$$
 
 ## Wartość oczekiwana
 Wartość oczekiwana zmiennej losowej $X$ określona jest wzorem:
@@ -203,7 +203,7 @@ $P(Y = n) = 10p^{n-1}(1-p)$ dla $n=1, 2, 3,...$
 
 Wartość oczekiwana grania aż do pierwszej porażki to:
 
-$E(Y) = \sum_{k=1}^\infty x_k \cdot 10p^{k-1}(1-p) = 10(1-p)\sum_{k=1}^\infty x_k p^{k-1},$
+$E(Y) = \sum\limits_{k=1}^\infty x_k \cdot 10p^{k-1}(1-p) = 10(1-p)\sum\limits_{k=1}^\infty x_k p^{k-1},$
 
 ponieważ $x_1 = 1, x_2 = 2,...,x_n = n$, to można zapisać:
 
