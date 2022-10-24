@@ -387,14 +387,16 @@ c)
 |$y_i$|-10|80|170|
 |$p_i$|0.5|0.3|0.2|
 
-d)\
-$F_Y(y) = 
-\begin{cases}
+d)
+
+$
+F_Y(y) = \begin{cases}
 0   & \text{dla } x \le -10,       \\
 0.5 & \text{dla } -10 < x \le 80,  \\
 0.8 & \text{dla } 80 < x \le 170,  \\
 1   & \text{dla } x > 170.         \\
-\end{cases}$
+\end{cases}
+$
 
 e)
 <p align="center">
