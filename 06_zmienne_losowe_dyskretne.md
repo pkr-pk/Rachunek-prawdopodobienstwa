@@ -328,7 +328,7 @@ $E(X|X>0) =  0\cdot\frac{0}{0.9} + 1\cdot\frac{0.3}{0.9} + 2\cdot\frac{0.4}{0.9}
 ### Zadanie 6
 Zmienna losowa $X$ oznacza wygraną w pewnej grze losowej. Jej dystrybuanta to funkcja $F(x)$ postaci:
 
-$
+$$
 F(x) = 
 \begin{cases}
 0   & \text{dla $x < 0$,}           \\
@@ -336,7 +336,7 @@ F(x) =
 0.8 & \text{dla $100 \le x < 200$,} \\
 1   & \text{dla $x \ge 200$.}       \\
 \end{cases}
-$
+$$
 
 a) Oblicz prawdopodobieństwo, że gracz nic nie wygra.\
 b) Oblicz wartość średnią wygranej $E(X)$.\
