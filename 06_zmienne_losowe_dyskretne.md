@@ -280,9 +280,8 @@ Najbardziej prawdopodobne jest 4 lub 5 huraganów.
 ### Zadanie 4
 Liczba polis ubezpieczeniowych, które posiada losowo wybrany mieszkaniec dużego miasta jest zmienną losową $X$. Funkcję prawdopodobieństwa zmiennej losowej $X$ przedstawia tabela:
 
-||||||
-|---|---|---|---|---|
 |$x_i$|0|1|2|3|
+|---|---|---|---|---|
 |$p_i$|0.1|0.3|0.4|c|
 
 a) Oblicz stałą c.\
@@ -305,9 +304,8 @@ $P(X > 1) = 0.4 + 0.2 = 0.6.$
 c)\
 Należy sumować kolejne prawdopodobieństwa $p_i$:
 
-|||||||
-|---|---|---|---|---|---|
 |x|$$(-\infty, 0]$$|$$(0,1]$$|$$(1,2]$$|$$(2,3]$$|$$(3, +\infty)$$|
+|---|---|---|---|---|---|
 |F(x)|0|0.1|0.4|0.8|1|
 
 d)\
@@ -351,9 +349,8 @@ $P(X = 0) = 0.5.$
 b)\
 Tutaj należy najpierw znaleźć funkcję prawdopodobieństwa co jest dość łatwe mając dystrybuantę należy odejmować od siebie odpowiednie prawdopodobieństwa:
 
-|||||
-|---|---|---|---|
 |$x_i$|0|100|200|
+|---|---|---|---|
 |$p_i$|0.5|0.3|0.2|
 
 $E(X) = 0\cdot0.5 + 100\cdot0.3 + 200\cdot0.2 = 70.$
@@ -381,9 +378,8 @@ $D^2(Y) = D^2(0.9X-10) = 0.9^2\cdot D^2(X) = 0.9^2 \cdot 6100 = 4941.$
 
 c)
 
-|||||
-|---|---|---|---|
 |$y_i$|-10|80|170|
+|---|---|---|---|
 |$p_i$|0.5|0.3|0.2|
 
 d)
@@ -405,9 +401,8 @@ e)
 ### Zadanie 8
 Zmienna losowa $X$ ma funkcję prawdopodobieństwa daną w postaci tabeli:
 
-||||||
-|---|---|---|---|---|
 |$x_i$|-2|-1|0|3|
+|---|---|---|---|---|
 |$p_i$|0.1|0.2|0.1|0.6|
 
 Niech zmienna losowa $Y=X^2-1$.\
