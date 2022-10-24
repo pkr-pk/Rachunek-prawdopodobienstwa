@@ -1146,4 +1146,10 @@ Korzystając z własności wartości oczekiwanej zmiennej losowej $X$ wykazać, 
 
 Rozwiązanie:
 
-$D^2(X) = \\ E\{[X-E(X)]^2\} = \\ E\{X^2 - 2XE(X) +[E(X)]^2\} =\\ E(X^2) - 2E(X)E[E(X)] + E\{[E(X)]^2 \} = \\ E(X^2) - 2E(X)E(X) + [E(X)]^2 = \\ E(X^2) - 2[E(X)]^2 + [E(X)]^2 = \\ E(X^2) - [E(X)]^2$
+$D^2(X) = $\
+$E\{[X-E(X)]^2\} = $\
+$E\{X^2 - 2XE(X) +[E(X)]^2\} = $\
+$E(X^2) - 2E(X)E[E(X)] + E\{[E(X)]^2 \} = $\
+$E(X^2) - 2E(X)E(X) + [E(X)]^2 = $\
+$E(X^2) - 2[E(X)]^2 + [E(X)]^2 = $\
+$E(X^2) - [E(X)]^2$
