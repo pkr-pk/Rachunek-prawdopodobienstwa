@@ -56,7 +56,7 @@ $P(A|B)\cdot P(B) = P(A) + P(B) - P(A \cup B),$
 
 $P(A \cup B) = P(A) + P(B) - P(A|B)\cdot P(B) = 0.7 + 0.2 - 0.6 \cdot 0.2 = 0.78$
 
-###Zadanie 3
+### Zadanie 3
 Prawdopodobieństwo awarii sieci komputerowej w losowo wybranym dniu tygodnia wynosi 0.05. Awarie są zdarzeniami niezależnymi.\
 a) Oblicz prawdopodobieństwo, że w wybranym tygodniu zdarzą się awarie w czwartek i piątek.\
 b) Oblicz prawdopodobieństwo, że w tygodniu wystąpi awaria w co najmniej jednym dniu.\
