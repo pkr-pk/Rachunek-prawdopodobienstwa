@@ -427,18 +427,16 @@ $P(Y>0) = P(X^2-1>0) = P(X^2>1)$
 
 Teraz trzeba znaleźć zmienną losową $X^2$:
 
-||||||
-|---|---|---|---|---|
 |$x_i^2$|4|1|0|9|
+|---|---|---|---|---|
 |$p_i$|0.1|0.2|0.1|0.6|
 
 $P(X^2>1) = 0.1 + 0.6 = 0.7$
 
 c)
 
-||||||
-|---|---|---|---|---|
 |$y_i$|3|0|-1|8|
+|---|---|---|---|---|
 |$p_i$|0.1|0.2|0.1|0.6|
 
 ### Zadanie 9
@@ -470,16 +468,14 @@ $P(X = 2) = \frac{3}{9} \cdot \frac{2}{8} = \frac{1}{12}.$
 
 Funkcja prawdopodobieństwa:
 
-|||||
-|---|---|---|---|
 |$x_i$|0|1|2|
+|---|---|---|---|
 |$p_i$|$\frac{5}{12}$|$\frac{1}{2}$|$\frac{1}{12}$|
 
 Dystrybuanta:
 
-||||||
-|---|---|---|---|---|
 |x|$$(-\infty, 0]$$|$$(0,1]$$|$$(1,2]$$|$$(2, +\infty)$$|
+|---|---|---|---|---|
 |F(x)|0|$\frac{5}{12}$|$\frac{11}{12}$|1|
 
 Wariancja:
@@ -493,9 +489,8 @@ $D^2(X)=E(X^2)-[E(X)]^2 = \frac{5}{6} - \left(\frac{2}{3}\right)^2 = \frac{7}{18
 ### Zadanie 11
 Rozkład zmiennej losowej skokowej $X$ przedstawia tabela:
 
-||||||
-|---|---|---|---|---|
 |$x_i$|1|$a$|3|4|
+|---|---|---|---|---|
 |$p_i$|0.1|0.4|0.3|$b$|
 
 Wiadomo, że $E(X) = \frac{13}{5}$. Wyznaczyć $a$ i $b$ oraz obliczyć $D(X)$.
@@ -517,9 +512,8 @@ $D(X)=\sqrt{7.6 - 2.6^2} \approx 0.917.$
 ### Zadanie 12
 Dana jest dystrybuanta zmiennej losowej skokowej X:
 
-||||||||
-|---|---|---|---|---|---|---|
 |$x$|$$(−\infty, 0]$$|$$(0, 1]$$|$$(1, 2]$$|$$(2, 3]$$|$$(3, 4]$$|$$(4,+\infty)$$|
+|---|---|---|---|---|---|---|
 |$F(x)$|0|0.12|0.44|0.62|0.78|1|
 
 a) Wyznaczyć jej funkcje rozkładu prawdopodobieństwa.\
@@ -531,9 +525,8 @@ Rozwiązanie:
 
 a)
 
-||||||||
-|---|---|---|---|---|---|---|
 |$x_i$|0|1|2|3|4|
+|---|---|---|---|---|---|---|
 |$p_i$|0.12|0.32|0.18|0.16|0.22|
 
 b)\
@@ -685,9 +678,8 @@ print("Szukane prawdopodobienstwo:", 1 - st.binom.cdf(2, 10, 1/3))
 ### Zadanie 20
 Rozkład zmiennej losowej skokowej $X$ przedstawia tabela:
 
-|||||||
-|---|---|---|---|---|---|
 |$x_i$|10| a| 30| 40| 50|
+|---|---|---|---|---|---|
 |$p_i$| 0.1| 0.2| 0.3| 0.3| b|
 
 Wiadomo, że $E(X) = 31$. Wyznaczyć $a$ i $b$ oraz obliczyć $D^2(X)$.
@@ -728,9 +720,8 @@ Najlepiej narysować tabelkę i odejmować kolejne oczka od siebie.
 
 $|\Omega| = 6\cdot6=36$
 
-|||||||||
-|---|---|---|---|---|---|---|---|
 |$x_i$|0|1|2|3|4|5|
+|---|---|---|---|---|---|---|---|
 |$p_i$|$\frac{6}{36}$|$\frac{10}{36}$|$\frac{8}{36}$|$\frac{6}{36}$|$\frac{4}{36}$|$\frac{2}{36}$|
 
 b)\
@@ -855,9 +846,8 @@ $P(X = 2) = \frac{{5 \choose 2} \cdot {3 \choose 0}}{28} \approx 0.36$
 
 Funkcje rozkładu prawdopodobieństwa zmiennej $X$: 
 
-|||||
-|---|---|---|---|
 |$x_i$|0|1|2|
+|---|---|---|---|
 |$p_i$|0.11|0.54|0.36|
 
 $P((-\infty, x_i]) \ge \frac{1}{2},$
@@ -869,9 +859,8 @@ $Dom = 1.$
 ### Zadanie 26
 W pewnym drzewostanie zebrano informacje o liczbie nabiegów korzeniowych:
 
-|||||||
-|---|---|---|---|---|---|
 |$x_i$|0|1|2|3|4|
+|---|---|---|---|---|---|
 |$p_i$|0.1|0.3|0.3|0.2|0.1|
 
 Niech $X$ oznacza liczbę nabiegów korzeniowych w losowo wybranym drzewie.\
@@ -883,9 +872,8 @@ Rozwiązanie:
 
 a)
 
-||||||||
-|---|---|---|---|---|---|---|
 |$x$|$$(−\infty, 0]$$|$$(0, 1]$$|$$(1, 2]$$|$$(2, 3]$$|$$(3, 4]$$|$$(4,+\infty)$$|
+|---|---|---|---|---|---|---|
 |$F(x)$|0|0.1|0.4|0.7|0.9|1|
 
 b)
@@ -933,16 +921,14 @@ $P(X = 2) = \frac{{3 \choose 2} \cdot {7 \choose 0}}{45} \approx 0.07$
 
 Funkcje rozkładu prawdopodobieństwa zmiennej $X$: 
 
-|||||
-|---|---|---|---|
 |$x_i$|0|1|2|
+|---|---|---|---|
 |$p_i$|0.47|0.47|0.07|
 
 Dystrybuanta:
 
-||||||
-|---|---|---|---|---|
 |$x$|$$(−\infty, 0]$$|$$(0, 1]$$|$$(1, 2]$$|$$(2, +\infty]$$|
+|---|---|---|---|---|
 |$F(x)$|0|0.47|0.93|1|
 
 Wartość oczekiwana:
@@ -1002,9 +988,8 @@ p \frac{1-p+p}{(1-p)^2} = \frac{p}{(1-p)^2} = \frac{1}{0.5} = 2.$
 ### Zadanie 30
 Dana jest funkcja prawdopodobieństwa pewnej zmiennej $X$:
 
-||||||||
-|---|---|---|---|---|---|---|
 |$x_i$|-5|-2|0|1|3|8|
+|---|---|---|---|---|---|---|
 |$p_i$|0.1|0.2|0.1|0.2|c|0.1|
 
 Wyznaczyć:\
@@ -1021,9 +1006,8 @@ $c = 1 - 0.1 - 0.2 - 0.1 - 0.2 - 0.1 = 0.3$
 
 b)
 
-|||||||||
-|---|---|---|---|---|---|---|---|
 |$x$|$$(\infty,-5]$$|$$(-5,-2]$$|$$(-2, 0]$$|$$(0,1]$$|$$(1,3]$$|$$(3,8]$$|$$(8, +\infty)$$|
+|---|---|---|---|---|---|---|---|
 |$F(x)$|0|0.1|0.3|0.4|0.6|0.9|1|
 
 c)
@@ -1059,7 +1043,7 @@ $P(1 < X \le 8) = 0.4.$
 ### Zadanie 31
 Dana jest dystrybuanta pewnej zmiennej losowej $X$:
 
-$
+$$
 F(x) =
 \begin{cases}
 0   & \text{dla } x \le 2, \\
@@ -1068,15 +1052,14 @@ F(x) =
 0.9 & \text{dla } 6 < x \le 7, \\
 1   & \text{dla } x > 7. \\
 \end{cases}
-$
+$$
 
 Wyznaczyć rozkład, obliczyć $E(X)$, $D^2(X)$, $D(X)$, $P(X > 1)$, $P(X ­\ge 0.5)$, $P(−1 < X < 2)$, $P(X \ge­ 7)$.
 
 Rozwiązanie:
 
-||||||
-|---|---|---|---|---|
 |$x_i$|2|4|6|7|
+|---|---|---|---|---|
 |$p_i$|0.3|0.4|0.2|0.1|
 
 $E(X) = 2\cdot0.3 + 4\cdot0.4 + 6\cdot0.2 + 7\cdot0.1 = 4.1,$
@@ -1101,9 +1084,8 @@ Gramy z druga osobą, na przykład z bankierem w następująca grę: jeśli w rz
 Rozwiązanie:
 
 
-||||||||
-|---|---|---|---|---|---|---|
 |$x_i$|-5|-3|-1|2|4|6|
+|---|---|---|---|---|---|---|
 |$p_i$|$\frac{1}{6}$|$\frac{1}{6}$|$\frac{1}{6}$|$\frac{1}{6}$|$\frac{1}{6}$|$\frac{1}{6}$|
 
 $E(X) = \frac{1}{2}.$
@@ -1115,9 +1097,8 @@ Wśród wszystkich dzieci szkolnych z pewnego województwa przeprowadzono ankiet
 
 Rozwiązanie:
 
-|||||||
-|---|---|---|---|---|---|
 |$x_i$|0|1|2|3|4|
+|---|---|---|---|---|---|
 |$p_i$|0.2|0.14|0.43|0.19|0.04|
 
 $E(X) = 1.73,$
@@ -1148,9 +1129,8 @@ for i in range(4):
 
 Rozkłada prawdopodobieństwa:
 
-||||||
-|---|---|---|---|---|
 |$x_i$|0|1|2|3|
+|---|---|---|---|---|
 |$p_i$|0.118|0.367|0.382|0.132|
 
 Prawdopodobieństwo tego, że w rodzinie będzie co najmniej jeden chłopiec jest równe prawdopodobieństwu tego, że będzie mniej niż 3 dziewczynki:
