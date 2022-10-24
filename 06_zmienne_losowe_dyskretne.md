@@ -807,28 +807,27 @@ Zmienna losowa $X$ przyjmuje trzy wartości: 0, 1 i 2. Wiadomo, ze $E(X)=1$ oraz
 
 Rozwiązanie:
 
-$\begin{cases}
+$$\begin{cases}
 1 = p_1 + 2p_2 \\
 1.5 = p_1 + 4p_2
-\end{cases}$
+\end{cases}$$
 
-$\begin{cases}
+$$\begin{cases}
 p_1 = 1 - 2p_2 \\
 1.5 = 1 - 2p_2 + 4p_2
-\end{cases}$
+\end{cases}$$
 
-$\begin{cases}
+$$\begin{cases}
 p_2 = 0.25 \\
 p_1 = 0.5
-\end{cases}$
+\end{cases}$$
 
 $p_0 = 1- 0.5 - 0.25 = 0.25$
 
 Rozkład zmiennej $X$:
 
-|||||
-|---|---|---|---|
 |$x_i$|0|1|2|
+|---|---|---|---|
 |$p_i$|0.25|0.5|0.25|
 
 ### Zadanie 25
