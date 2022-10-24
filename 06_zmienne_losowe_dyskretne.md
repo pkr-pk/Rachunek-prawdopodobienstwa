@@ -398,7 +398,7 @@ F_Y(y) = \begin{cases}
 1   & \text{dla } x > 170.         \\
 \end{cases}
 \end{aligned}
-$$
+$
 
 e)
 <p align="center">
