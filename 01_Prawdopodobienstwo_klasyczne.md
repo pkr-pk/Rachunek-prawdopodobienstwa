@@ -504,8 +504,7 @@ $$P = \frac{1}{{n \choose k}}$$
 
 b1) Ponieważ w ustalonej komórce znajduje się $m$ cząstek to należy ustalić liczbę rozmieszczeń pozostałych $k - m$ cząstek w $n-1$ komórek, są to kombinacje z powtórzeniami:
 
-$$P = \frac{{k-m+n-1-1 \choose k-m}}{{k + n - 1 \choose k}} = $$
-$$\frac{{k+n-m-2 \choose k-m}}{{k + n - 1 \choose k}}$$
+$$P = \frac{{k-m+n-1-1 \choose k-m}}{{k + n - 1 \choose k}} = \frac{{k+n-m-2 \choose k-m}}{{k + n - 1 \choose k}}$$
 
 b2) Sytuacja jest podobna do powyższej jednak komórka nie jest ustalona a wybrać ją można na $n$ sposobów co daje:
 $$P = \frac{n{k+n-m-2 \choose k-m}}{{k + n - 1 \choose k}}$$
