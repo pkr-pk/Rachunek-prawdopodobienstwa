@@ -339,34 +339,34 @@ b) Oblicz prawdopodobieństwo warunkowe, że klient będzie czekał co najmniej 
 
 Rozwiązanie:
 
-$E(X) = \\
-\int_0^\infty x\lambda e^{-\lambda x}dx = \\
-\lambda\int_0^\infty x \left(\frac{e^{-\lambda x}}{-\lambda}\right)'dx = \\
-\lambda \left. \left( xe^{-\lambda x} + \frac{1}{\lambda}  \int_0^\infty e^{-\lambda x}dx \right) \right|_0^\infty = \\
-\lambda \left. \left(xe^{-\lambda x} - \frac{1}{\lambda^2} e^{-\lambda x}\right) \right|_0^\infty = \\
-\left. \left(\lambda xe^{-\lambda x} - \frac{1}{\lambda} e^{-\lambda x}\right) \right|_0^\infty = \\
-\lim_{x\to\infty} \left(\lambda xe^{-\lambda x} - \frac{1}{\lambda} e^{-\lambda x}\right) - \frac{1}{-\lambda} = \\
-\lim_{x\to\infty} \left(\lambda \frac{x}{e^{\lambda x}} - \frac{1}{\lambda} \frac{1}{e^{\lambda x}} \right) + \frac{1}{\lambda} = \\
-\lim_{x\to\infty} \left(\lambda \frac{(x)'}{\left(e^{\lambda x}\right)'} - \frac{1}{\lambda} \frac{1}{e^{\lambda x}} \right) + \frac{1}{\lambda} = \\
-\lim_{x\to\infty} \left(\lambda \frac{1}{\lambda e^{\lambda x}} - \frac{1}{\lambda} \frac{1}{e^{\lambda x}} \right) + \frac{1}{\lambda} = \\
-0 - 0 + \frac{1}{\lambda} = \frac{1}{\lambda}$
+$E(X) =$\
+$\int_0^\infty x\lambda e^{-\lambda x}dx =$\
+$\lambda\int_0^\infty x \left(\frac{e^{-\lambda x}}{-\lambda}\right)'dx =$\
+$\lambda \left. \left( xe^{-\lambda x} + \frac{1}{\lambda}  \int_0^\infty e^{-\lambda x}dx \right) \right|_0^\infty =$\
+$\lambda \left. \left(xe^{-\lambda x} - \frac{1}{\lambda^2} e^{-\lambda x}\right) \right|_0^\infty =$\
+$\left. \left(\lambda xe^{-\lambda x} - \frac{1}{\lambda} e^{-\lambda x}\right) \right|_0^\infty =$\
+$\lim_{x\to\infty} \left(\lambda xe^{-\lambda x} - \frac{1}{\lambda} e^{-\lambda x}\right) - \frac{1}{-\lambda} =$\
+$\lim_{x\to\infty} \left(\lambda \frac{x}{e^{\lambda x}} - \frac{1}{\lambda} \frac{1}{e^{\lambda x}} \right) + \frac{1}{\lambda} =$\
+$\lim_{x\to\infty} \left(\lambda \frac{(x)'}{\left(e^{\lambda x}\right)'} - \frac{1}{\lambda} \frac{1}{e^{\lambda x}} \right) + \frac{1}{\lambda} =$\
+$\lim_{x\to\infty} \left(\lambda \frac{1}{\lambda e^{\lambda x}} - \frac{1}{\lambda} \frac{1}{e^{\lambda x}} \right) + \frac{1}{\lambda} =$\
+$0 - 0 + \frac{1}{\lambda} = \frac{1}{\lambda}$
 
 <br />
 <br />
 
-$E(X^2) = \\
-\int_0^\infty x^2 \lambda e^{-\lambda x}dx = \\
-\lambda \int_0^\infty x^2 \left(\frac{e^{-\lambda x}}{-\lambda}\right)'dx = \\
-\lambda \left. \left( x^2e^{-\lambda x} + \frac{2}{\lambda}  \int_0^\infty x e^{-\lambda x}dx \right) \right|_0^\infty = \\
-\lambda \left. \left[ x^2e^{-\lambda x} + \frac{2}{\lambda}  \int_0^\infty x \left(\frac{e^{-\lambda x}}{-\lambda}\right)'dx \right] \right|_0^\infty = \\
-\lambda \left. \left[ x^2e^{-\lambda x} + \frac{2}{\lambda}\left( xe^{\lambda x} + \frac{1}{\lambda} \int_0^\infty e^{-\lambda x}dx \right) \right] \right|_0^\infty = \\
-\lambda \left. \left[ x^2e^{-\lambda x} + \frac{2}{\lambda}\left( xe^{\lambda x} - \frac{1}{\lambda^2} e^{-\lambda x} \right) \right] \right|_0^\infty = \\
-\left. \left[ \lambda x^2e^{-\lambda x} + 2 \left( xe^{\lambda x} - \frac{1}{\lambda^2} e^{-\lambda x} \right) \right] \right|_0^\infty = \\
-\left. \left( \lambda x^2e^{-\lambda x} + 2xe^{\lambda x} - \frac{2}{\lambda^2} e^{-\lambda x} \right) \right|_0^\infty = \\
-\lim_{x\to\infty} \left( \lambda x^2e^{-\lambda x} + 2xe^{\lambda x} - \frac{2}{\lambda^2} e^{-\lambda x} \right) - \left(-\frac{2}{\lambda^2}\right) = \\
-\lim_{x\to\infty} \left( \lambda \frac{(x^2)''}{(e^{\lambda x})''} + 2\frac{(x)'}{(e^{\lambda x})'} - \frac{2}{\lambda^2} \frac{1}{e^{\lambda x}} \right) + \frac{2}{\lambda^2} = \\
-\lim_{x\to\infty} \left( \lambda \frac{2}{\lambda^2e^{\lambda x}} + 2\frac{1}{\lambda e^{\lambda x}} - \frac{2}{\lambda^2} \frac{1}{e^{\lambda x}}  \right) + \frac{2}{\lambda^2} = \\
-0 + 0 - 0 + \frac{2}{\lambda^2} = \frac{2}{\lambda^2}$
+$E(X^2) =$\
+$\int_0^\infty x^2 \lambda e^{-\lambda x}dx =$\
+$\lambda \int_0^\infty x^2 \left(\frac{e^{-\lambda x}}{-\lambda}\right)'dx =$\
+$\lambda \left. \left( x^2e^{-\lambda x} + \frac{2}{\lambda}  \int_0^\infty x e^{-\lambda x}dx \right) \right|_0^\infty =$\
+$\lambda \left. \left[ x^2e^{-\lambda x} + \frac{2}{\lambda}  \int_0^\infty x \left(\frac{e^{-\lambda x}}{-\lambda}\right)'dx \right] \right|_0^\infty =$\
+$\lambda \left. \left[ x^2e^{-\lambda x} + \frac{2}{\lambda}\left( xe^{\lambda x} + \frac{1}{\lambda} \int_0^\infty e^{-\lambda x}dx \right) \right] \right|_0^\infty =$\
+$\lambda \left. \left[ x^2e^{-\lambda x} + \frac{2}{\lambda}\left( xe^{\lambda x} - \frac{1}{\lambda^2} e^{-\lambda x} \right) \right] \right|_0^\infty =$\
+$\left. \left[ \lambda x^2e^{-\lambda x} + 2 \left( xe^{\lambda x} - \frac{1}{\lambda^2} e^{-\lambda x} \right) \right] \right|_0^\infty =$\
+$\left. \left( \lambda x^2e^{-\lambda x} + 2xe^{\lambda x} - \frac{2}{\lambda^2} e^{-\lambda x} \right) \right|_0^\infty =$\
+$\lim_{x\to\infty} \left( \lambda x^2e^{-\lambda x} + 2xe^{\lambda x} - \frac{2}{\lambda^2} e^{-\lambda x} \right) - \left(-\frac{2}{\lambda^2}\right) =$\
+$\lim_{x\to\infty} \left( \lambda \frac{(x^2)''}{(e^{\lambda x})''} + 2\frac{(x)'}{(e^{\lambda x})'} - \frac{2}{\lambda^2} \frac{1}{e^{\lambda x}} \right) + \frac{2}{\lambda^2} =$\
+$\lim_{x\to\infty} \left( \lambda \frac{2}{\lambda^2e^{\lambda x}} + 2\frac{1}{\lambda e^{\lambda x}} - \frac{2}{\lambda^2} \frac{1}{e^{\lambda x}}  \right) + \frac{2}{\lambda^2} =$\
+$0 + 0 - 0 + \frac{2}{\lambda^2} = \frac{2}{\lambda^2}$
 
 <br />
 <br />
