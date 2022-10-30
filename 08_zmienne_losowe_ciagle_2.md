@@ -226,7 +226,7 @@ Znaleźć dystrybuantę, medianę, modę, wartość oczekiwaną, $P(X > \sqrt{\l
 
 Rozwiązanie:
 
-$\int_0^t xe^{-\frac{x^2}{2}}dx = \left|\begin{aligned} z = \frac{x^2}{2} \\ dz = xdx\end{aligned}\right| = \int_0^{t} e^{-z}dz = -e^{-z}\bigr|_0^t = -e^{-\frac{x^2}{2}}\bigr|_0^t = -(e^{-\frac{t^2}{2}} - e^{-\frac{0}{2}}) = 1 - e^{-\frac{t^2}{2}},$
+$$\int_0^t xe^{-\frac{x^2}{2}}dx = \left|\begin{aligned} z = \frac{x^2}{2} \\ dz = xdx\end{aligned}\right| = \int_0^{t} e^{-z}dz = -e^{-z}\bigr|_0^t = -e^{-\frac{x^2}{2}}\bigr|_0^t = -(e^{-\frac{t^2}{2}} - e^{-\frac{0}{2}}) = 1 - e^{-\frac{t^2}{2}},$$
 
 $$F(x) = \begin{cases}
 0                      & \text{dla } x < 0, \\
