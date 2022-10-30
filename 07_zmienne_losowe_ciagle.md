@@ -1565,8 +1565,7 @@ $E(X) = \frac{1}{2}\int_0^{ln3}xe^xdx = \frac{3}{2}ln3-1,$
 
 $E(X^2) = \frac{1}{2}\int_0^{ln3}x^2e^xdx = 2 - 3ln3 + \frac{3}{2}(ln3)^2,$
 
-$D^2(X) = 2 - 3ln3 + \frac{3}{2}(ln3)^2 - (\frac{3}{2}ln3-1)^2 = 
-2 - 3ln3 + \frac{3}{2}(ln3)^2 - \frac{9}{4}(ln3)^2 + 3ln3 - 1 = 1 - \frac{3}{4}(ln3)^2.$
+$D^2(X) = 2 - 3ln3 + \frac{3}{2}(ln3)^2 - (\frac{3}{2}ln3-1)^2 = 2 - 3ln3 + \frac{3}{2}(ln3)^2 - \frac{9}{4}(ln3)^2 + 3ln3 - 1 = 1 - \frac{3}{4}(ln3)^2.$
 
 d)
 
