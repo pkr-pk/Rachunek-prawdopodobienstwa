@@ -339,7 +339,7 @@ b) Oblicz prawdopodobieństwo warunkowe, że klient będzie czekał co najmniej 
 
 Rozwiązanie:
 
-$E(X)$\
+$E(X) =$\
 $=\int_0^\infty x\lambda e^{-\lambda x}dx $\
 $=\lambda\int_0^\infty x \left(\frac{e^{-\lambda x}}{-\lambda}\right)'dx $\
 $=\lambda \left( xe^{-\lambda x} + \frac{1}{\lambda}  \int_0^\infty e^{-\lambda x}dx \right) \bigr|_0^\infty$\
@@ -360,6 +360,7 @@ $\int_0^\infty x^2 \lambda e^{-\lambda x}dx =$\
 $\lambda \int_0^\infty x^2 \left(\frac{e^{-\lambda x}}{-\lambda}\right)'dx =$\
 $\lambda \left. \left( x^2e^{-\lambda x} + \frac{2}{\lambda} \int_0^\infty x e^{-\lambda x}dx \right) \right|_0^\infty =$\
 $\lambda \left. \left[ x^2e^{-\lambda x} + \frac{2}{\lambda} \int_0^\infty x \left(\frac{e^{-\lambda x}}{-\lambda}\right)'dx \right] \right|_0^\infty =$\
+
 $\lambda \left. \left[ x^2e^{-\lambda x} + \frac{2}{\lambda}\left( xe^{\lambda x} + \frac{1}{\lambda} \int_0^\infty e^{-\lambda x}dx \right) \right] \right|_0^\infty =$\
 $\lambda \left. \left[ x^2e^{-\lambda x} + \frac{2}{\lambda}\left( xe^{\lambda x} - \frac{1}{\lambda^2} e^{-\lambda x} \right) \right] \right|_0^\infty =$\
 $\left. \left[ \lambda x^2e^{-\lambda x} + 2 \left( xe^{\lambda x} - \frac{1}{\lambda^2} e^{-\lambda x} \right) \right] \right|_0^\infty =$\
