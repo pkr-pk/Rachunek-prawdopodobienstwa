@@ -179,27 +179,27 @@ Niech $f(x) = \frac{1}{\pi} \cdot \frac{1}{1+x^2} \ \text{dla } x \in \mathbb{R}
 
 Rozwiązanie:
 
-$F(x) = \frac{1}{\pi} \int_{-\infty}^t \frac{dx}{1 + x^2} = \frac{1}{\pi}\arctan(x)\bigr|_{-\infty}^t = \frac{1}{\pi}(\arctg(t) + \frac{\pi}{2}) \ \text{dla } t \in \mathbb{R}$
+$F(x) = \frac{1}{\pi} \int_{-\infty}^t \frac{dx}{1 + x^2} = \frac{1}{\pi}\arctan(x)\bigr|_{-\infty}^t = \frac{1}{\pi}(\arctan(t) + \frac{\pi}{2}) \ \text{dla } t \in \mathbb{R}$
 
 $E(X) = \frac{1}{\pi} \int_{-\infty}^\infty \frac{xdx}{1 + x^2} = \left|\begin{aligned} t = x^2 \\ 2xdx = dt \end{aligned}\right| = \frac{1}{2\pi} \int_{\infty}^\infty \frac{xdx}{1 + t} = \frac{1}{2\pi} \ln(1 + t)\biggr|_\infty^\infty = \infty - \infty,$
 
 czyli wartość oczekiwana nie istnieje.
 
-$P(0 < X \le 1) = P(X \le 1) - P(X < 0) = \frac{1}{\pi}(\arctg(1) + \frac{\pi}{2}) - \frac{1}{\pi}(\arctg(0) + \frac{\pi}{2}) = \frac{1}{4},$
+$P(0 < X \le 1) = P(X \le 1) - P(X < 0) = \frac{1}{\pi}(\arctan(1) + \frac{\pi}{2}) - \frac{1}{\pi}(\arctan(0) + \frac{\pi}{2}) = \frac{1}{4},$
 
-$P(3X − 1 > \sqrt{3} − 1) = P(3X > \sqrt{3}) = 1 - P(X < \frac{\sqrt{3}}{3}) = 1 - \frac{1}{\pi}(\arctg(\frac{\sqrt{3}}{3}) + \frac{\pi}{2}) = \frac{1}{3},$
+$P(3X − 1 > \sqrt{3} − 1) = P(3X > \sqrt{3}) = 1 - P(X < \frac{\sqrt{3}}{3}) = 1 - \frac{1}{\pi}(\arctan(\frac{\sqrt{3}}{3}) + \frac{\pi}{2}) = \frac{1}{3},$
 
-$P(0 < X < \sqrt{3}) = P(X < \sqrt{3}) - P(X < 0) = \frac{1}{\pi}(\arctg(\sqrt{3}) + \frac{\pi}{2}) - \frac{1}{\pi}(\arctg(0) + \frac{\pi}{2}) = \frac{1}{3}.$
+$P(0 < X < \sqrt{3}) = P(X < \sqrt{3}) - P(X < 0) = \frac{1}{\pi}(\arctan(\sqrt{3}) + \frac{\pi}{2}) - \frac{1}{\pi}(\arctan(0) + \frac{\pi}{2}) = \frac{1}{3}.$
 
 Mediana:
 
 $P(X < m) = 0.5,$
 
-$\frac{1}{\pi}(\arctg(m) + \frac{\pi}{2}) = \frac{1}{2},$
+$\frac{1}{\pi}(\arctan(m) + \frac{\pi}{2}) = \frac{1}{2},$
 
-$\arctg(m) + \frac{\pi}{2} = \frac{\pi}{2},$
+$\arctan(m) + \frac{\pi}{2} = \frac{\pi}{2},$
 
-$\arctg(m) = 0,$
+$\arctan(m) = 0,$
 
 $m=0.$
 
