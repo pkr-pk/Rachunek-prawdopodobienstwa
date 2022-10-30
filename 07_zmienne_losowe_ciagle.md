@@ -652,7 +652,7 @@ print("Wartosc oczekiwana:", result)
 
 c)
 
-$P(|Z|<1) = P(-1<Z<1) = P(Z<1)-P(Z<-1) = 1-0.5e^{-1}-0.5e^{-1} \approx 0.63$
+$P(|Z| < 1) = P(-1 < Z < 1) = P(Z < 1)-P(Z < -1) = 1-0.5e^{-1}-0.5e^{-1} \approx 0.63$
 
 ### Zadanie 12
 Zmienna losowa $X$ ma rozkład wykładniczy z parametrem $\lambda = 0.2$. Niech $Y = min(X,2)+1$.\
