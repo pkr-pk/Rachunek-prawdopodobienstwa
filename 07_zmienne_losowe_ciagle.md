@@ -344,9 +344,10 @@ $\int_0^\infty x\lambda e^{-\lambda x}dx =$\
 $\lambda\int_0^\infty x \left(\frac{e^{-\lambda x}}{-\lambda}\right)'dx =$\
 $\lambda \left( xe^{-\lambda x} + \frac{1}{\lambda}  \int_0^\infty e^{-\lambda x}dx \right) \bigr|_0^\infty =$\
 
-$\lambda \left. \left( xe^{-\lambda x} + \frac{1}{\lambda}  \int_0^\infty e^{-\lambda x}dx \right) \right|_0^\infty =$\
-$\lambda \left. \left(xe^{-\lambda x} - \frac{1}{\lambda^2} e^{-\lambda x}\right) \right|_0^\infty =$\
-$\left. \left(\lambda xe^{-\lambda x} - \frac{1}{\lambda} e^{-\lambda x}\right) \right|_0^\infty =$\
+
+$\lambda \left(xe^{-\lambda x} - \frac{1}{\lambda^2} e^{-\lambda x}\right) \bigr|_0^\infty =$\
+$\left(\lambda xe^{-\lambda x} - \frac{1}{\lambda} e^{-\lambda x}\right) \bigr|_0^\infty =$\
+
 $\lim_{x\to\infty} \left(\lambda xe^{-\lambda x} - \frac{1}{\lambda} e^{-\lambda x}\right) - \frac{1}{-\lambda} =$\
 $\lim_{x\to\infty} \left(\lambda \frac{x}{e^{\lambda x}} - \frac{1}{\lambda} \frac{1}{e^{\lambda x}} \right) + \frac{1}{\lambda} =$\
 $\lim_{x\to\infty} \left(\lambda \frac{(x)'}{\left(e^{\lambda x}\right)'} - \frac{1}{\lambda} \frac{1}{e^{\lambda x}} \right) + \frac{1}{\lambda} =$\
