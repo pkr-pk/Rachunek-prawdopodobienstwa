@@ -223,7 +223,7 @@ $$D^2(X) = \frac{\alpha}{\beta^2}.$$
 # Zadania
 
 ### Zadanie 1
-Zmienna losowa $X$ ma rozkład jednostajny na przedziale $[a, b]$. Obilcz $E(X)$ oraz $D^2(X)$.
+Zmienna losowa $X$ ma rozkład jednostajny na przedziale $[a, b]$. Oblicz $E(X)$ oraz $D^2(X)$.
 
 Rozwiązanie:
 
@@ -237,7 +237,7 @@ $E(X^2) = \int_{-\infty}^\infty x^2f(x)dx = \int_a^b x^2\frac{1}{b-a}dx = \frac{
 
 $D^2(X) = E(X^2) - [E(X)]^2 = \frac{b^2+ab+a^2}{3} - \left(\frac{b+a}{2}\right)^2 = \frac{4b^2+4ab+4a^2}{12} -\frac{3b^2+6ab+3a^2}{12} = \frac{b^2-2ab+a^2}{12} = \frac{(b-a)^2}{12}.$
 
-Można obliczyć wariancję z defiznicji ale wtedy jest dłużej bo jest więcej całek do liczenia.
+Można obliczyć wariancję z definicji ale wtedy jest dłużej bo jest więcej całek do liczenia.
 
 Obliczę też dystrybuantę:
 
@@ -272,7 +272,7 @@ a)
 
 Całka z gęstości prawdopodobieństwa musi równać się 1, więc:
 
-$1 = \int_0^{10}Cxdx = \left. C\frac{x^2}{2} \right|_0^{10} = C\frac{100-0}{2} = 50C$
+$1 = \int_0^{10}C xdx = \left. C\frac{x^2}{2} \right|_0^{10} = C\frac{100-0}{2} = 50C$
 
 $C = \frac{1}{50}$
 
@@ -315,7 +315,7 @@ Zmienna losowa $Y$ ma dystrybuantę $F(y) = A + B \cdot arctg(y),$ $y \in (-\inf
 
 Rozwiązanie:
 
-Należy skorzystać z własniści dystrybuanty:
+Należy skorzystać z własności dystrybuanty:
 
 $$
 \begin{cases}
@@ -721,7 +721,7 @@ $$f_T(t)=
 
 Zmienna losowa $X$ określona jest wzorem $X = -T^3 + 1$.\
 a) Znajdź gęstość $f_X$ zmiennej losowej $X$.\
-b) Znajdź dystrybantę zmiennej losowej $X$.
+b) Znajdź dystrybuantę zmiennej losowej $X$.
 
 Rozwiązanie:
 
@@ -831,8 +831,8 @@ $A = \frac{\frac{3}{4} - 3\cdot\frac{1}{2}\cdot\frac{1}{2} + 2\cdot(\frac{1}{2})
 ### Zadanie 18
 Dochód miesięczny losowo wybranego pracownika pewnego sektora gospodarki jest zmienną losową $X$ z rozkładu normalnego o wartości średniej 2500 zł i odchyleniu standardowym 400 zł.\
 a) Jaki procent pracowników ma dochód większy niż 4000 zł?\
-b) Jaka jest najmniejsza wartość miesięcznego dochodu wsród najlepiej opłaconych 25% pracowników?\
-c) Jaka jest górna granica dochodu wsród 25% najmniej zarabiających pracowników?
+b) Jaka jest najmniejsza wartość miesięcznego dochodu wśród najlepiej opłaconych 25% pracowników?\
+c) Jaka jest górna granica dochodu wśród 25% najmniej zarabiających pracowników?
 
 Rozwiązanie:
 
