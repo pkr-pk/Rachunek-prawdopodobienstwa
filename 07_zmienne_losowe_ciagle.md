@@ -1493,7 +1493,11 @@ $a = \frac{3}{2\pi}$
 
 b)
 
-$\frac{3}{2\pi} \int_{-1}^t \frac{dx}{\sqrt{4−x^2}} = \frac{3}{2\pi} \int_{-1}^t \frac{dx}{2\sqrt{1−(\frac{x}{2})^2}} = \left|\begin{aligned}\frac{x}{2} = \sin(u) \\ dx = 2\cos(u)du \\ u = \arcsin(\frac{x}{2}) \end{aligned}\right| = \frac{3}{2\pi} \int_{-\frac{\pi}{6}}^{\arcsin(\frac{t}{2})} \frac{2\cos(u)du}{2\sqrt{1−\sin^2(u)}} = \frac{3}{2\pi} \int_{-\frac{\pi}{6}}^{\arcsin(\frac{t}{2})} \frac{\cos(u)du}{\sqrt{\cos^2(u)}} = \frac{3}{2\pi} \int_{-\frac{\pi}{6}}^{\arcsin(\frac{t}{2})} du = \frac{3}{2\pi} u\biggr|_{-\frac{\pi}{6}}^{\arcsin(\frac{t}{2})} = \frac{3}{2\pi}(\arcsin(\frac{t}{2})+ \frac{\pi}{6})$
+$$\frac{3}{2\pi} \int_{-1}^t \frac{dx}{\sqrt{4−x^2}} = \frac{3}{2\pi} \int_{-1}^t \frac{dx}{2\sqrt{1−(\frac{x}{2})^2}} $$
+
+$$= \left|\begin{aligned}\frac{x}{2} = \sin(u) \\ dx = 2\cos(u)du \\ u = \arcsin(\frac{x}{2}) \end{aligned}\right| = \frac{3}{2\pi} \int_{-\frac{\pi}{6}}^{\arcsin(\frac{t}{2})} \frac{2\cos(u)du}{2\sqrt{1−\sin^2(u)}}$$
+
+$$= \frac{3}{2\pi} \int_{-\frac{\pi}{6}}^{\arcsin(\frac{t}{2})} \frac{\cos(u)du}{\sqrt{\cos^2(u)}} = \frac{3}{2\pi} \int_{-\frac{\pi}{6}}^{\arcsin(\frac{t}{2})} du = \frac{3}{2\pi} u\biggr|_{-\frac{\pi}{6}}^{\arcsin(\frac{t}{2})} = \frac{3}{2\pi}(\arcsin(\frac{t}{2})+ \frac{\pi}{6})$$
 
 $$
 F(x) = \begin{cases}
