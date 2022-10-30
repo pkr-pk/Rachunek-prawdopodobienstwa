@@ -663,7 +663,7 @@ Rozwiązanie:
 
 a)
 
-$P(Y < 2) = P(min(X,2) + 1 < 2) = P(min(X,2) < 1) = 1 - P(min(X,2) \ge 1) = 1 - P(X \ge 1, 2 \ge 1) = 1 - (1 - P(X < 1)) = P(X < 1) = 1 - e^{-0.2} = 0.181.$
+$P(Y < 2) = P(\min(X,2) + 1 < 2) = P(\min(X,2) < 1) = 1 - P(\min(X,2) \ge 1) = 1 - P(X \ge 1, 2 \ge 1) = 1 - (1 - P(X < 1)) = P(X < 1) = 1 - e^{-0.2} = 0.181.$
 
 $P(Y>3) = P(\min(X,2) + 1 > 3) = P(\min(X,2) > 2) = P(X > 2, 2 > 2) = 0$, bo $P(2>2) = 0.$
 
@@ -929,20 +929,22 @@ Wyznacz dystrybuantę rozkładu Cauchy'ego.
 
 Rozwiązanie:
 
-$P(X \le t) = \int_{-\infty}^t \frac{a}{\pi(a^2+(x-m)^2)}dx = \frac{a}{\pi} \int_{-\infty}^t \frac{1}{(a^2+(x-m)^2)}dx =
-\left|\begin{aligned} 
+$P(X \le t) = \int_{-\infty}^t \frac{a}{\pi(a^2+(x-m)^2)}dx = \frac{a}{\pi} \int_{-\infty}^t \frac{1}{(a^2+(x-m)^2)}dx =$
+$\left|\begin{aligned} 
 p = x - m \\ 
 dp = dx
-\end{aligned} \right| = 
-\frac{a}{\pi} \int_{-\infty}^{t-m} \frac{1}{a^2+p^2}dp = 
-\left|\begin{aligned} 
+\end{aligned} \right| =$
+
+$\frac{a}{\pi} \int_{-\infty}^{t-m} \frac{1}{a^2+p^2}dp = $
+$\left|\begin{aligned} 
 ay = p \\
 y = \frac{p}{a} \\ 
 ady = dp
-\end{aligned} \right| = 
-\frac{a}{\pi} \int_{-\infty}^{\frac{t-m}{a}} \frac{a}{a^2(1+y^2)}dp = 
-\frac{1}{\pi} \int_{-\infty}^{\frac{t-m}{a}} \frac{1}{1+y^2}dp = 
-\left. \frac{1}{\pi}arctg(y)\right|_{-\infty}^{\frac{t-m}{a}} = \frac{1}{\pi}arctg(\frac{t-m}{a}) + \frac{1}{2},$
+\end{aligned} \right| =$
+
+$\frac{a}{\pi} \int_{-\infty}^{\frac{t-m}{a}} \frac{a}{a^2(1+y^2)}dp = $
+$\frac{1}{\pi} \int_{-\infty}^{\frac{t-m}{a}} \frac{1}{1+y^2}dp = $
+$\left. \frac{1}{\pi}arctg(y)\right|_{-\infty}^{\frac{t-m}{a}} = \frac{1}{\pi}arctg(\frac{t-m}{a}) + \frac{1}{2},$
 
 dla $a > 0, \ m\in R.$
 
