@@ -364,7 +364,8 @@ $\lambda \left. \left[ x^2e^{-\lambda x} + \frac{2}{\lambda}\left( xe^{\lambda x
 
 $\lambda \left. \left[ x^2e^{-\lambda x} + \frac{2}{\lambda}\left( xe^{\lambda x} - \frac{1}{\lambda^2} e^{-\lambda x} \right) \right] \right|_0^\infty =$
 
-$\left. \left[ \lambda x^2e^{-\lambda x} + 2 \left( xe^{\lambda x} - \frac{1}{\lambda^2} e^{-\lambda x} \right) \right] \right|_0^\infty =$\
+$\left. \left[ \lambda x^2e^{-\lambda x} + 2 \left( xe^{\lambda x} - \frac{1}{\lambda^2} e^{-\lambda x} \right) \right] \right|_0^\infty =$
+
 $\left. \left( \lambda x^2e^{-\lambda x} + 2xe^{\lambda x} - \frac{2}{\lambda^2} e^{-\lambda x} \right) \right|_0^\infty =$\
 $\lim_{x\to\infty} \left( \lambda x^2e^{-\lambda x} + 2xe^{\lambda x} - \frac{2}{\lambda^2} e^{-\lambda x} \right) - \left(-\frac{2}{\lambda^2}\right) =$\
 $\lim_{x\to\infty} \left( \lambda \frac{(x^2)''}{(e^{\lambda x})''} + 2\frac{(x)'}{(e^{\lambda x})'} - \frac{2}{\lambda^2} \frac{1}{e^{\lambda x}} \right) + \frac{2}{\lambda^2} =$\
