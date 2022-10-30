@@ -11,9 +11,9 @@ Dla zmiennej losowej ciągłej wprowadzamy funkcję gęstości prawdopodobieńst
 *   jest nieujemna: 
     $$f(x) \ge 0, $$
 *   prawdopodobieństwo tego, że zmienna losowa przyjmie wartość z przedziału $(a,b]$, to:
-    $$P(a<X \le b) = \int_a^b f(x) dx,$$
+    $$P( a< X \le b) = \int_a^b f(x) dx,$$
 *   Prawdopodobieństwo tego, że zmienna losowa przyjmie dowolną wartość to:  
-    $$P(-\infty <X \le +\infty) = \int_{-\infty}^{+\infty} f(x) dx = 1 $$
+    $$P(-\infty < X \le +\infty) = \int_{-\infty}^{+\infty} f(x) dx = 1 $$
 
 ### Dystrybuanta
 Dystrybuantą zmiennej losowej $X$ nazywamy funkcję $F(x)$ określoną na zbiorze liczb rzeczywistych jako: 
@@ -208,7 +208,7 @@ $$M_{X}(t)=\exp \left(\mu \,t+{\frac {\sigma ^{2}t^{2}}{2}}\right)$$
 ### Rozkład gamma
 Funkcja rozkładu prawdopodobieństwa:
 
-$${\begin{aligned}f(x;\alpha ,\beta )&={\frac {\beta ^{\alpha }x^{\alpha -1}e^{-\beta x}}{\Gamma (\alpha )}}\quad {\text{ dla }}x>0\quad \alpha ,\beta >0,\\[6pt]\end{aligned}}$$
+$${\begin{aligned}f(x;\alpha ,\beta )&={\frac {\beta ^{\alpha }x^{\alpha -1}e^{-\beta x}}{\Gamma (\alpha )}}\quad {\text{ dla }}x>0\quad \alpha ,\beta >0, \end{aligned}}$$
 
 gdzie $\Gamma(\alpha)$ jest funkcją gamma. Dla dodatnich liczb całkowitych $\Gamma(\alpha )=(\alpha -1)!$.
 
