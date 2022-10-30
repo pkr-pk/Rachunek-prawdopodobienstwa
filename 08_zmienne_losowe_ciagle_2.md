@@ -36,21 +36,21 @@ $P(|X| > \frac{1}{3}) = P(X > \frac{1}{3} \cup X < -\frac{1}{3}) = P(X < - \frac
 Dobrać tak stałą $a$, by funkcja
 
 $$f(x) = \begin{cases}
-a \ cos(x) & \text{dla $-\frac{\pi}{2} \le x < \frac{\pi}{2}$}, \\
-0   & \text{w p.p.}  
+a \cos(x) & \text{dla } -\frac{\pi}{2} \le x < \frac{\pi}{2}, \\
+0         & \text{w p.p.}  
 \end{cases}$$
 
 była gęstością pewnej zmiennej losowej $X$. Znaleźć dystrybuantę, obliczyć $E(X)$, $D^2(X)$, $P(|X| > \frac{\pi}{6})$, $P(X ­ \ge \frac{\pi}{3})$, $P(−\frac{\pi}{6} < X \le \frac{\pi}{2})$ oraz medianę i modę $X$.
 
 Rozwiązanie:
 
-$1 = a\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} cos(x) dx = 2a,$
+$1 = a\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} \cos(x) dx = 2a,$
 
 $a = \frac{1}{2}.$
 
 Dystrybuanta:
 
-$\frac{1}{2} \int_{-\frac{\pi}{2}}^t cos(x) dx = \frac{1}{2}(sin(t)+1),$
+$\frac{1}{2} \int_{-\frac{\pi}{2}}^t \cos(x) dx = \frac{1}{2}(\sin(t)+1),$
 
 $$F(x) = \begin{cases}
 0                      & \text{dla } x < 0, \\
@@ -179,7 +179,7 @@ Niech $f(x) = \frac{1}{\pi} \cdot \frac{1}{1+x^2} \ \text{dla } x \in \mathbb{R}
 
 Rozwiązanie:
 
-$F(x) = \frac{1}{\pi} \int_{-\infty}^t \frac{dx}{1 + x^2} = \frac{1}{\pi}\arctg(x)\bigr|_{-\infty}^t = \frac{1}{\pi}(\arctg(t) + \frac{\pi}{2}) \ \text{dla } t \in \mathbb{R}$
+$F(x) = \frac{1}{\pi} \int_{-\infty}^t \frac{dx}{1 + x^2} = \frac{1}{\pi}\arctan(x)\bigr|_{-\infty}^t = \frac{1}{\pi}(\arctg(t) + \frac{\pi}{2}) \ \text{dla } t \in \mathbb{R}$
 
 $E(X) = \frac{1}{\pi} \int_{-\infty}^\infty \frac{xdx}{1 + x^2} = \left|\begin{aligned} t = x^2 \\ 2xdx = dt \end{aligned}\right| = \frac{1}{2\pi} \int_{\infty}^\infty \frac{xdx}{1 + t} = \frac{1}{2\pi} \ln(1 + t)\biggr|_\infty^\infty = \infty - \infty,$
 
