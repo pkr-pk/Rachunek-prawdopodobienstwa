@@ -1289,7 +1289,9 @@ Gęstość zmiennej losowej $X$ ma postać: $f(x) = \frac{a}{e^x+e^{−x}}, \ x 
 
 Rozwiązanie:
 
-$1 = \int_{-\infty}^\infty \frac{a}{e^x+e^{−x}}dx = a\int_{-\infty}^\infty \frac{1}{e^x+e^{−x}}dx = a\int_{-\infty}^\infty \frac{e^xdx}{(e^x)^2+1} =\left|\begin{aligned}e^x = t \\ e^xdx = dt \end{aligned} \right| = a\int_0^\infty \frac{dt}{t^2+1}=a\cdot arctg(t)\biggr|_0^\infty = \frac{a\pi}{2}$
+$$1 =\int_{-\infty}^\infty \frac{a}{e^x+e^{−x}}dx = a\int_{-\infty}^\infty \frac{1}{e^x+e^{−x}}dx = a\int_{-\infty}^\infty \frac{e^xdx}{(e^x)^2+1}$$ 
+
+$$= \left|\begin{aligned}e^x = t \\ e^xdx = dt \end{aligned} \right| = a\int_0^\infty \frac{dt}{t^2+1}=a\cdot arctg(t)\biggr|_0^\infty = \frac{a\pi}{2}$$
 
 $2 = a\pi$
 
