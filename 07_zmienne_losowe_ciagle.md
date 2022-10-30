@@ -1149,7 +1149,7 @@ Skorzystam ze standaryzacji zmiennej losowej:
 
 a)
 
-$P(|X − m| < 3\sigma) = P(-3\sigma < X − m < 3\sigma) = P(\frac{m-3\sigma-m}{\sigma} < Z < \frac{m+3\sigma-m}{\sigma}) = P(-3<Z<3) = \Phi(3) - \Phi(-3).$
+$P(|X − m| < 3\sigma) = P(-3\sigma < X − m < 3\sigma) = P(\frac{m-3\sigma-m}{\sigma} < Z < \frac{m+3\sigma-m}{\sigma}) = P(-3 < Z < 3) = \Phi(3) - \Phi(-3).$
 
 ```python
 import scipy.stats as st
@@ -1159,7 +1159,7 @@ print(st.norm.cdf(3) - st.norm.cdf(-3))
 
 b)
 
-$0.99 = P(-k<Z<k) = \Phi(k) - \Phi(-k) = \Phi(k) - 1 + \Phi(k) = 2\Phi(k) - 1,$
+$0.99 = P(-k < Z < k) = \Phi(k) - \Phi(-k) = \Phi(k) - 1 + \Phi(k) = 2\Phi(k) - 1,$
 
 $2\Phi(k) = 1.99,$
 
