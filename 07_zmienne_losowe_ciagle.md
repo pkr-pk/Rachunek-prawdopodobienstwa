@@ -929,13 +929,13 @@ Wyznacz dystrybuantę rozkładu Cauchy'ego.
 
 Rozwiązanie:
 
-$$P(X \le t) = \int_{-\infty}^t \frac{a}{\pi(a^2+(x-m)^2)}dx = \frac{a}{\pi} \int_{-\infty}^t \frac{1}{(a^2+(x-m)^2)}dx =$
+$$P(X \le t) = \int_{-\infty}^t \frac{a}{\pi(a^2+(x-m)^2)}dx = \frac{a}{\pi} \int_{-\infty}^t \frac{1}{(a^2+(x-m)^2)}dx =
 $\left|\begin{aligned} 
 p = x - m \\ 
 dp = dx
 \end{aligned} \right| =
-\frac{a}{\pi} \int_{-\infty}^{t-m} \frac{1}{a^2+p^2}dp = $
-$\left|\begin{aligned} 
+\frac{a}{\pi} \int_{-\infty}^{t-m} \frac{1}{a^2+p^2}dp =
+\left|\begin{aligned} 
 ay = p \\
 y = \frac{p}{a} \\ 
 ady = dp
