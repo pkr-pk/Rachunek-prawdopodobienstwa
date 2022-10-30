@@ -181,7 +181,7 @@ Rozwiązanie:
 
 $F(x) = \frac{1}{\pi} \int_{-\infty}^t \frac{dx}{1 + x^2} = \frac{1}{\pi}\arctan(x)\bigr|_{-\infty}^t = \frac{1}{\pi}(\arctan(t) + \frac{\pi}{2}) \ \text{dla } t \in \mathbb{R}$
 
-$E(X) = \frac{1}{\pi} \int_{-\infty}^\infty \frac{xdx}{1 + x^2} = \left|\begin{aligned} t = x^2 \\ 2xdx = dt \end{aligned}\right| = \frac{1}{2\pi} \int_{\infty}^\infty \frac{xdx}{1 + t} = \frac{1}{2\pi} \ln(1 + t)\biggr|_\infty^\infty = \infty - \infty,$
+$$E(X) = \frac{1}{\pi} \int_{-\infty}^\infty \frac{xdx}{1 + x^2} = \left|\begin{aligned} t = x^2 \\ 2xdx = dt \end{aligned}\right| = \frac{1}{2\pi} \int_{\infty}^\infty \frac{xdx}{1 + t} = \frac{1}{2\pi} \ln(1 + t)\biggr|_\infty^\infty = \infty - \infty,$$
 
 czyli wartość oczekiwana nie istnieje.
 
