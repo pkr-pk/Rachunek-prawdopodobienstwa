@@ -1007,8 +1007,8 @@ $h(y) = \frac{y-b}{a},$
 
 $h'(y) = \frac{1}{a},$
 
-$f_Y(y) = |\frac{1}{a}|f_X(\frac{y-b}{a}) = \frac{1}{\sigma a \sqrt{2\pi}}exp\left( \frac{-\left( \frac{y-b}{a} - m \right)^2}{2\sigma^2}\right) = 
-\frac{1}{\sigma a \sqrt{2\pi}}exp\left( \frac{-(y - b - am)^2}{2\sigma^2a^2}\right).$
+$f_Y(y) = |\frac{1}{a}|f_X(\frac{y-b}{a}) = \frac{1}{\sigma a \sqrt{2\pi}}exp\left( \frac{-\left( \frac{y-b}{a} - m \right)^2}{2\sigma^2}\right)$\
+$=\frac{1}{\sigma a \sqrt{2\pi}}exp\left( \frac{-(y - b - am)^2}{2\sigma^2a^2}\right).$
 
 Zmienna $Y$ pochodzi z rozkładu $N(b+am, \sigma a)$. 
 
