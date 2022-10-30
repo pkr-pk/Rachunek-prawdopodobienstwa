@@ -1707,17 +1707,17 @@ $P(X < -\frac{1}{2}) = \frac{1}{4}(3(-\frac{1}{2}) - (-\frac{1}{2})^3 + 2) = \fr
 
 
 
+ 
 
-
-$P(|X| > \frac{1}{3}) = P(X > \frac{1}{3} X < -\frac{1}{3}) = $
+$P(|X| > \frac{1}{3}) = P(X > \frac{1}{3} \cup X < - \frac{1}{3}) = $
 
 $P(|X| > \frac{1}{3}) = P(X > \frac{1}{3}$
 
 $ \cup X < -\frac{1}{3}) = $
 
-$P(X < -\frac{1}{3}) + 1 - P(X < \frac{1}{3}) = $
+$P(X < - \frac{1}{3}) + 1 - P(X < \frac{1}{3}) = $
 
-$\frac{1}{4}(3(-\frac{1}{3}) - (-\frac{1}{3})^3 + 2) + 1 -\frac{1}{4}(3(\frac{1}{3}) - (\frac{1}{3})^3 + 2) = \frac{14}{27}.$
+$\frac{1}{4}(3(- \frac{1}{3}) - (- \frac{1}{3})^3 + 2) + 1 - \frac{1}{4}(3(\frac{1}{3}) - (\frac{1}{3})^3 + 2) = \frac{14}{27}.$
 
 ### Zadanie 51
 Dobrać tak stała $a$, by funkcja
