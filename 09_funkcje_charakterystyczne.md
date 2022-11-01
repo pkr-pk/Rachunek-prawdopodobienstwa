@@ -171,16 +171,13 @@ $= \frac{1}{2}\left[ \int\limits_{-\infty}^{0} e^{itx+x}dx + \int\limits_{0}^{\i
 
 Zbadam istnienie granic:
 
-$\lim\limits_{N\to\infty}\int\limits_{-N}^{0} e^{itx+x}dx + \lim\limits_{M\to\infty}\int\limits_{0}^{M}e^{itx-x}dx =$
+$$\lim\limits_{N\to\infty}\int\limits_{-N}^{0} e^{itx+x}dx + \lim\limits_{M\to\infty}\int\limits_{0}^{M}e^{itx-x}dx =$$
 
+$$= \lim\limits_{N\to\infty} \left[\frac{e^{itx+x}}{it+1}\right]_{-N}^0 + \lim\limits_{M\to\infty} \left[\frac{e^{itx-x}}{it-1}\right]_0^M$$
 
-$= \lim\limits_{N\to\infty} \left[\frac{e^{itx+x}}{it+1}\right]_{-N}^0 + \lim\limits_{M\to\infty} \left[\frac{e^{itx-x}}{it-1}\right]_0^M$
+$$= \frac{1}{it+1} - \lim\limits_{N\to\infty} \frac{e^{-itN-N}}{it+1} + \frac{1}{it-1} - \lim\limits_{M\to\infty} \frac{e^{itM-M}}{it-1}$$
 
-
-$ = \frac{1}{it+1} - \lim\limits_{N\to\infty} \frac{e^{-itN-N}}{it+1} + \frac{1}{it-1} - \lim\limits_{M\to\infty} \frac{e^{itM-M}}{it-1}$
-
-
-$=\frac{1}{it+1} - \lim\limits_{N\to\infty} e^{-N}\frac{\cos(Nt) - i\sin(Nt)}{it+1} + \lim\limits_{M\to\infty} e^{-M}\frac{\cos(Mt) + i\sin(Mt)}{it-1} - \frac{1}{it-1}.$
+$$=\frac{1}{it+1} - \lim\limits_{N\to\infty} e^{-N}\frac{\cos(Nt) - i\sin(Nt)}{it+1} + \lim\limits_{M\to\infty} e^{-M}\frac{\cos(Mt) + i\sin(Mt)}{it-1} - \frac{1}{it-1}.$$
 
 Drugi i czwarty składnik jest zerem, ponieważ są to granice iloczynu funkcji, w których pierwszy czynnik dąży do zera a drugi jest funkcją ograniczoną. Otrzymuję więc:
 
