@@ -599,8 +599,4 @@ $= \frac{(\alpha+1)\alpha\Gamma(\alpha)}{\beta^2\Gamma(\alpha)}$
 
 $= \frac{\alpha^2+\alpha}{\beta^2},$
 
-$Var(X) = \frac{\alpha^2+\alpha}{\beta^2} - \frac{\alpha^2}{\beta^2} = 
-\frac{\alpha}{\beta^2}.$
-
-
-
+$Var(X) = \frac{\alpha^2+\alpha}{\beta^2} - \frac{\alpha^2}{\beta^2} = \frac{\alpha}{\beta^2}.$
