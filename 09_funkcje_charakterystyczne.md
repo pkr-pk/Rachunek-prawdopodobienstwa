@@ -222,11 +222,13 @@ $f(x) = \frac{1}{\sqrt{2}\Gamma(\frac{1}{2})}x^{-\frac{1}{2}}e^{-\frac{x}{2}},$ 
 ### Zadanie 4
 Wyznaczyć gęstość prawdopodobieństwa zmiennej losowej $X$, o funkcji charakterystycznej postaci:\
 a) $\phi(t) = \exp(\frac{t^2}{2}),$\
-b) 
+b)
+
 $$\phi(t) = \begin{cases}
 1-|t| & \text{dla } |t| \le 1,   \\
 0     & \text{dla } |t| > 0, \\
 \end{cases}$$
+
 c) $\phi(t) = e^{2it-3|t|},$ \
 d) $\phi(t) = e^{2it},$ \
 e) $\phi(t) = \cos(t),$ \
