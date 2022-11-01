@@ -480,7 +480,7 @@ x^3 & \text{dla } x \in (0, 1], \\
 1   & \text{dla } x > 1.
 \end{cases}$$
 
-Znaleźć funkcję gęstości, obliczyć $E(X)$, $D^2(X)$, $P(0<X<\frac{1}{2})$, medianę oraz $x_{0.2}$ i $x_{0.729}$.
+Znaleźć funkcję gęstości, obliczyć $E(X)$, $D^2(X)$, $P(0 < X <\frac{1}{2})$, medianę oraz $x_{0.2}$ i $x_{0.729}$.
 
 Rozwiązanie:
 
