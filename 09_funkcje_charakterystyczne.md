@@ -242,7 +242,7 @@ Sprawdzam warunek czy mogę skorzystać z wzoru nr I:
 
 $\int\limits_{-\infty}^\infty \left|\exp(-\frac{t^2}{2})\right|dt = \sqrt{2\pi} < \infty.$
 
-Warunkek jest spełniony więc korzystam z wzoru nr I:
+Warunek jest spełniony więc korzystam z wzoru nr I:
 
 $$f(x) = \frac{1}{2\pi}\int\limits_{-\infty}^\infty \exp(-itx)\exp(-\frac{t^2}{2})dt =
 \frac{1}{2\pi}\int\limits_{-\infty}^\infty exp(-itx - \frac{t^2}{2})dt$$
@@ -273,7 +273,7 @@ t  & \text{dla } t\ge0, \\
 
 $\int\limits_{-1}^1 |1-|t||dt =$
 
-$\int\limits_{-1}^1 1-|t|dt$
+$= \int\limits_{-1}^1 1-|t|dt$
 
 $= \int\limits_{-1}^0 (1+t)dt + \int\limits_0^1 (1-t)dt$
 
@@ -313,15 +313,17 @@ $f(x) = \frac{1}{2\pi}\int\limits_{-\infty}^\infty e^{-itx+2it-3|t|}dt.$
 
 W całce pojawiają się nieskończoności więc należy zbadać istnienie granic:
 
-$\lim\limits_{N\to\infty} \int\limits_{-N}^0 e^{-itx + 2it + 3t} dt + \lim\limits_{M\to\infty} \int\limits_0^M e^{-itx + 2it - 3t} dt =$
+$$\lim\limits_{N\to\infty} \int\limits_{-N}^0 e^{-itx + 2it + 3t} dt + \lim\limits_{M\to\infty} \int\limits_0^M e^{-itx + 2it - 3t} dt =$$
 
-$= \lim\limits_{N\to\infty} \left[\frac{e^{3t + 2it + itx}}{3+2i-ix} \right]_{-N}^0 + \lim\limits_{M\to\infty} \left[\frac{e^{-3t + 2it - itx}}{-3+2i-ix} \right]_0^M$
+$$= \lim\limits_{N\to\infty} \left[\frac{e^{3t + 2it + itx}}{3+2i-ix} \right]_{-N}^0 + \lim\limits_{M\to\infty} \left[\frac{e^{-3t + 2it - itx}}{-3+2i-ix} \right]_0^M$$
 
-$= \frac{1}{3+2i-ix} - \lim\limits_{N\to\infty} \frac{e^{-3N - 2iN - iNx}}{3+2i-ix} + \lim\limits_{M\to\infty} \frac{e^{-3M + 2iM - iMx}}{-3+2i-ix} - \frac{1}{-3+2i-ix}$
+$$= \frac{1}{3+2i-ix} - \lim\limits_{N\to\infty} \frac{e^{-3N - 2iN - iNx}}{3+2i-ix} + \lim\limits_{M\to\infty} \frac{e^{-3M + 2iM - iMx}}{-3+2i-ix} - \frac{1}{-3+2i-ix}$$
 
-$= \frac{1}{3+2i-ix} - \lim\limits_{N\to\infty} e^{-3N} \frac{e^{-2iN - iNx}}{3+2i-ix} + \lim\limits_{M\to\infty} e^{-3M}\frac{e^{2iM - iMx}}{-3+2i-ix} - \frac{1}{-3+2i-ix}$
+$$= \frac{1}{3+2i-ix} - \lim\limits_{N\to\infty} e^{-3N} \frac{e^{-2iN - iNx}}{3+2i-ix} + \lim\limits_{M\to\infty} e^{-3M}\frac{e^{2iM - iMx}}{-3+2i-ix} - \frac{1}{-3+2i-ix}$$
 
-$= \frac{1}{3+2i-ix} - \lim\limits_{N\to\infty} e^{-3N} \frac{\cos(-2N - Nx) + i\sin(-2N - Nx)}{3+2i-ix} + \lim\limits_{M\to\infty} e^{-3M}\frac{\cos(2M-Mx) + i\sin(2M-Mx)}{-3+2i-ix} - \frac{1}{-3+2i-ix}$
+$$= \frac{1}{3+2i-ix} - \lim\limits_{N\to\infty} e^{-3N} \frac{\cos(-2N - Nx) + i\sin(-2N - Nx)}{3+2i-ix}$$ 
+
+$$+ \lim\limits_{M\to\infty} e^{-3M}\frac{\cos(2M-Mx) + i\sin(2M-Mx)}{-3+2i-ix} - \frac{1}{-3+2i-ix}$$
 
 Drugi i trzeci składnik jest zerem, ponieważ są to granice iloczynu funkcji, w których pierwszy czynnik dąży do zera a drugi jest funkcją ograniczoną. Otrzymuję więc:
 
