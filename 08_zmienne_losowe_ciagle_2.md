@@ -423,11 +423,185 @@ $$F(x) = \begin{cases}
 
 $P(0 < X < \ln2) = P(X < \ln2) - P(X < 0) = 1 - \ln2 \cdot e^{-\ln2} - e^{-\ln2} = 1 - \frac{1}{2}\ln2 - \frac{1}{2} = \frac{1}{2} - \frac{1}{2}\ln2$
 
+### Zadanie 61
+Dobrać tak stała $k$, by funkcja
+
+$$f(x) = \begin{cases}
+k\cdot \arcsin(x) & \text{dla } x \in [0, 1], \\
+0                & \text{w p.p}, \\ 
+\end{cases}$$
+
+była gęstością pewnej zmiennej losowej $X$.
+
+Rozwiązanie:
+
+$1 = k\int_0^1 \arcsin(x)$\
+$= k\left[x\cdot \arcsin(x) + \sqrt{1-x^2}\right]_0^1$\
+$= k\left(1\cdot \arcsin(1) + \sqrt{1-1} - 0\cdot \arcsin(0) + \sqrt{1-0}\right)$\
+$= k(\frac{\pi}{2}-1)$\
+$= k(\frac{\pi-2}{2}),$
+
+$k = \frac{2}{\pi-2}.$
+
+### Zadanie 62
+Zmienna losowa $X$ ma dystrybuantę postaci
+
+$$F(x) = \begin{cases}
+0         & \text{dla } x \le 0, \\
+3x^2-2x^3 & \text{dla } x \in (0, 1]. \\
+1         & \text{dla } x > 1.
+\end{cases}$$
+
+Znaleźć funkcję gęstości. Obliczyć $E(X)$, $D^2(X)$, $P(0 < X < \frac{1}{2})$, $P(X > \frac{1}{3})$.
+
+Rozwiązanie:
+
+$$f(x) = \begin{cases}
+6x-6x^2 & \text{dla } x \in (0, 1), \\
+0       & \text{w p.p.}
+\end{cases}$$
+
+$E(X) = \int_0^1 6x^2-6x^3 = 0.5,$
+
+$E(X^2) = \int_0^1 6x^3-6x^4 = 0.3,$
+
+$D^2(X) = 0.3 - 0.25= 0.05.$
+
+$P(0 < X < \frac{1}{2}) = P(X < \frac{1}{2}) - P(X < 0) = 3(\frac{1}{2})^2-2(\frac{1}{2})^3 = 0.5,$
+
+$P(X > \frac{1}{3}) = 1 - P(X < \frac{1}{3}) = 1 - 3(\frac{1}{3})^2 + 2(\frac{1}{3})^3 = \frac{20}{27}.$
+
+### Zadanie 63
+Dystrybuanta pewnej zmiennej losowej $X$ jest postaci
+
+$$F(x) = \begin{cases}
+0   & \text{dla } x \le 0, \\
+x^3 & \text{dla } x \in (0, 1], \\
+1   & \text{dla } x > 1.
+\end{cases}$$
+
+Znaleźć funkcję gęstości, obliczyć $E(X)$, $D^2(X)$, $P(0<X<\frac{1}{2})$, medianę oraz $x_{0.2}$ i $x_{0.729}$.
+
+Rozwiązanie:
+
+$$f(x) = \begin{cases}
+3x^2 & \text{dla } x \in (0, 1), \\
+0    & \text{w p.p.}
+\end{cases}$$
+
+$E(X) = \int_0^1 3x^3 dx = \frac{3}{4},$
+
+$E(X) = \int_0^1 3x^4 dx = \frac{3}{5},$
+
+$D^2(X) = \frac{3}{5} - (\frac{3}{4})^2 = \frac{3}{80}.$
+
+$P(0 < X < \frac{1}{2}) = P(X < \frac{1}{2}) - P(X < 0) = (\frac{1}{2})^3 = \frac{1}{8}$
+
+$P(X < x_{0.5}) = 0.5,$
+
+$x_{0.5}^3 = 0.5,$
+
+$x_{0.5} = 0.5^\frac{1}{3}.$
+
+$P(X < x_{0.2}) = 0.2,$
+
+$x_{0.2}^3 = 0.2,$
+
+$x_{0.2} = 0.2^\frac{1}{3}.$
+
+$P(X < x_{0.729}) = 0.729,$
+
+$x_{0.729}^3 = 0.729,$
+
+$x_{0.729} = 0.729^\frac{1}{3} = 0.9.$
 
 
+### Zadanie 64
+
+Niech zmienna losowa $X$ ma rozkład normalny $N(\mu , \sigma^2)$. Wówczas rozkład zmiennej losowej $Y = exp(X)$ nazywamy rozkładem lognormalnym z parametrami $\mu$, $\sigma$. Oblicz wartość oczekiwaną i wariancje zmiennej losowej $Y$.
+
+Rozwiązanie:
+
+$f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$
+
+Należy doprowadzić poniższe równania do takiej postaci aby pojawiała się gęstość rozkładu normalnego, wtedy całka będzie wynosić 1.
+
+$E(Y) =$
+
+$= E(e^X)$
+
+$= \int\limits_{-\infty}^\infty \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}e^x dx$
+
+$= \int\limits_{-\infty}^\infty \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{(x-\mu)^2 - 2\sigma^2 x}{2\sigma^2}} dx$
+
+$= \int\limits_{-\infty}^\infty \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{x^2-2\mu x +\mu^2 - 2\sigma^2 x}{2\sigma^2}} dx$
+
+$= \int\limits_{-\infty}^\infty \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{x^2-2(\mu + \sigma^2)x + (\mu + \sigma^2)^2 - (\mu + \sigma^2)^2 + \mu^2}{2\sigma^2}} dx$
+
+$= \int\limits_{-\infty}^\infty \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{(x-2(\mu + \sigma^2))^2 - (\mu + \sigma^2)^2 + \mu^2}{2\sigma^2}} dx$
+
+$= \int\limits_{-\infty}^\infty \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{(x-2(\mu + \sigma^2))^2}{2\sigma^2} - \frac{\mu^2-(\mu + \sigma^2)^2}{2\sigma^2}} dx$
+
+$= \int\limits_{-\infty}^\infty \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{(x-2(\mu + \sigma^2))^2}{2\sigma^2}} e^{-\frac{\mu^2-(\mu + \sigma^2)^2}{2\sigma^2}} dx$
+
+$= e^{-\frac{\mu^2-(\mu + \sigma^2)^2}{2\sigma^2}}$
+
+$= e^{\mu + \frac{\sigma^2}{2}}$
+
+$E(Y^2) =$
+
+$= E(e^2X)$
+
+$= \int\limits_{-\infty}^\infty \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}e^{2x} dx$
+
+$= \int\limits_{-\infty}^\infty \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{(x-(\mu+2\sigma^2))^2}{2\sigma^2}} e^{-\frac{(\mu^2-(\mu+2\sigma^2)^2)}{2\sigma^2}}dx$
+
+$= e^{-\frac{(\mu^2-(\mu+2\sigma^2)^2)}{2\sigma^2}}$
+
+$= e^{2\mu + 2\sigma^2}$
+
+$Var(Y) = e^{2\mu + 2\sigma^2} - \left(e^{\mu + \frac{\sigma^2}{2}}\right)^2 = 
+ e^{2\mu + \sigma^2} (e^{\sigma^2} - 1)$
 
 
+### Zadanie 65
+Mówimy, że ciągła zmienna losowa $X$ ma rozkład gamma z parametrami $\alpha > 0$, $\beta > 0$, jeśli gęstość prawdopodobieństwa zmiennej $X$ jest postaci:
 
+$$f(x) = \begin{cases}
+\frac{\beta^{\alpha} x^{\alpha - 1} e^{-\beta x}}{\Gamma(\alpha)} & \text{dla } x > 0, \\
+0                                                                 & \text{poza tym}.
+\end{cases}$$
+
+Oblicz wartość oczekiwaną i wariancję zmiennej losowej $X$.
+
+Rozwiązanie:
+
+$E(X) =$
+
+$= \int\limits_{-\infty}^\infty \frac{\beta^{\alpha} x^{\alpha - 1} x e^{-\beta x}}{\Gamma(\alpha)}$
+
+$= \frac{\beta^\alpha\Gamma(\alpha+1)}{\beta^{\alpha+1}\Gamma(\alpha)} \int\limits_{-\infty}^\infty \frac{\beta^{\alpha+1}}{\Gamma(\alpha+1)} x^{(\alpha + 1)- 1} e^{-\beta x}$
+
+$= \frac{\Gamma(\alpha+1)}{\beta\Gamma(\alpha)}$
+
+$= \frac{\alpha\Gamma(\alpha)}{\beta\Gamma(\alpha)}$
+
+$= \frac{\alpha}{\beta},$
+
+$E(X^2) =$
+
+$= \int\limits_{-\infty}^\infty \frac{\beta^{\alpha} x^{\alpha - 1} x^2 e^{-\beta x}}{\Gamma(\alpha)}$
+
+$= \frac{\beta^\alpha\Gamma(\alpha+2)}{\beta^{\alpha+2}\Gamma(\alpha)} \int\limits_{-\infty}^\infty \frac{\beta^{\alpha+2}}{\Gamma(\alpha+2)} x^{(\alpha + 2)- 1} e^{-\beta x}$
+
+$= \frac{\Gamma(\alpha+2)}{\beta^2\Gamma(\alpha)}$
+
+$= \frac{(\alpha+1)\alpha\Gamma(\alpha)}{\beta^2\Gamma(\alpha)}$
+
+$= \frac{\alpha^2+\alpha}{\beta^2},$
+
+$Var(X) = \frac{\alpha^2+\alpha}{\beta^2} - \frac{\alpha^2}{\beta^2} = 
+\frac{\alpha}{\beta^2}.$
 
 
 
