@@ -130,9 +130,11 @@ Zbadam istnienie granicy:
 
 $\lim\limits_{N\to\infty} \int\limits_{a}^{\infty} \exp\left[\frac{x(\lambda it-1)}{\lambda}\right]dx =$
 
+
 $= \lim\limits_{N\to\infty}\left[ \frac{\exp\left[\frac{x(\lambda it-1)}{\lambda}\right]}{\frac{\lambda it-1}{\lambda}}\right]_a^N$
 
-$ = \frac{\lambda}{\lambda it - 1} \lim\limits_{N\to\infty}\left[ \exp\left[\frac{x(\lambda it-1)}{\lambda}\right]\right]_a^N$ 
+
+$= \frac{\lambda}{\lambda it - 1} \lim\limits_{N\to\infty}\left[ \exp\left[\frac{x(\lambda it-1)}{\lambda}\right]\right]_a^N$ 
 
 $= \frac{\lambda}{\lambda it - 1} \lim\limits_{N\to\infty} \exp\left[\frac{N\lambda it-N}{\lambda}\right] - \frac{\lambda}{\lambda it - 1} \exp\left[\frac{a\lambda it-a}{\lambda}\right]$
 
