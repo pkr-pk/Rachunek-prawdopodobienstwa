@@ -461,10 +461,9 @@ Druga metoda:
 
 Jeżeli znamy rozwinięcie funkcji eksponent w szereg Maclaurina to możemy w szybki sposób wyznaczyć k-ty moment zwykły danego rozkładu.
 
-$\exp(t) = \sum\limits_{k=0}^\infty \frac{t^k}{k!}$ dla $r\in\mathbb{R},$
+$$\exp(t) = \sum\limits_{k=0}^\infty \frac{t^k}{k!} \text{ dla } r\in\mathbb{R},$$
 
-$\exp(-\frac{t^2}{2}) = \sum\limits_{k=0}^\infty \frac{\left(-\frac{t^2}{2}\right)^k}{k!} = 
-\sum\limits_{k=0}^\infty \frac{\left(-1\right)^k t^{2k}}{2^k k!}$ dla $r\in\mathbb{R},$
+$$\exp(-\frac{t^2}{2}) = \sum\limits_{k=0}^\infty \frac{\left(-\frac{t^2}{2}\right)^k}{k!} = \sum\limits_{k=0}^\infty \frac{\left(-1\right)^k t^{2k}}{2^k k!} \text{ dla } r\in\mathbb{R},$$
 
 Zgadnie z twierdzeniem I:
 
