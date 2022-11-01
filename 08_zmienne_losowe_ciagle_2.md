@@ -560,8 +560,7 @@ $= e^{-\frac{(\mu^2-(\mu+2\sigma^2)^2)}{2\sigma^2}}$
 
 $= e^{2\mu + 2\sigma^2}$
 
-$Var(Y) = e^{2\mu + 2\sigma^2} - \left(e^{\mu + \frac{\sigma^2}{2}}\right)^2 = 
- e^{2\mu + \sigma^2} (e^{\sigma^2} - 1)$
+$Var(Y) = e^{2\mu + 2\sigma^2} - \left(e^{\mu + \frac{\sigma^2}{2}}\right)^2 = e^{2\mu + \sigma^2} (e^{\sigma^2} - 1)$
 
 
 ### Zadanie 65
