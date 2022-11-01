@@ -45,7 +45,7 @@ $$\phi(t) = \begin{cases}
 |dwumianowy|$p_k = {n\choose k}p^kq^{n-k},$ <br> $k=0,1,...,n$ <br> $p, q > 0,$ $p+q=1$|$\phi(t) = (pe^{it}+q)^n$|
 |ujemny dwumianowy|$p_k = {k-1\choose \nu-1}p^\nu q^{k-\nu},$ <br> $k = \nu, \nu + 1,...$ <br> $p, q >0,$ $p+q=1,$ <br> $\nu \in \mathbb{N}$|$\phi(t) = (\frac{pe^{it}}{1-qe^{it}})^\nu$|
 |Poissona|$p_k = \frac{e^{-\lambda}\lambda^k}{k!},$ <br>$k\in\mathbb{N_0},$ $\lambda > 0$|$\phi(t)=\exp[\lambda(e^{it}-1)]$|
-|równomierny|$f(x) = \frac{1}{b-a},$<br>$a<x<b$|$\phi(t) = \frac{1}{b-a}\frac{e^{itb}-e^{ita}}{it}$|
+|jednostajny|$f(x) = \frac{1}{b-a},$<br>$a < x < b$|$\phi(t) = \frac{1}{b-a}\frac{e^{itb}-e^{ita}}{it}$|
 |normalny|$f(x)=\frac{1}{\sigma\sqrt{2\pi}}\exp[-\frac{(x-\mu)^2}{2\sigma^2}],$ <br> $\sigma>0,$ $\mu\in\mathbb{R}$|$\phi(t) = \exp(i\mu t - \frac{\sigma^2t^2}{2})$|
 |gamma|$f(x)=\frac{1}{\lambda^p\Gamma(p)}x^{p-1}\exp(-\frac{x}{\lambda}),$<br> $x, \lambda, p > 0$|$\phi(t)=\frac{1}{(1-i\lambda t)^p}$|
 |Laplace'a|$f(x) = \frac{1}{2}e^{-\|x\|}$|$\phi(t)=\frac{1}{1+t^2}$|
