@@ -7,7 +7,7 @@ Niech $X$ oraz $Y$ będą zmiennymi losowymi określonymi niekoniecznie na tej s
 
 Dystrybuantą dwuwymiarowej zmiennej losowej $(X, Y)$ nazywamy funkcję $F$ zmiennych $x, y$, która dla każdej pary liczb rzeczywistych $(x, y) \in \mathbb{R^2}$ przyjmuje wartości równe prawdopodobieństwu zdarzenia polegającego na tym, że zmienna losowa $X$ przyjmuje wartość mniejszą od $x$ i zmienna losowa $Y$ przyjmuje wartość mniejszą od $y$:
 
-$$F_{XY}(x,y) = P_{XY}(X<x, Y<y)\ \text{dla} \ (x, y) \in \mathbb{R^2}.$$
+$$F_{XY}(x,y) = P_{XY}(X < x, Y < y)\ \text{dla} \ (x, y) \in \mathbb{R^2}.$$
 
 $F$ nazywamy także dystrybuantą łączną zmiennej losowej $(X, Y)$.
 
@@ -63,9 +63,9 @@ Jeśli dwuwymiarowa zmienna losowa $(X, Y)$ przyjmuje skończoną liczbę warto�
 
 Oznaczmy przez $F_X$ i $F_Y$ dystrybuanty rozkładów brzegowych zmiennych losowych $X$ i $Y$ odpowiednio. Jeśli $(X, Y)$ jest dwuwymiarową zmienną losową skokową, to:
 
-$F_X(x) = \sum\limits_{x_i<x}p_{i.} \ \ \ \text{dla} \ \ \ x\in\mathbb{R}$
+$F_X(x) = \sum\limits_{x_i < x}p_{i.} \ \text{ dla } \ x\in\mathbb{R}$
 
-$F_Y(y) = \sum\limits_{y_k<y}p_{.k} \ \ \ \text{dla} \ \ \ y\in\mathbb{R}$
+$F_Y(y) = \sum\limits_{y_k < y}p_{.k} \ \text{ dla } \ y\in\mathbb{R}$
 
 ### Dystrybuanty brzegowe
 
@@ -81,7 +81,7 @@ $$P_{X|A}(X=x_i)=P_{X|A}(X=x_i|A)=\frac{P_X(X=x_i, A)}{P(A)}, \ \ i \in \mathbb{
 
 Dystrybuanta $X$ pod warunkiem $A$:
 
-$$F_{X|A}(x)=P_{X|A}(X≤x|A) = \frac{P_X(X<x, A)}{P(A)}.$$
+$$F_{X|A}(x)=P_{X|A}(X≤x|A) = \frac{P_X(X < x, A)}{P(A)}.$$
 
 Warunkowa wartość oczekiwana:
 
@@ -103,9 +103,9 @@ $$P_{Y|X}(y_i|x_k)=P_{Y|X}(Y=y_k|X=x_i) =
 
 Dystrybuanty rozkładów warunkowych oznaczamy odpowiednio przez: $F_{X|Y}(x|y_k), \ F_{Y|X}(y|x_i)$ i wyznaczamy ze wzorów:
 
-$$F_{X|Y}(x|y_k) = P_{X|Y}(X<x|Y=y_k) = \sum\limits_{x_i<x} \frac{p_{ik}}{p_{.k}},$$
+$$F_{X|Y}(x|y_k) = P_{X|Y}(X < x|Y=y_k) = \sum\limits_{x_i < x} \frac{p_{ik}}{p_{.k}},$$
 
-$$F_{Y|X}(y|x_i) = P_{Y|X}(Y=y|X=x_i) = \sum\limits_{y_k<y} \frac{p_{ik}}{p_{i.}}.$$
+$$F_{Y|X}(y|x_i) = P_{Y|X}(Y < y|X=x_i) = \sum\limits_{y_k < y} \frac{p_{ik}}{p_{i.}}.$$
 
 Warunkowa wartość oczekiwana:
 
