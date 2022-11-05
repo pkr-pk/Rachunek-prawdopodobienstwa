@@ -13,9 +13,13 @@ $F$ nazywamy także dystrybuantą łączną zmiennej losowej $(X, Y)$.
 
 ### Własności dystrybuanty
 
-a) $$\begin{equation}\forall x\in\mathbb{R} \lim\limits_{y \to -\infty} F_{XY}(x, y) = 0, \ \ \ \ \ \forall y\in\mathbb{R} \lim\limits_{x \to -\infty} F_{XY}(x, y) = 0,\end{equation}$$
+a) 
 
-b) $$\begin{equation}\lim\limits_{x \to \infty \ y \to \infty} F_{XY}(x, y) = 1,\end{equation}$$
+$$\begin{equation}\forall x\in\mathbb{R} \lim\limits_{y \to -\infty} F_{XY}(x, y) = 0, \ \ \ \ \ \forall y\in\mathbb{R} \lim\limits_{x \to -\infty} F_{XY}(x, y) = 0,\end{equation}$$
+
+b) 
+
+$$\begin{equation}\lim\limits_{x \to \infty \ y \to \infty} F_{XY}(x, y) = 1,\end{equation}$$
 
 c) Dla dowolnych punktów: $(x_1, y_1)$, $(x_2, y_2)$ takich, że $x_1 \le x_2$ i $y_1 \le y_2$ zachodzi nierówność:
 
