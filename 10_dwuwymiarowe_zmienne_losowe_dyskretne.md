@@ -43,9 +43,9 @@ $$\begin{equation}P_{XY}((X, Y) \in A) =
 
 Oznaczmy:
 
-$$p_{i.} = \sum\limits_{k}p_{ik} \ \ \text{dla} \ \ i \in\mathbb{N},$$
+$$\begin{equation}p_{i.} = \sum\limits_{k}p_{ik} \ \ \text{dla} \ \ i \in\mathbb{N}, \end{equation}$$
 
-$$p_{.k} = \sum\limits_{i}p_{ik} \ \ \text{dla} \ \ k \in\mathbb{N}.$$
+$$\begin{equation}p_{.k} = \sum\limits_{i}p_{ik} \ \ \text{dla} \ \ k \in\mathbb{N}.\end{equation}$$
 
 $p_{i.} = P_{XY}(X=x_i, Y=y_1) + P_{XY}(X=x_i, Y=y_2)+\dots$ jest prawdopodobieństwem tego, że zmienna losowa $X$ przyjmuje wartość równą $x_i$, bez względu na to, którą z wartości: $y_1, y_2,\dots$ przyjmuje zmienna losowa $Y$, oraz, że $\sum\limits_i p_{i.} = 1,$ a więc funkcja:
 
@@ -326,11 +326,11 @@ gdzie $X$ jest oceną klasówki z matematyki losowo wybranego ucznia pewnej klas
 
 Rozwiązanie:
 
-Należy skorzystać ze wzoru (4) a następnie z wzoru (11). Ze wzoru (4) mamy:
+Mamy:
 
 $p_{4.}=P(X=4)=\frac{6}{35}.$
 
-Teraz korzystam z wzoru (11):
+Teraz:
 
 $P(Y=y_k|X=4) = \frac{P(Y=y_k, X=4)}{P(X=4)} = \frac{P(Y=y_k, X=4)}{\frac{6}{35}},$
 
@@ -343,3 +343,214 @@ $P(Y=3.5|X=4) = \frac{1}{6},$
 $P(Y=4|X=4) = \frac{3}{6},$
 
 $P(Y=5|X=4) = \frac{1}{6}.$
+
+### Zadanie 6
+
+Z talii 52 kart wylosowano 1 kartę. Niech zmienna losowa $X$ przyjmuje wartości równe liczbie wylosowanych asów, zaś $Y$ - liczbę wylosowanych pików. Wyznaczyć rozkład prawdopodobieństwa dwuwymiarowej zmiennej losowej $(X, Y)$ i rozkłady brzegowe. Czy zmienne są niezależne?
+
+Rozwiązanie:
+
+Ponieważ losujemy tylko 1 kartę, każda ze zmiennych $X$, $Y$ może przyjmować z dodatnim prawdopodobieństwem tylko dwie wartości 0 albo 1.
+
+Oznaczmy możliwe zdarzenia:
+
+$A$ - wylosowanie asa pik,
+
+$B$ - wylosowanie pika, który nie jest asem,
+
+$C$ - wylosowanie asa, który nie jest pikiem,
+
+$D$ - wylosowanie karty, która nie jest asem i nie jest pikiem.
+
+$P(A) = P(X=1,Y=1) = \frac{1}{52},$
+
+$P(B) = P(X=0,Y=1) = \frac{12}{52},$
+
+$P(C) = P(X=1,Y=0) = \frac{3}{52},$
+
+$P(D) = P(X=0,Y=0) = \frac{36}{52}.$
+
+|$y_k$ \ $x_n$|0|1|$p_{.k}$|
+|---|---|---|---|
+|0|$\frac{36}{52}$|$\frac{3}{52}$|$\frac{39}{52}$|
+|1|$\frac{12}{52}$|$\frac{1}{52}$|$\frac{13}{52}$|
+|$p_{\text{i.}}$|$\frac{48}{52}$|$\frac{4}{52}$|1|
+
+Zmienne są niezależne, ponieważ dla każdej ustalonej wartości $X$ i $Y$:
+
+$P(X,Y) = P(X)P(Y)$, np.:
+
+$P(X=0,Y=0) = \frac{36}{52} = \frac{48}{52} \cdot \frac{39}{52} = P(X=0)P(Y=0)$
+
+### Zadanie 7
+
+Pewien mechanizm składa się z dwóch kół zębatych: dużego i małego. Warunki techniczne przy montażu urządzenia zostają naruszone, jeśli w obu kołach występują dodatnie odchylenia grubości zębów od nominalnego wymiaru. Robotnik dysponuje 2 kołami zębatymi dużymi: "plusowym" i "minusowym" i dwoma małymi "plusowym" i "minusowym". Rozważmy zero-jedynkowe zmienne losowe $X$ i $Y$: zmienna losowa $X$ przyjmuje wartość 1, jeśli robotnik wylosuje duże koło "plusowe" i 0 jeśli duże koło "minusowe". Analogicznie określona jest zmienna losowa $Y$ w przypadku koła małego.
+
+a) Wyznaczyć dystrybuantę $F$ dwuwymiarowej zmiennej losowej $(X, Y)$.
+
+b) Obliczyć prawdopodobieństwo naruszenia warunków technicznych przy montażu mechanizmu.
+
+Rozwiązanie:
+
+a)
+
+Na początku wyznaczę rozkład zmiennej losowej $(X, Y)$. Zmienna $(X, Y)$ przyjmuje wartości $(0, 0), (1, 0), (0, 1), (1, 1)$ z prawdopodobieństwami:
+
+$P(X = 0, Y = 0) = \frac{1}{2}\cdot\frac{1}{2} = \frac{1}{4},$
+
+$P(X = 1, Y = 0) = \frac{1}{2}\cdot\frac{1}{2} = \frac{1}{4},$
+
+$P(X = 0, Y = 1) = \frac{1}{2}\cdot\frac{1}{2} = \frac{1}{4},$
+
+$P(X = 1, Y = 1) = \frac{1}{2}\cdot\frac{1}{2} = \frac{1}{4}.$
+
+W tabeli wygląda to następująco:
+
+|$y_k$ \ $x_i$|0|1|
+|---|---|---|
+|0|$\frac{1}{4}$|$\frac{1}{4}$|
+|1|$\frac{1}{4}$|$\frac{1}{4}$|
+
+Korzystając z wzoru nr (1) wyznaczam dystrybuantę:
+
+|$y$ \ $x$|$(-\infty, 0]$|$(0,1]$|$(1, \infty)$|
+|---|---|---|---|
+|$(-\infty,0]$|0|0            |0            |
+|$(0, 1]$     |0|$\frac{1}{4}$|$\frac{1}{2}$|
+|$(1,\infty)$ |0|$\frac{1}{2}$|1            |
+
+b)
+
+Naruszenie warunków technicznych montażu nastąpi wtedy, gdy robotnik wybierze losowo duże koło zębate plusowe i małe koło plusowe:
+
+$P(X = 1, Y = 1) = \frac{1}{2}\cdot\frac{1}{2} = \frac{1}{4}$.
+
+### Zadanie 8
+
+Rzucamy jedną kostką do gry. Niech zmienna losowa $X$ przyjmuje wartość 0, gdy wyrzucimy parzystą liczbę oczek (zdarzenie $A$), oraz wartość 1, gdy wyrzucimy nieparzystą liczbę oczek ($A'$), zmienna losowa $Y$ przyjmuje wartość 1, gdy liczba rzuconych oczek jest podzielna przez 3 ($B$), oraz wartość 2, gdy liczba oczek nie jest podzielna przez 3 ($B'$). Zbadać niezależność zmiennych losowych $X$ i $Y$.
+
+Rozwiązanie:
+
+Dwuwymiarowa zmienna losowa $(X, Y)$ przyjmuje wartości: $(0,1)$, $(0,2)$, $(1,1)$, $(1,2)$ z prawdopodobieństwami:
+
+$P(X=0, Y=1) = P(A \cap B) = \frac{1}{6},$
+
+$P(X=0, Y=2) = P(A \cap B') = \frac{2}{6} = \frac{1}{3},$
+
+$P(X=1, Y=1) = P(A' \cap B) = \frac{1}{6},$
+
+$P(X=1, Y=2) = P(A' \cap B') = \frac{2}{6} = \frac{1}{3}.$
+
+Przedstawiam otrzymane wyniki w tabelce dwudzielczej i wyznaczam rozkłady brzegowe poszczególnych zmiennych
+
+|$y_k$ \ $x_i$  |0            |1            |$p_{.k}$     |
+|---|---|---|---|
+|1       |$\frac{1}{6}$|$\frac{1}{6}$|$\frac{1}{3}$|
+|2       |$\frac{1}{3}$|$\frac{1}{3}$|$\frac{2}{3}$|
+|$p_{i.}$|$\frac{1}{2}$|$\frac{1}{2}$|1            |
+
+Zauważmy, że dla $\underset{i = 1, 2 \ k = 1, 2}{\forall} \ p_{ik} = p_{i.}p_{.k}$, a więc $X$, $Y$ są niezależnymi zmiennymi losowymi.
+
+### Zadanie 9
+
+Niech zmienne losowe $X$ i $Y$ mają rozkłady zero-jedynkowe o parametrach odpowiednio $p$ i $q$, gdzie $0 < p, q < 1$ oraz będą niezależne. Znajdź łączną gęstość prawdopodobieństwa oraz łączną dystrybuantę zmiennych losowych $X$ i $Y$.
+
+Rozwiązanie:
+
+Zmienne losowe $X$ i $Y$ przyjmują wartości 0 oraz 1. Wszystkie możliwe kombinacje to:
+
+$R_{XY}=\{(0,0),(0,1),(1,0),(1,1)\}.$
+
+Ponieważ zmienne losowe $X$ i $Y$ są niezależne to:
+
+$p_{ik} = p_{i.}p_{.k} \ \text{ dla } \ i,k=0,1.$
+
+Ostatecznie:
+
+$P(0,0)=P_X(0)P_Y(0)=(1−p)(1−q),$
+
+$P(0,1)=P_X(0)P_Y(1)=(1−p)q,$
+
+$P(1,0)=P_X(1)P_Y(0)=p(1−q),$
+
+$P(1,1)=P_X(1)P_Y(1)=pq.$
+
+Teraz obliczę dystrybuantę:
+
+$F_{XY}(x,y)=P(X≤x,Y≤y).$
+
+<p align="center">
+<img src="img/dwuwymiarowe_zmienne_losowe_dyskretne/01.jpg" width="60%">
+</p>
+
+1. $(x, y) \in A$
+
+    $F_{XY}(x,y)=P(X \le x,Y \le y)=P(X=0,Y=0)=P(X=0)P(Y=0)=(1−p)(1−q).$
+
+2) $(x, y) \in B$
+
+    $F_{XY}(x,y)=P(X \le x,Y \le y)=P(X \le 1,Y=0)=P(Y=0)=1−q.$
+
+3) $(x, y) \in C$
+
+    $F_{XY}(x,y)=P(X \le x,Y \le y)=P(X=0,Y \le 1)=P(X=0)=1−p.$
+
+4) $(x, y) \in D$
+
+    $F_{XY}(x,y)=P(X \le x,Y \le y)=P(X \le 1,Y \le 1)=1.$
+
+5) $(x, y) \in E$
+
+$F_{XY}(x, y) = 0$
+
+Ostatecznie:
+
+$$F_{XY}(x, y) = \begin{cases}
+0          & E=\{(x,y): x < 0 \vee y < 0\}, \\
+(1−p)(1−q) & A=\{(x,y): 0 \le x < 1  \wedge 0 \le y < 1\}, \\
+1−q        & B=\{(x,y): x \ge 1  \wedge 0 \le y < 1\}, \\
+1−p        & C=\{(x,y): 0 \le x < 1  \wedge y \ge 1\}, \\
+1          & D=\{(x,y): x \ge 1 \wedge y \ge 1\}, \\
+\end{cases}$$
+
+### Zadanie 10
+
+Dwuwymiarowa zmienna losowa $(X,Y)$ charakteryzuje losowo wybranego w pewnym miesiącu klienta banku. Zmienna losowa $X$ oznacza liczbę rodzajów funduszy inwestycyjnych, które posiada klient, natomiast zmienna losowa $Y$ przyjmuje wartość $y=1$, jeśli klient posiada jakąkolwiek lokatę, a $y=0$, gdy klient nie posiada lokaty. Funkcję prawdopodobieństwa łącznego zmiennej $(X,Y)$ określa tabela:
+
+|$y_k$ \ $x_i$  |0   |1   |2   |3   |$p_{.k}$|
+|---|---|---|---|---|---|
+|0       |0.02|0.07|0.06|0.01|0.16|
+|1       |0.01|0.5 |0.3 |0.03|0.84|
+|$p_{i.}$|0.03|0.57|0.36|0.04|1   |
+
+a) Oblicz prawdopodobieństwo warunkowe, że losowo wybrany klient posiada jakikolwiek fundusz inwestycyjny, jeśli wiadomo, że nie ma on lokaty.
+
+b) Oblicz wariancję $Var(X)$.
+
+c) Czy zmienne losowe $X$, $Y$ są niezależne.
+
+d) Znajdź $F(1, 1.5)$.
+
+Rozwiązanie:
+
+a)
+
+$P(X \ge 1 | Y=0) = \frac{P(X \ge 1, Y=0)}{P(Y=0)} = \frac{P(1, 0)+P(2, 0) + P(3, 0)}{P(Y=0)} = \frac{0.07+0.06+0.01}{0.16} = \frac{0.14}{0.16} = 0.875$
+
+b)
+
+$E(X) = 0\cdot0.03 + 1\cdot0.57 + 2\cdot0.36 + 3\cdot0.04 = 1.41,$
+
+$E(X^2) = 0^2\cdot0.03 + 1^2\cdot0.57 + 2^2\cdot0.36 + 3^2\cdot0.04 = 2.37,$
+
+$Var(X) = 2.37 - 1.41^2 = 0.3819.$
+
+c)
+
+$0.02 \ne 0.01\cdot0.16$
+
+Więc zmienne losowe nie są niezależne.
+
+d)
+
+$F(1, 1.5) = P(X \le 1, Y \le 1.5) = 0.02 + 0.07 + 0.01 + 0.5 = 0.6$.

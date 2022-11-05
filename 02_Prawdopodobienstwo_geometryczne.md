@@ -232,7 +232,7 @@ plt.show()
 ```
 
 <p align="center">
-<img src="img/prawdopodobienstwo_geometryczne/25.jpg" width="50%">
+<img src="img/prawdopodobienstwo_geometryczne/24.jpg" width="50%">
 </p>
 
 Jak można odczytać z zacieniowanego wykresu wyróżnik jest większy od zera gdy $m \in (-3, -1) \cup (2, 3)$. Szukane prawdopodobieństwo to:
