@@ -161,29 +161,29 @@ E[X|Y=y_2] & \text{ z prawdopodobieństwem } P(Y=y_2) \\
 
 ### Wzory wartość oczekiwana
 
-$\begin{equation}E[g(X)h(Y)|X]=g(X)E[h(Y)|X],\end{equation}$
+$$\begin{equation}E[g(X)h(Y)|X]=g(X)E[h(Y)|X],\end{equation}$$
 
-$\begin{equation}E[X]=E[E[X|Y]],\end{equation}$
+$$\begin{equation}E[X]=E[E[X|Y]],\end{equation}$$
 
-$\begin{equation}E\left[\sum\limits_{i=1}^nX_i \right] = \sum\limits_{i=1}^n EX_i.\end{equation}$
+$$\begin{equation}E\left[\sum\limits_{i=1}^nX_i \right] = \sum\limits_{i=1}^n EX_i.\end{equation}$$
 
 Dla niezależnych zmiennych losowych $X$ oraz $Y$:
 
-$\begin{equation}E[X|Y]=EX,\end{equation}$
+$$\begin{equation}E[X|Y]=EX,\end{equation}$$
 
-$\begin{equation}E[g(X)|Y]=E[g(X)],\end{equation}$
+$$\begin{equation}E[g(X)|Y]=E[g(X)],\end{equation}$$
 
-$\begin{equation}E[XY]=EXEY,\end{equation}$
+$$\begin{equation}E[XY]=EXEY,\end{equation}$$
 
-$\begin{equation}E[g(X)h(Y)]=E[g(X)]E[h(Y)].\end{equation}$
+$$\begin{equation}E[g(X)h(Y)]=E[g(X)]E[h(Y)].\end{equation}$$
 
 ### Wzory wariancja
 
 Dla niezależnych zmiennych losowych $X$ oraz $Y$:
 
-$\begin{equation}Var\left(\sum\limits_{i=1}^nX_i \right) = \sum\limits_{i=1}^n Var(X_i),\end{equation}$
+$$\begin{equation}Var\left(\sum\limits_{i=1}^nX_i \right) = \sum\limits_{i=1}^n Var(X_i),\end{equation}$$
 
-$\begin{equation}Var(X|Y) = Var(X).\end{equation}$
+$$\begin{equation}Var(X|Y) = Var(X).\end{equation}$$
 
 ### Warunkowa wariancja
 
@@ -191,11 +191,11 @@ Niech $μ_{X|Y}(y)=E[X|Y=y]$:
 
 $$Var(X|Y=y)=E[(X−μ_{X|Y}(y))^2|Y=y]=\sum\limits_i (x_i−μ_{X|Y}(y))^2 P_{X|Y}(x_i)$$
 
-$\begin{equation} = E[X^2|Y=y]−μ_{X|Y}(y)^2 = E[X^2|Y=y]−[E[X|Y=y]]^2.\end{equation}$
+$$\begin{equation} = E[X^2|Y=y]−μ_{X|Y}(y)^2 = E[X^2|Y=y]−[E[X|Y=y]]^2.\end{equation}$$
 
 ### Wariancja całkowita
 
-$\begin{equation}Var(X)=E[Var(X|Y)]+Var(E[X|Y]).\end{equation}$
+$$\begin{equation}Var(X)=E[Var(X|Y)]+Var(E[X|Y]).\end{equation}$$
 
 # Zadania
 
