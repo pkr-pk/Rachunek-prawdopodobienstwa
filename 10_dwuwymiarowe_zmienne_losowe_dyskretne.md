@@ -203,7 +203,7 @@ $$\begin{equation}Var(X)=E[Var(X|Y)]+Var(E[X|Y]).\end{equation}$$
 
 Rozkład łączny wektora losowego $(X, Y)$ podany jest w tabeli:
 
-|$y_k$/$x_n$|0|2|
+|$y_k$ \ $x_n$|0|2|
 |---|---|---|
 |-2|0.1|0.2|
 |0|0|0.2|
@@ -215,7 +215,7 @@ Rozwiązanie:
 
 Należy sumować odpowiednie wiersze i kolumny w tabelce:
 
-|$y_k$/$x_n$|0|2|$p_{.k}$|
+|$y_k$ \ $x_n$|0|2|$p_{.k}$|
 |---|---|---|---|
 |-2|0.1|0.2|0.3|
 |0|0|0.2|0.2|
@@ -501,7 +501,7 @@ $F_{XY}(x,y)=P(X≤x,Y≤y).$
 
 5) $(x, y) \in E$
 
-$F_{XY}(x, y) = 0$
+    $F_{XY}(x, y) = 0$
 
 Ostatecznie:
 
