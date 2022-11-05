@@ -670,7 +670,7 @@ $P_{X|Y}(X=1|−1 < Y < 2) = \frac{\frac{2}{13}}{\frac{8}{13}} = \frac{2}{8},$
 
 $P_{X|Y}(X=2|−1 < Y < 2) = \frac{\frac{1}{13}}{\frac{8}{13}} = \frac{1}{8},$
 
-$E[X|−1<Y<2] =  -2\cdot\frac{1}{8} -1\cdot\frac{2}{8}+0\cdot\frac{2}{8}+1\cdot\frac{2}{8}+2\cdot\frac{1}{8} = 0$
+$E[X|−1 < Y < 2] =  -2\cdot\frac{1}{8} -1\cdot\frac{2}{8}+0\cdot\frac{2}{8}+1\cdot\frac{2}{8}+2\cdot\frac{1}{8} = 0$
 
 c) 
 
