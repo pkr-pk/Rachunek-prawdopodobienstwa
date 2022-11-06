@@ -1,4 +1,4 @@
-# Funkcje charakterystyczna
+# Funkcje charakterystyczne
 
 Funkcją charakterystyczną zmiennej losowej $X$ nazywamy wartość oczekiwaną funkcji $e^{itX}$, gdzie $t$ jest zmienną rzeczywistą, a $i$ - tzw. jednostką urojoną; oznaczmy tę funkcję przez $\phi(t)$:
 

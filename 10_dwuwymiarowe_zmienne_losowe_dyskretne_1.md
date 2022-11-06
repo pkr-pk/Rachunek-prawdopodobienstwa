@@ -778,3 +778,154 @@ $E[X^2|Y=2]=1⋅\frac{1}{2}+4\frac{1}{4}+9⋅\frac{1}{4}=\frac{15}{4},$
 stąd:
 
 $Var(X)=E[X^2|Y=2]−(E[X|Y=2])^2=\frac{15}{4}−\frac{49}{16}=\frac{11}{16}.$
+
+### Zadanie 16
+
+Niech $X \sim Geo(p)$. Znajdź $EX$ poprzez warunkowanie wyniku pierwszego rzutu monetą.
+
+Rozwiązanie:
+
+$O$ - wyrzucenie orła,
+
+$R$ - wyrzucenie reszki.
+
+$P(O) = p.$
+
+Rzucamy monetą aż do momentu wyrzucenia orła. $X$ jest całkowitą liczbą rzutów.
+
+Stosuję:
+
+$EX=\sum\limits_i E[X|B_i]P(B_i).$
+
+$EX=E[X|O]P(O)+E[X|R]P(R)=pE[X|O]+(1−p)E[X|R]=p⋅1+(1−p)(EX+1).$
+
+W powyższym, $E[X|T]=EX + 1$, ponieważ rzuty są niezależne to jeżeli w pierwszym rzucie wypadnie reszka to w drugim rzucie zaczynamy eksperyment tak jakby od początku. Rozwiązując ze względu na $EX$ otrzymujemy:
+
+$EX=\frac{1}{p}.$
+
+### Zadanie 17
+
+Rzucamy monetą z prawdopodobieństwem wyrzucenia reszki $P(R) = p$. Rzucamy nieprzerwanie aż wyrzucimy dwie reszki pod rząd. Niech $X$ będzie zmienną losową opisującą całkowitą liczbę rzutów. Znajdź $EX$.
+
+Rozwiązanie
+
+Podobnie jak w poprzednim zadaniu, warunkowanie pierwszym rzutem:
+
+$\mu=EX=E[X|R]P(R)+E[X|O]P(O)=E[X|R]p+(1+\mu)(1−p).$
+
+$p\mu=pE[X|H]+(1−p)$
+
+Aby obliczyć $E[X|R]$ należy teraz warunkować drugim rzutem:
+
+$E[X|H]=E[X|HH]p+E[X|HT](1−p)=2p+(2+\mu)(1−p)=2+(1−p)\mu .$
+
+Ostatecznie:
+
+$\mu=EX=1+\frac{p}{p^2}.$
+
+### Zadanie 18
+
+Przypuśćmy, że liczbę klientów wizytujących restaurację w danym dniu opisuje zmienna losowa $N \sim Poisson(\lambda)$. Załóżmy, że każdy klient kupuje napój z prawdopodobieństwem $p$ niezależnie od innych klientów i niezależnie od wartości $N$. Niech $X$ będzie liczbą klientów, którzy kupili napój. Znajdź $EX$.
+
+Rozwiązanie:
+
+Zgodnie z treścią zadania wnioskujemy, że przy ustalonym $N=n$ zmienna losowa $X$ jest sumą $n$ niezależnych prób Bernoulliego z parametrem $p$. Stąd przy ustalonym $N=n$, zmienna losowa $X$ ma rozkład dwumianowy z parametrami $n$ i $p$. Możemy napisać:
+ 
+$X|N=n \sim Binomial(n,p).$
+
+Stąd:
+
+$P_{X|N}(k|n)={n\choose k}p^k(1−p)^{n−k}.$
+
+Czyli:
+
+$E[X|N=n]=np.$
+
+Stąd z prawa całkowitej wartości oczekiwanej mamy:
+
+$$E[X]=\sum\limits_{n=0}^\infty E[X|N=n]P_N(n)=
+\sum\limits_{n=0}^\infty npP_N(n)=
+p \sum\limits_{n=0}^\infty nP_N(n)=pE[N]=
+p\lambda .$$
+
+### Zadanie 19
+
+Dla dwóch zmiennych losowych dyskretnych $X$ i $Y$ pokaż, że $E[X+Y]=EX+EY$.
+
+Rozwiązanie:
+
+$E[X + Y]=$
+
+$=\sum\limits_i \sum\limits_k (x_i + y_k) P_{XY}(x_i, y_k)$
+
+$=\sum\limits_i \sum\limits_k x_i P_{XY}(x_i, y_k) + \sum\limits_i \sum\limits_k y_k P_{XY}(x_i, y_k)$
+
+$=\sum\limits_i x_i \sum\limits_k P_{XY}(x_i, y_k) + \sum\limits_k y_k \sum\limits_i P_{XY}(x_i, y_k)$
+
+$=\sum\limits_i x_i P_{X}(x_i) + \sum\limits_k y_k P_{Y}(y_k)$
+
+$=EX + EY$
+
+Powyżej korzystamy z wzoru na rozkład brzegowy.
+
+### Zadanie 20
+
+Niech zmienne losowe $X$ oraz $Y$ będą niezależne oraz niech pochodzą z rozkładu geometrycznego z parametrem $p$. Znaleźć funkcję prawdopodobieństwa zmiennej losowej $Z = X - Y$.
+
+Rozwiązanie:
+
+Najpierw wyznaczę punkty skokowe zmiennych $X$, $Y$ oraz $Z$:
+
+$W_X=W_Y=\mathbb{N}=\{1,2,3,\dots \},$ 
+
+stąd:
+
+$W_Z=\mathbb{Z}=\{\dots,−3,−2,−1,0,1,2,3,\dots \}.$
+
+Ponieważ $X,Y \sim Geometric(p),$ mamy:
+
+$P_X(k)=P_Y(k)=pq^{k−1}, \ \text{ dla } k=1,2,3,\dots ,$
+
+gdzie $q=1−p$. Dla każdego $k \in Z$ możemy napisać:
+
+$P_Z(k)=P(Z=k)=P(X−Y=k)=P(X=Y+k)= $
+
+$= \sum\limits_{j=1}^\infty P(X=Y+k|Y=j)P(Y=j)$
+
+$= \sum\limits_{j=1}^\infty P(X=j+k|Y=j)P(Y=j)$
+
+$= \sum\limits_{j=1}^\infty P(X=j+k)P(Y=j)$
+
+$= \sum\limits_{j=1}^\infty P_X(j+k)P_Y(j).$
+
+W powyższym korzystamy z prawdopodobieństwa całkowitego oraz niezależności zmiennych losowych.
+
+Dla $k > 0$:
+
+$P_Z(k) = \sum\limits_{j=1}^\infty P_X(j+k)P_Y(j)$
+
+$= \sum\limits_{j=1}^\infty pq^{j+k−1}pq^{j−1} = p^2q^k \sum\limits_{j=1}^\infty q^{2(j−1)}$
+
+$= p^2q^k \frac{1}{1−q^2} = \frac{p(1−p)^k}{2−p}.$
+
+Dla $k < 0$:
+
+$P_X(j+k)=0 \ \ \text{dla } j < -k+1$
+
+$P_Z(k) = \sum\limits_{j=1}^\infty P_X(j+k)P_Y(j)$
+
+$= \sum\limits_{j=-k+1}^\infty pq^{j+k−1}pq^{j−1} = p^2\sum\limits_{j=-k+1}^\infty q^{k+2(j−1)}$
+
+$= p^2[q^{−k}+q^{−k+2}+q^{−k+4}+\dots] = p^2q^{−k}[1+q^2+q^4+\dots]$
+
+$= \frac{p(1−p)^{-k}}{(2−p)}.$
+
+Ostatecznie:
+
+$$P_Z(k) = \begin{cases}
+\frac{p(1−p)^{|k|}}{(2−p)}      & \text{ dla } k \in \mathbb{Z}, \\
+0 & \text{poza tym}. \\
+\end{cases}$$
+
+
+
