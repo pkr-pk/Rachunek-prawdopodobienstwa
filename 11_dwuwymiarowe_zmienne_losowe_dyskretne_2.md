@@ -39,3 +39,41 @@ $E[Var(Y|N)] = E[NVar(X)] = ENVar(X),$
 ostatecznie:
 
 $Var(Y) = ENVar(X) + (EX)^2Var(N).$
+
+### Zadanie 26
+Zmienna losowa $(X, Y)$ ma funkcję prawdopodobieństwa daną tabelą:
+
+|$y_k$ \ $x_i$|0|1|
+|---|---|---|
+|-2|0.25|0.25|
+|0 |0.25|0.25|
+
+Znajdź funkcję prawdopodobieństwa zmiennej losowej:
+
+a) $Z = X + Y,$
+
+b) $Z = 2X^2Y.$
+
+Rozwiązanie:
+
+Punkty skokowe:
+
+$W_X = \{0, 1\},$
+
+$W_Y = \{-2, 0\}.$
+
+a) 
+
+$W_Z = \{-2, 0, -1, 1\}.$
+
+|$z_i$|-2  |-1  |0   |1   |
+|---|---|---|---|---|
+|$p_i$|0.25|0.25|0.25|0.25|
+
+b)
+
+$W_V = \{0, 0, -2, 0\} = \{-2, 0\}.$
+
+|$z_i$|-2  |0   |
+|---|---|---|
+|$p_i$|0.25|0.75|
