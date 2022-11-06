@@ -843,10 +843,7 @@ $E[X|N=n]=np.$
 
 Stąd z prawa całkowitej wartości oczekiwanej mamy:
 
-$$E[X]=\sum\limits_{n=0}^\infty E[X|N=n]P_N(n)=
-\sum\limits_{n=0}^\infty npP_N(n)=
-p \sum\limits_{n=0}^\infty nP_N(n)=pE[N]=
-p\lambda .$$
+$E[X]=\sum\limits_{n=0}^\infty E[X|N=n]P_N(n)=\sum\limits_{n=0}^\infty npP_N(n)=p \sum\limits_{n=0}^\infty nP_N(n)=pE[N]=p\lambda .$
 
 ### Zadanie 19
 
@@ -926,6 +923,293 @@ $$P_Z(k) = \begin{cases}
 \frac{p(1−p)^{|k|}}{(2−p)}      & \text{ dla } k \in \mathbb{Z}, \\
 0 & \text{poza tym}. \\
 \end{cases}$$
+
+### Zadanie 21
+
+Niech zmienne losowe $X$ oraz $Y$ będą niezależne oraz niech pochodzą z rozkładu geometrycznego z parametrem $p$. Niech $Z = \frac{X}{Y}$.
+
+a) Znajdź punkty skokowe zmiennej $Z$.
+
+b) Znajdź funkcję prawdopodobieństwa zmiennej $Z$.
+
+c) Oblicz $EZ$.
+
+Rozwiązanie
+
+a)
+
+$R_Z=\{\frac{m}{n}:m,n \in \mathbb{N}\}$
+
+b)
+
+$P_Z(\frac{m}{n})=\sum\limits_{k=1}^\infty P(X=mk,Y=nk)$
+
+$=\sum\limits_{k=1}^\infty P(X=mk)P(Y=nk)=\sum\limits_{k=1}^\infty pq^{mk−1}pq^{nk−1}$
+
+$=p^2q^{−2}\sum\limits_{k=1}^\infty q^{(m+n)k}=\frac{p^2 q^{m+n−2}}{1−q^{m+n}}$
+
+$=\frac{p^2(1−p)^{m+n−2}}{1−(1−p)^{m+n}}.$
+
+c)
+
+Dwa wzory użyte w obliczeniach:
+
+$\sum\limits_{k=1}^\infty kx^{k−1}= \frac{1}{(1−x)^2}, \ \text{dla } |x| < 1,$
+
+$\sum\limits_{k=1}^\infty \frac{x^k}{k} = −\ln(1−x), \ \text{dla } |x| < 1.$
+
+$E[XY]= \sum\limits_{n=1}^\infty \sum\limits_{m=1}^\infty mnP(X=m,Y=n)$
+
+$= \sum\limits_{n=1}^\infty \sum\limits_{m=1}^\infty \frac{m}{n} p^2 q^{m−1}q^{n−1} = \sum\limits_{n=1} \frac{1}{n} p^2 q^{n−1} \sum\limits_{m=1}^\infty mq^{m−1}$
+
+$=\sum\limits_{n=1} \frac{1}{n} p^2 q^{n−1} \frac{1}{(1−q)^2} = \sum\limits_{n=1} \frac{1}{n} q^{n−1}$
+
+$= \frac{1}{q} \sum\limits_{n=1} \frac{q^n}{n}= \frac{1}{1−p} ln{\frac{1}{p}}.$
+
+### Zadanie 22
+
+Rozważmy dwie zmienne losowe $X$ oraz $Y$ z łączną funkcją prawdopodobieństwa podaną w poniższej tabeli:
+
+|$x_i$ \ $y_k$|0|1|$p_{.k}$|
+|---|---|---|---|
+|0       |$\frac{1}{5}$|$\frac{2}{5}$|$\frac{3}{5}$|
+|1       |$\frac{2}{5}$|0            |$\frac{2}{5}$|
+|$p_{i.}$|$\frac{3}{5}$|$\frac{2}{5}$|1            |
+
+Niech $Z=E[X|Y]$.
+
+a) Znajdź brzegowe funkcje prawdopodobieństwa zmiennych $X$ i $Y$.
+
+b) Znajdź $P_{X|Y}(x|0)$ i $P_{X|Y}(x|1)$.
+
+c) Znajdź funkcję prawdopodobieństwa zmiennej $Z$.
+
+d) Znajdź $E[Z]$ oraz sprawdź, że $E[Z]=E[X]$. 
+
+e) Znajdź $Var(Z)$.
+
+Rozwiązanie:
+
+a)
+
+$P_X(X=0)=\frac{1}{5}+\frac{2}{5}=\frac{3}{5}$,
+
+$P_X(X=1)=\frac{2}{5}+0=\frac{2}{5}$,
+
+$P_Y(Y=0)=\frac{1}{5}+\frac{2}{5}=\frac{3}{5}$,
+
+$P_Y(Y=1)=\frac{2}{5}+0=\frac{2}{5}$.
+
+Czyli $X, Y \sim B(1, \frac{2}{5})$, rozkład zero-jedynkowy.
+
+b)
+
+$P_{X|Y}(0|0)=\frac{P_{XY}(X=0,Y=0)}{P_Y(Y=0)}=\frac{\frac{1}{5}}{\frac{3}{5}}=\frac{1}{3}$,
+
+$P_{X|Y}(1|0)=\frac{P_{XY}(X=1,Y=0)}{P_Y(Y=0)}=\frac{\frac{2}{5}}{\frac{3}{5}}=\frac{2}{3}$,
+
+Czyli $X|Y=0 \sim B(1, \frac{2}{3})$.
+
+$P_{X|Y}(0|1)=\frac{P_{XY}(X=0,Y=1)}{P_Y(Y=1)}=\frac{\frac{2}{5}}{\frac{2}{5}}=1$,
+
+$P_{X|Y}(1|1)=\frac{P_{XY}(X=1,Y=1)}{P_Y(Y=1)}=\frac{0}{\frac{2}{5}}=0$.
+
+Czyli $X|Y=1 \sim B(1, 0)$.
+
+c)
+
+$$Z=E[X|Y]=\begin{cases}
+E[X|Y=0] & \text{jeżeli } Y=0, \\
+E[X|Y=1] & \text{jeżeli } Y=1. \\
+\end{cases}$$
+
+$E[X|Y=0] = \sum\limits_i x_i P_{X|Y}(x_i|0) = 0 \cdot \frac{1}{3} + 1 \cdot \frac{2}{3} = \frac{2}{3}$,
+
+$E[X|Y=1] = \sum\limits_i x_i P_{X|Y}(x_i|1) = 0 \cdot 1 + 1 \cdot 0 = 0$.
+
+$P(Y=0)=\frac{3}{5}$,
+
+$P(Y=1)=\frac{2}{5}$.
+
+Stąd:
+
+$$Z=E[X|Y]=\begin{cases}
+\frac{2}{3} & \text{z prawdopodobieństwem } \frac{3}{5}, \\
+0           & \text{z prawdopodobieństwem } \frac{2}{5}, \\
+\end{cases}$$
+
+ostatecznie:
+
+$$P_Z(z)=\begin{cases}
+\frac{3}{5} & \text{dla } z = \frac{2}{3}, \\
+\frac{2}{5} & \text{dla } z = 0, \\
+0           & \text{dla pozostałych}. \\
+\end{cases}$$
+
+d)
+
+$E[Z]=\frac{2}{3}\cdot\frac{3}{5}+0\cdot\frac{2}{5} = \frac{2}{5}$,
+
+$E[X]=0 \cdot \frac{3}{5} + 1\cdot\frac{2}{5} = \frac{2}{5}$,
+
+$E[X] = E[Z] = E[E[X|Y]]$.
+
+e)
+
+$E[Z^2]=\frac{4}{9}⋅\frac{3}{5}+0⋅\frac{2}{5}=\frac{4}{15}$,
+
+$Var(Z) = \frac{4}{15} - \frac{4}{25} = \frac{8}{75}$.
+
+### Zadanie 23
+
+Niech $X$ i $Y$ będą dwoma zmiennymi losowymi a $g$ i $h$ będą dwoma funkcjami. Pokaż, że $E[g(X)h(Y)|X]=g(X)E[h(Y)|X]$.
+
+Rozwiązanie:
+
+Przy ustalonym $X=x$ mamy: 
+
+$E[g(X)h(Y)|X]=E[g(X)h(Y)|X=x]=E[g(x)h(Y)|X=x]=g(x)E[h(Y)|X=x]$
+
+W ogólności dla zmiennej losowej $X$ możemy zapisać:
+
+$E[g(X)h(Y)|X]=g(X)E[h(Y)|X]$.
+
+### Zadanie 24
+
+Niech zmienne losowe $X$, $Y$ oraz $Z=E[X|Y]$ będą takie jak w zadaniu nr 10. Niech ponadto $V=Var(X|Y)$.
+
+a) Znajdź funkcję prawdopodobieństwa zmiennej $V$.
+
+b) Znajdź $EV$.
+
+c) Sprawdź, że $Var(X)=E(V)+Var(Z)$.
+
+Rozwiązanie:
+
+Mamy:
+
+$X,Y ∼ B(1, \frac{2}{5})$,
+
+$X|Y=0∼B(1, \frac{2}{3})$,
+
+$X|Y=1∼B(1, 0)$,
+
+$Var(Z)=\frac{8}{75}$.
+
+a)
+
+$$V=Var[X|Y]=\begin{cases}
+Var[X|Y=0] & \text{jeżeli } Y=0, \\
+Var[X|Y=1] & \text{jeżeli } Y=1. \\
+\end{cases}$$
+
+$$V=Var[X|Y]=\begin{cases}
+Var[X|Y=0] & \text{z prawdopodobieństwem } \frac{3}{5}, \\
+Var[X|Y=1] & \text{z prawdopodobieństwem } \frac{2}{5}. \\
+\end{cases}$$
+
+Ponieważ $X|Y=0∼B(1, \frac{2}{3})$:
+
+$Var[X|Y=0] = \frac{2}{3}\cdot\frac{1}{3} = \frac{2}{9}$.
+
+Ponieważ $X|Y=1∼B(1, 0)$:
+
+$Var[X|Y=1] = 0\cdot1 = 0$.
+
+Stąd:
+
+$$V=Var[X|Y]=\begin{cases}
+\frac{2}{9} & \text{z prawdopodobieństwem } \frac{3}{5}, \\
+0           & \text{z prawdopodobieństwem } \frac{2}{5}, \\
+\end{cases}$$
+
+ostatecznie:
+
+$$P_V(v)=\begin{cases}
+\frac{3}{5} & \text{dla } v = \frac{2}{9}, \\
+\frac{2}{5} & \text{dla } v = 0, \\
+0           & \text{dla pozostałych}. \\
+\end{cases}$$
+
+b)
+
+$E[V]=\frac{2}{9}⋅\frac{3}{5}+0⋅\frac{2}{5}=\frac{2}{15}$
+
+c)
+
+$Var(X) = \frac{2}{5}\cdot \frac{3}{5} = \frac{6}{25},$
+
+$EV = \frac{2}{5},$
+
+$Var(Z) = \frac{8}{75},$
+
+stąd:
+
+$Var(X)=E(V)+Var(Z).$
+
+### Zadanie 25
+
+Niech $N$ będzie liczbą klientów wizytujących pewien sklep w danym dniu. Załóżmy, że znamy $EN$ oraz $Var(N)$. Niech $X_i$ będzie sumą pieniędzy jaką średnio wydaje i-ty klient w sklepie. Zakładamy, że $X_i$ są niezależne między sobą oraz są niezależne od $N$. Zmienne $X_i$ mają takie same wartości oczekiwane oraz takie same wariancje:
+
+$EX_i = EX,$
+
+$Var(X_i) = Var(X).$
+
+Niech:
+
+$Y = \sum\limits_{i=1}^N X_i,$
+
+znajdź $EY$ oraz $Var(Y).$
+
+Rozwiązanie:
+
+Aby znaleźć $EY$ nie można bezpośrednio skorzystać z liniowości wartości oczekiwanej ponieważ $N$ jest zmienną losową. Można natomiast przy ustalonym $N=n$ użyć liniowości aby znaleźć $E[Y|N=n]$:
+
+$EY = E[E[Y|N]]$
+
+$= E\left[E\left[\sum\limits_{i=1}^N X_i|N\right]\right] = E\left[\sum\limits_{i=1}^N E[X_i|N]\right]$
+
+$= E\left[\sum\limits_{i=1}^N EX_i\right] = E[NEX]$
+
+$= ENEX.$
+
+Do znalezienia wariancji użyjemy prawa całkowitej wariancji:
+
+$Var(Y) = E[Var(Y|N)] + Var(E[Y|N]) = E[Var(Y|N)] + Var(NEX) = E[Var(Y|N)] + (EX)^2Var(N).$
+
+Aby znaleźć $E(Var(Y|N))$ zauważmy, że przy ustalonym $N=n$, $Y$ jest sumą $n$ niezależnych zmiennych losowych. Dla $n$ niezależnych zmiennych losowych wariancja sumy jest równa sumie wariancji.
+
+$Var(Y|N) = Var\left(\sum\limits_{i=1}^N X_i|N)\right) = \sum\limits_{i=1}^N Var(X_i|N) = \sum\limits_{i=1}^N Var(X_i) = NVar(X),$
+
+stąd:
+
+$E[Var(Y|N)] = E[NVar(X)] = ENVar(X),$
+
+ostatecznie:
+
+$Var(Y) = ENVar(X) + (EX)^2Var(N).$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
