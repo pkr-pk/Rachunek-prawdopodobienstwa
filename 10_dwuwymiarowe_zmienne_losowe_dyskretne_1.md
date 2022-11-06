@@ -817,7 +817,7 @@ $p\mu=pE[X|H]+(1−p)$
 
 Aby obliczyć $E[X|R]$ należy teraz warunkować drugim rzutem:
 
-$E[X|H]=E[X|HH]p+E[X|HT](1−p)=2p+(2+\mu)(1−p)=2+(1−p)\mu .$
+$E[X | H]=E[X | HH]p + E[X | HT](1 - p) = 2p+(2+\mu)(1−p)=2+(1−p)\mu .$
 
 Ostatecznie:
 
