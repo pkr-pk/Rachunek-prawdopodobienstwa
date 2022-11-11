@@ -8,7 +8,7 @@ Niech $X$ oraz $Y$ będą zmiennymi losowymi określonymi niekoniecznie na tej s
 
 Dystrybuantą dwuwymiarowej zmiennej losowej $(X, Y)$ nazywamy funkcję $F$ zmiennych $x, y$, która dla każdej pary liczb rzeczywistych $(x, y) \in \mathbb{R^2}$ przyjmuje wartości równe prawdopodobieństwu zdarzenia polegającego na tym, że zmienna losowa $X$ przyjmuje wartość mniejszą od $x$ i zmienna losowa $Y$ przyjmuje wartość mniejszą od $y$:
 
-$$\begin{equation} F(x,y) = P(X<x, Y<y)\ \text{dla} \ (x, y) \in \mathbb{R^2}. \end{equation}$$
+$$\begin{equation} F(x,y) = P(X < x, Y < y)\ \text{dla} \ (x, y) \in \mathbb{R^2}. \end{equation}$$
 
 $F$ nazywamy także dystrybuantą łącznej zmiennej losowej $(X, Y)$.
 
@@ -167,7 +167,7 @@ $Cov\left(\sum\limits_{i=1}^m a_i X_i,\sum\limits_{j=1}^n b_jY_j\right)=\sum\lim
 
 **Całkowita kowariancja**:
 
-$$\begin{equation} Cov(X,Y) = E(cov(X, Y|Z)) + cov(E(X|Z), E(Y|Z))., \end{equation}$$
+$$\begin{equation} Cov(X,Y) = E(cov(X, Y|Z)) + cov(E(X|Z), E(Y|Z)). \end{equation}$$
 
 **Macierz kowariancji**:
 
@@ -214,7 +214,7 @@ $C = \frac{3}{4}$
 
 $P(0 < X < 0.5, \ 0 < Y < 1) = \frac{3}{4} \int\limits_{0}^{0.5} dx \int\limits_{0}^{1-x^2} dy = \frac{3}{4} \int\limits_{0}^{0.5} (1-x^2) dy = \frac{3}{4} [x-\frac{x^3}{3}]_0^{0.5} = \frac{11}{32}.$
 
-Aby obliczyć rozkłady brzegowe należy skorzystać z wzorów (18) i (20). W drugim przypadku należy pamiętać aby dobrze dobrać granice całkowania.
+Obliczę rozkłady brzegowe. W drugim przypadku należy pamiętać aby dobrze dobrać granice całkowania.
 
 $\frac{3}{4} \int\limits_{0}^{1-x^2} dy = \frac{3}{4} (1-x^2),$
 
