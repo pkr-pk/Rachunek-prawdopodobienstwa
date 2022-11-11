@@ -234,5 +234,127 @@ $$f_2(x) = \begin{cases}
 0                     & \text{dla pozostałych } y.
 \end{cases}$$
 
+### Zadanie 2
+
+Funkcja
+
+$$f(x, y) = \begin{cases}
+\frac{3}{8}(x^2y + y) & \text{dla } 0 < x < 1, \ 0 < y < 2, \\
+0                     & \text{poza tym,}
+\end{cases}$$
+
+jest gęstością pewnego wektora losowego $(X, Y)$. Wyznacz rozkłady brzegowe tego wektora losowego. Sprawdź, czy zmienne losowe $X$ i $Y$ są niezależne.
+
+Rozwiązanie:
+
+Rozkłady brzegowe:
+
+$\frac{3}{8} \int\limits_{0}^{1} (x^2y+y)dy = \frac{3}{8} [\frac{x^2y^2}{2} + \frac{y^2}{2}]_0^2 = \frac{3}{4}(x^2 + 1),$
+
+stąd:
+
+$$f_1(x) = \begin{cases}
+\frac{3}{4}(x^2 + 1) & \text{dla } 0 \le x \le 1, \\
+0                    & \text{dla pozostałych } x.
+\end{cases}$$
+
+$\frac{3}{8} \int\limits_{0}^{1} (x^2y+y)dy = \frac{3}{8} [\frac{x^3y}{3} + xy]_0^1 = \frac{y}{2},$
+
+stąd:
+
+$$f_2(x) = \begin{cases}
+\frac{y}{2} & \text{dla } 0 \le y \le 2, \\
+0           & \text{dla pozostałych } y.
+\end{cases}$$
+
+Niezależność:
+
+$f_1(x)f_2(y) = \frac{3}{4}(x^2 + 1) \cdot \frac{y}{2} = \frac{3}{8}(x^2y + y) = f(x, y).$
+
+Zmienne $X$ oraz $Y$ są więc niezależne.
+
+### Zadanie 3
+
+Dla jakiej stałej $A$ funkcja $g(y, z) = Ae^{-y-z}1_{(0, \infty)\times(0, \infty)}(y, z)$ jest gęstością prawdopodobieństwa pewnej zmiennej losowej $(Y, Z)$.
+
+Rozwiązanie:
+
+Mamy:
+
+$1 = A\int\limits_0^\infty\int\limits_0^\infty e^{-y-z}dzdy = -A\int\limits_0^\infty e^{-y-z}\bigr|_0^\infty dy = A\int\limits_0^\infty e^{-y} dy = -A e^{-y}\bigr|_0^\infty = A,$
+
+stąd:
+
+ $A = 1.$
+
+### Zadanie 4
+
+Dla zmiennej losowej z poprzedniego zadania:
+
+a) oblicz $P(1 < Y < 2, 1 < Z < 2), P(Y+Z > 2), P(Z > 3|Y > 1)$,
+
+b) znajdź dystrybuantę dwuwymiarową i dystrybuanty brzegowe.
+
+c) Czy zmienne $Y, Z$ są niezależne?
+
+Rozwiązanie:
+
+a)
+
+$P(1 < Y < 2, 1 < Z < 2) = \int\limits_1^2 \int\limits_1^2 e^{-y-z}dzdy = \int\limits_1^2 \left(-e^{-y-z}\right)\bigr|_1^2 dy$
+
+$= \int\limits_1^2 \left(-e^{-y-2} -e^{-y-1}\right) dy = \left(e^{-y-2} -e^{-y-1}\right)\bigr|_1^2$
+
+$= \left(e^{-4} -e^{-3}\right) - \left(e^{-3} -e^{-2}\right) = e^{-4} + e^{-2}$
+
+$P(Y+Z > 2) = 1 - P(Y+Z < 2) = 1 - P(Z < 2-Y) = 1 - \int\limits_0^2 \int\limits_0^{2-y} e^{-y-z}dzdy$
+
+$= 1 + \int\limits_0^2 e^{-y-z}\bigr|_0^{2-y} dy = 1 + \int\limits_0^2 e^{-y-2+y} -e^{-y} dy$
+
+$= 1 + \int\limits_0^2 e^{-2} -e^{-y} dy = 1 + \left[ye^{-2} + e^{-y} \right]_0^2$
+
+$= 1 + \left[2e^{-2} + e^{-y} - 1\right] = 3e^{-2}$
+
+$P(Z > 3|Y > 1) = \frac{P(Z > 3,Y > 1)}{P(Y > 1)} = \frac{\int\limits_1^\infty \int\limits_3^\infty e^{-y-z}dzdy}{\int\limits_1^\infty \int\limits_0^\infty e^{-y-z}dzdy} = e^{-3}$
+
+b)
+
+Dystrybuanta dwuwymiarowa; korzystam z wzoru nr (14):
+
+$F(y, z) = \int\limits_0^y \int\limits_0^z e^{-u-v}dvdu = e^{-y-z}-e^{-y}-e^{-z}+1.$
+
+Dystrybuanty brzegowe:
+
+$F_1(y) = \int\limits_0^y \int\limits_0^\infty e^{-u-z}dzdu = 1 - e^{-y},$
+
+$F_2(z) = \int\limits_0^z \int\limits_0^\infty e^{-y-v}dydv = 1 - e^{-z}.$
+
+c)
+
+Zmienne są niezależne bo $F(y, z) = F_1(y)F_2(z)$
+
+### Zadanie 5
+
+Zmienna losowa $(X, Y)$ ma łączną gęstość prawdopodobieństwa:
+
+$$f(x, y) = \begin{cases}
+x + y & \text{dla } (x, y) \in [0, 1] \times [0, 1], \\
+0     & \text{poza tym,}
+\end{cases}$$
+
+oblicz $P(X \le 0.8, Y > 0.25)$.
+
+Rozwiązanie:
+
+$P(X \le 0.8, Y > 0.25) = \int\limits_{0.25}^1 \left[ \int\limits_{0}^1 (x+y)dx \right]dy$
+
+$= \int\limits_{0.25}^1 \left[ \frac{x^2}{2} + xy \right]_{x=0}^{x=0.8}dy = \int\limits_{0.25}^1 \left( \frac{0.8^2}{2} + 0.8y \right)dy$ 
+
+$= \left[ \frac{0.8^2}{2}y + 0.8\frac{y^2}{2} \right]_{x=0.25}^{x=1} = 0.615$
+
+
+
+
+
 
 
