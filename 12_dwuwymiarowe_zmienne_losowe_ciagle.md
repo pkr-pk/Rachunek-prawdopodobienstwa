@@ -346,11 +346,11 @@ oblicz $P(X \le 0.8, Y > 0.25)$.
 
 Rozwiązanie:
 
-$P(X \le 0.8, Y > 0.25) = \int\limits_{0.25}^1 \left[ \int\limits_{0}^1 (x+y)dx \right]dy$
+$$P(X \le 0.8, Y > 0.25) = \int\limits_{0.25}^1 \left[ \int\limits_{0}^1 (x+y)dx \right]dy$$
 
-$= \int\limits_{0.25}^1 \left[ \frac{x^2}{2} + xy \right]_{x=0}^{x=0.8}dy = \int\limits_{0.25}^1 \left( \frac{0.8^2}{2} + 0.8y \right)dy$ 
+$$= \int\limits_{0.25}^1 \left[ \frac{x^2}{2} + xy \right]_{x=0}^{x=0.8}dy = \int\limits_{0.25}^1 \left( \frac{0.8^2}{2} + 0.8y \right)dy$$
 
-$= \left[ \frac{0.8^2}{2}y + 0.8\frac{y^2}{2} \right]_{x=0.25}^{x=1} = 0.615$
+$$= \left[ \frac{0.8^2}{2}y + 0.8\frac{y^2}{2} \right]_{x=0.25}^{x=1} = 0.615$$
 
 
 
