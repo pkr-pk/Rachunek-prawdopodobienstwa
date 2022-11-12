@@ -77,3 +77,60 @@ $W_V = \{0, 0, -2, 0\} = \{-2, 0\}.$
 |$z_i$|-2  |0   |
 |---|---|---|
 |$p_i$|0.25|0.75|
+
+### Zadanie 27
+
+Niech zmienna losowa $(X,Y)$ oznacza wygrane (w tysiącach zł) w dwu etapach teleturnieju przez losowo wybranego uczestnika konkursu. Funkcję prawdopodobieństwa zmiennej $(X,Y)$ przedstawia tabela:
+
+|$y_k$ \ $x_i$|0|5|10|$p_{.k}$|
+|---|---|---|---|---|
+|0       |0.5|0   |0   |0   |
+|1       |0.3|0.02|0.01|0.01|
+|3       |0.1|0.05|0.02|0.01|
+|$p_{i.}$|0.9|0.07|0.03|1   |
+
+Zmienna losowa $Z = X + Y$ jest łączną wygraną. Oblicz:
+
+a) wartość oczekiwaną łącznej wygranej,
+
+b) $Cov(X, Y)$,
+
+c) $Var(Z)$.
+
+Rozwiązanie:
+
+a)
+
+Punkty skokowe:
+
+$W_X = \{0, 5, 10\},$
+
+$W_Y = \{0, 1, 3\}$
+
+$W_Z = \{0, 1, 3, 5, 6, 8, 10, 11, 13\}$
+
+$E(Z) = E(X + Y) = 0.3 + 3\cdot0.1 + 6\cdot0.2 + 8\cdot0.05 + 11\cdot0.01   + 13\cdot0.02 = 2.57.$
+
+b)
+
+$E(XY) = 5\cdot0.02 + 10\cdot0.01 + 15\cdot0.05 + 30\cdot0.02 = 1.55,$
+
+$E(X) = 0.33 + 3\cdot0.17 = 0.84,$
+
+$E(Y) = 5\cdot0.07 + 10\cdot0.03 = 0.65,$
+
+$Cov(X,Y) = 1.55 - 0.84\cdot0.65 = 1.004.$
+
+c)
+
+$Var(Z) = Var(X+Y) = Var(X) + Var(Y) + 2Cov(X,Y)$
+
+$E(X^2) = 0.33 + 9\cdot0.17 = 1.86,$
+
+$E(Y^2) = 25\cdot0.07 + 100\cdot0.03 = 4.75,$
+
+$Var(X) = 1.86 - 0.84^2 = 1.1544,$
+
+$Var(Y) = 4.75 - 0.65^2 = 4.3275,$
+
+$Var(Z) = 1.1544 + 4.3275 + 2\cdot1.004 = 7.4899.$

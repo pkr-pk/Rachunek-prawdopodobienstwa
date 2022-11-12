@@ -502,8 +502,127 @@ x^2    & C=\{(x,y): 0\le x<1  \wedge y\ge 1\}, \\
 1      & D=\{(x,y): x\ge1  \wedge y\ge 1\}, \\
 \end{cases}$$
 
+### Zadanie 11
 
+Zmienna losowa $(X, Y)$ ma rozkład jednostajny w kole $x^2+y^2\le4$. Czy $X$, $Y$ są niezależne?
 
+Rozwiązanie:
+
+Zmienna losowa ma rozkład jednostajny więc jej gęstość to 1 nad pole obszaru całkowania. Obszar całkowania to koło, pole koła to:
+
+$P_k = \pi r^2 = 4\pi$,
+
+stąd:
+
+$$f(x, y) = \begin{cases}
+\frac{1}{4\pi} & \text{dla } x^2+y^2\le 4, \\
+0              & \text{poza tym,}
+\end{cases}$$
+
+Obliczam gęstości brzegowe:
+
+$f_X(x) = \frac{1}{4\pi}\int\limits_{-\sqrt{4-x^2}}^{\sqrt{4-x^2}} dy = \frac{\sqrt{4-x^2}}{2\pi}$
+
+$f_Y(y) = \frac{1}{4\pi}\int\limits_{-\sqrt{4-y^2}}^{\sqrt{4-y^2}} dx = \frac{\sqrt{4-y^2}}{2\pi}$
+
+$f_X(x)f_Y(y)\ne f(x, y)$
+
+więc zmienne nie są niezależne.
+
+### Zadanie 12
+
+Zmienna losowa $(X,Y)$ ma rozkład jednostajny na zbiorze $D=\{(x,y): x \ge 0, y \ge 0, x + y \le 1\}$. Oblicz:
+
+a) $Cov(X, Y)$,
+
+b) współczynnik korelacji $\rho$.
+
+Rozwiązanie:
+
+Przedstawiony zbiór to trójkąt o polu powierzchni $\frac{1}{2}$. Stąd gęstość prawdopodobieństwa to:
+
+$$f(x, y) = \begin{cases}
+\frac{1}{\frac{1}{2}} = 2 & \text{dla } x \ge 0, y \ge 0, x + y \le 1, \\
+0                         & \text{poza tym}.
+\end{cases}$$
+
+a)
+
+$Cov(XY) = EXY - EXEY,$
+
+$EXY = \int\limits_0^1 \left[\int\limits_0^{1-x} xy dy\right] dx = \frac{1}{12},$
+
+$EX = \int\limits_0^1 \left[\int\limits_0^{1-x} x dy\right] dx = \frac{1}{3},$
+
+$EY = \int\limits_0^1 \left[\int\limits_0^{1-x} y dy\right] dx = \frac{1}{3},$
+
+$Cov(XY) = \frac{1}{12} - \frac{1}{3} \cdot \frac{1}{3} = -\frac{1}{36}.$
+
+b)
+
+$\rho(X,Y) = \frac{cov(X,Y)}{\sqrt{D^2(X)D^2(Y)}},$
+
+$EX^2 = \int\limits_0^1 \left[\int\limits_0^{1-x} x^2 dy\right] dx = \frac{1}{6},$
+
+$EY^2 = \int\limits_0^1 \left[\int\limits_0^{1-x} y^2 dy\right] dx = \frac{1}{6},$
+
+$Var(X) = \frac{1}{6} - \frac{1}{9} = \frac{1}{18},$
+
+$Var(Y) = \frac{1}{6} - \frac{1}{9} = \frac{1}{18},$
+
+$\rho(X,Y) = \frac{-\frac{1}{36}}{\frac{1}{18}} = -\frac{1}{2}.$
+
+### Zadanie 13
+
+Zmienne losowe $X_1, X_2,...,X_n$ oznaczają wartości strat wygenerowanych w ciągu tego samego okresu przez $n$ niezależnych polis ubezpieczeniowych. Można założyć, że $X_i$ mają rozkłady wykładnicze o wartościach średnich 500 (zł). Oblicz wartość średnią i wariancję łącznej straty z tych polis.
+
+Rozwiązanie:
+
+Oznaczę:
+
+$Z = X_1 + X_2+...+X_n$.
+
+Ponieważ zmienne losowe są niezależne:
+
+$EZ = E(X_1 + X_2+\ldots+X_n) = EX_1 + EX_2+\ldots+EX_n = nEX_i = 500n$
+
+$VarZ = Var(X_1 + X_2+\ldots+X_n) = VarX_1 + VarX_2+\ldots+VarX_n = nVarX_i = 2500n$
+
+Inna metoda: 
+
+Suma $n$ zmiennych losowych z rozkładu wykładniczego ma rozkład $Gamma(n, \lambda)$
+
+Wartość oczekiwana w rozkładzie gamma to: $\frac{n}{\lambda} = 500n$.
+
+Wariancja w rozkładzie gamma to $\frac{n}{\lambda^2} = 2500n.$
+
+### Zadanie 14
+
+Oblicz współczynnik korelacji między zmiennymi losowymi $X$, $Y$, jeśli wiadomo, że $Var(X + Y) = 5$, $Var(X - 2Y) = 2$, $Var(Y) = 1$.
+
+Rozwiązanie:
+
+Skorzystam ze wzoru:
+
+$Var(aX + bY) = a^2Var(X) + b^2Var(Y) + 2abCov(X, Y)$
+
+$5 = Var(X + Y) = Var(X) + Var(Y) + 2Cov(X, Y),$
+
+$2 = Var(X - 2Y) = Var(X) + 4Var(Y) - 4Cov(X, Y),$
+
+$5 = Var(X) + 1 + 2Cov(X, Y),$
+
+$2 = Var(X) + 4 - 4Cov(X, Y),$
+
+odejmuję stronami:
+
+$3 = -3 + 6Cov(X, Y)$
+
+$Cov(X,Y) = 1$
+
+$Var(X) = 4Cov(X, Y) - 2 = 2 $
+
+$\rho = \frac{1}{\sqrt{2}}$
 
 
 
