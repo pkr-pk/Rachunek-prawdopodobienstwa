@@ -372,7 +372,7 @@ $P(X < Y) = \int\limits_{0}^1 \left[ \int\limits_{0}^y dx \right]dy = \int\limit
 Niech: 
 
 $$f(x, y) = \begin{cases}
-Cx^2 & \text{dla $-1 \le x \le 1, \ \ \ 0 \le y \le x^2$}, \\
+Cx^2 & \text{dla } -1 \le x \le 1, \ 0 \le y \le x^2, \\
 0 & \text{poza tym,}
 \end{cases}$$
 
@@ -380,7 +380,7 @@ Dla jakiej wartości $C$ funkcja $f$ jest gęstością prawdopodobieństwa?
 
 Rozwiązanie:
 
-$1 = C\int\limits_{-1}^1 \left[ \int\limits_0^{x^2} x^2 dy\right]dx = C\int\limits_{-1}^1 \left[ yx^2 \right]_{y=0}^{y=x^2} dx = C\int\limits_{-1}^1 x^4 dx = C \frac{x^5}{5}|_{-1}^1 = \frac{2C}{5},$
+$$1 = C\int\limits_{-1}^1 \left[ \int\limits_0^{x^2} x^2 dy\right]dx = C\int\limits_{-1}^1 \left[ yx^2 \right]_{y=0}^{y=x^2} dx = C\int\limits_{-1}^1 x^4 dx = C \frac{x^5}{5}|_{-1}^1 = \frac{2C}{5},$$
 
 $C = \frac{5}{2}$
 
