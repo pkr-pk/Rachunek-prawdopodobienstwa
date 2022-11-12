@@ -38,21 +38,21 @@ funkcję $f$ nazywamy gęstością rozkładu prawdopodobieństwa.
 
 Własności dwuwymiarowej zmiennej losowej typu ciągłego:
 
-1)
-
-$$\begin{equation} \int\limits_{-\infty}^\infty \int\limits_{-\infty}^\infty f(x, y) dydx = 1, \end{equation}$$
+1) Mamy:
+    
+    $$\begin{equation} \int\limits_{-\infty}^\infty \int\limits_{-\infty}^\infty f(x, y) dydx = 1, \end{equation}$$
 
 2) w punktach $(x, y)$ ciągłości $f$ mamy:
 
-$$\begin{equation} \frac{\partial^2F(x, y)}{\partial x \partial y} = f(x, y), \end{equation}$$
+    $$\begin{equation} \frac{\partial^2F(x, y)}{\partial x \partial y} = f(x, y), \end{equation}$$
 
 3) dla obszaru regularnego $B \subset \mathbb{R^2}$:
 
-$$\begin{equation} P[(X, Y) \in B] = \iint\limits_{B} f(x,y)dxdy, \end{equation}$$ 
+    $$\begin{equation} P[(X, Y) \in B] = \iint\limits_{B} f(x,y)dxdy, \end{equation}$$ 
 
-w szczególności gdy $B$ jest prostokątem, tzn. $B = \{(x, y): a \le x \le b \land c \le y \le d\}$, wtedy:
+    w szczególności gdy $B$ jest prostokątem, tzn. $B = \{(x, y): a \le x \le b \land c \le y \le d\}$, wtedy:
 
-$$\begin{equation} P(a \le X \le b \land c \le Y \le d) = \int\limits_a^b \int\limits_c^d f(x, y) dydx. \end{equation}$$
+    $$\begin{equation} P(a \le X \le b \land c \le Y \le d) = \int\limits_a^b \int\limits_c^d f(x, y) dydx. \end{equation}$$
 
 ### Rozkład brzegowy
 
@@ -107,25 +107,25 @@ $$\begin{equation} F_{Y|X}(y|x) = \int\limits_{-\infty}^y f_{Y|X}(v|x)dv = \frac
 
 1) Warunkiem koniecznym i wystarczającym na to, by $X$ i $Y$ były niezależnymi zmiennymi losowymi jest, by dla każdego $(x,y) \in \mathbb{R^2}$ dystrybuanta $F$ dwuwymiarowej zmiennej losowej $(X,Y)$ była iloczynem dystrybuant rozkładów brzegowych $F_X$ i $F_Y$:
 
-$$\begin{equation} F(x,y) = F_X(x)F_Y(y). \end{equation}$$
+    $$\begin{equation} F(x,y) = F_X(x)F_Y(y). \end{equation}$$
 
 2) Warunkiem koniecznym i wystarczającym niezależności zmiennych losowych ciągłych $X, Y$ o gęstościach odpowiednio równych $f_X, f_Y$ jest zachodzenie równości: 
 
-$$\begin{equation} f(x,y) = f_X(x)f_Y(y) \ \ \text{dla} \ \ x, y \in\mathbb{R}, \end{equation}$$
+    $$\begin{equation} f(x,y) = f_X(x)f_Y(y) \ \ \text{dla} \ \ x, y \in\mathbb{R}, \end{equation}$$
 
-gdzie $f$ jest gęstością dwuwymiarowej zmiennej losowej $(X,Y)$.
+    gdzie $f$ jest gęstością dwuwymiarowej zmiennej losowej $(X,Y)$.
 
-Zmienne losowe $X$ i $Y$ typu skokowego są niezależne wtedy i tylko wtedy, gdy
+    Zmienne losowe $X$ i $Y$ typu skokowego są niezależne wtedy i tylko wtedy, gdy
 
-$$\begin{equation} P(X=x_i, Y=y_k) = P(X=x_i)P(Y=y_k) \ \ \text{dla} \ \ i,k\in\mathbb{N}, \end{equation}$$
+    $$\begin{equation} P(X=x_i, Y=y_k) = P(X=x_i)P(Y=y_k) \ \ \text{dla} \ \ i,k\in\mathbb{N}, \end{equation}$$
 
-czyli:
+    czyli:
 
-$$\begin{equation} p_{ik} = p_{i.}p_{.k} \ \ \text{dla} \ \ i,k\in\mathbb{N}. \end{equation}$$
+    $$\begin{equation} p_{ik} = p_{i.}p_{.k} \ \ \text{dla} \ \ i,k\in\mathbb{N}. \end{equation}$$
 
 3) $X$ i $Y$ są niezależnymi zmiennymi losowymi wtedy i tylko wtedy, gdy rozkłady warunkowe są równe odpowiednim rozkładom brzegowym, co można zapisać np. tak:
 
-$$\begin{equation} F(y|x) = F_Y(y), \ \ \ F(x|y)=F_X(x). \end{equation}$$
+    $$\begin{equation} F(y|x) = F_Y(y), \ \ \ F(x|y)=F_X(x). \end{equation}$$
 
 ### Charakterystyki liczbowe dwuwymiarowej zmiennej losowej
 
@@ -351,6 +351,156 @@ $$P(X \le 0.8, Y > 0.25) = \int\limits_{0.25}^1 \left[ \int\limits_{0}^1 (x+y)dx
 $$= \int\limits_{0.25}^1 \left[ \frac{x^2}{2} + xy \right]_{x=0}^{x=0.8}dy = \int\limits_{0.25}^1 \left( \frac{0.8^2}{2} + 0.8y \right)dy$$
 
 $$= \left[ \frac{0.8^2}{2}y + 0.8\frac{y^2}{2} \right]_{x=0.25}^{x=1} = 0.615$$
+
+### Zadanie 6
+
+Niech $(X, Y)$ oznacza parę liczb pseudolosowych wygenerowanych przez generator rozkładu jednostajnego. Wówczas gęstość:
+
+$$f(x, y) = \begin{cases}
+1 & \text{dla $(x, y) \in [0, 1]$}, \\
+0 & \text{poza tym,}
+\end{cases}$$
+
+oblicz $P(X < Y)$.
+
+Rozwiązanie:
+
+$P(X < Y) = \int\limits_{0}^1 \left[ \int\limits_{0}^y dx \right]dy = \int\limits_{0}^1 y dy =\frac{1}{2}.$
+
+### Zadanie 7
+
+Niech: 
+
+$$f(x, y) = \begin{cases}
+Cx^2 & \text{dla $-1 \le x \le 1, \ \ \ 0 \le y \le x^2$}, \\
+0 & \text{poza tym,}
+\end{cases}$$
+
+Dla jakiej wartości $C$ funkcja $f$ jest gęstością prawdopodobieństwa?
+
+Rozwiązanie:
+
+$1 = C\int\limits_{-1}^1 \left[ \int\limits_0^{x^2} x^2 dy\right]dx = C\int\limits_{-1}^1 \left[ yx^2 \right]_{y=0}^{y=x^2} dx = C\int\limits_{-1}^1 x^4 dx = C \frac{x^5}{5}|_{-1}^1 = \frac{2C}{5},$
+
+$C = \frac{5}{2}$
+
+### Zadanie 8
+
+Gęstość $f$ ma postać:
+
+$$f(x, y) = \begin{cases}
+Cx(x+y) & \text{dla } x,y \ge 0, \ \ \ y \le 1 - x, \\
+0       & \text{poza tym,}
+\end{cases}$$
+
+oblicz $P(X\le\frac{1}{2})$.
+
+Rozwiązanie:
+
+$1 = C\int\limits_0^1 \left[ \int\limits_0^{1-x} x(x+y) dy\right]dx$
+
+$= C\int\limits_0^1 \left[ yx^2 +\frac{xy^2}{2} \right]_{y=0}^{y=1-x}dx = C\int\limits_0^1 \left[ (1-x)x^2 +\frac{x}{2}(1-x)^2 \right] dx$
+
+$=C\int\limits_0^1 \left[ x^2-x^3 + \frac{x}{2}-x^2+\frac{x^3}{2} \right] dx = C\int\limits_0^1 \left[ \frac{x}{2}-\frac{x^3}{2} \right] dx$
+
+$= C \left[ \frac{x^2}{4}-\frac{x^4}{8} \right]_0^1 = \frac{1}{8} C$
+
+$C = 8$
+
+$P(X \le \frac{1}{2}) = 8\int\limits_0^{0.5} \left[ \int\limits_0^{1-x} x(x+y) dy\right]dx = 8\left[ \frac{x^2}{4}-\frac{x^4}{8} \right]_0^{0.5} = 8[\frac{1}{16} - \frac{1}{128}] = \frac{7}{16}$
+
+### Zadanie 9
+Dwuwymiarowa zmienna losowa $(X, Y)$ ma gęstość:
+
+$$f(x, y) = \begin{cases}
+\frac{3}{8}(x+y)^2 & \text{dla } (x,y) \in [-1,1]\times[-1,1], \\
+0                  & \text{poza tym,}
+\end{cases}$$
+
+a) Wyznacz gęstości brzegowe.
+
+b) Czy zmienne losowe są niezależne?
+
+Rozwiązanie:
+
+a)
+
+$f_X(x) = \frac{3}{8}\int\limits_{-1}^1 (x-y)^2 dy$
+
+$= \frac{3}{8}\int\limits_{-1}^1 (x^2-2xy+y^2) dy = \frac{3}{8}\left[x^2y-xy^2+\frac{y^3}{3}\right]_{y=-1}^{y=1}$
+
+$= \frac{3}{8}\left[x^2-x+\frac{1}{3} +x^2+x+\frac{1}{3}\right] = \frac{3}{8}\left[2x^2+\frac{2}{3}\right]$
+
+$= \frac{3}{4}\left[x^2+\frac{1}{3}\right]$
+
+$f_Y(y) = \frac{3}{4}\left[y^2+\frac{1}{3}\right]$
+
+b)
+
+Zmienne losowe nie są niezależne bo:
+
+$f_X(x)f_Y(y) \ne f(x, y)$
+
+### Zadanie 10
+
+Zmienna losowa $(X, Y)$ ma gęstość:
+
+$$f(x, y) = \begin{cases}
+Cxy & \text{dla } 0 < x < 1, \ 0 < y < 1, \\
+0   & \text{poza tym,}
+\end{cases}$$
+
+znajdź:
+
+a) $C$,
+
+b) $P(X^2 < Y < X)$,
+
+c) Dystrybuantę $F$ zmiennej losowej $(X,Y)$.
+
+Rozwiązanie:
+
+a)
+
+$1 = C \int\limits_0^1 \left[\int\limits_0^1 xy  dy\right]dx = C \int\limits_0^1 x\left[\frac{y^2}{2}\right]_0^1dx = \frac{C}{2} \int\limits_0^1 xdx = \frac{C}{4}$
+
+$C = 4$
+
+b)
+
+$P(X^2 < Y < X) = 4 \int\limits_0^1 \left[\int\limits_{x^2}^x xy  dy\right]dx = 2 \int\limits_0^1 \left[x^3 - x^5\right]dx = \frac{1}{6}$
+
+c)
+
+1) $(x, y) \in A$
+
+    $F(x, y) = 4\int\limits_0^x\left[ \int\limits_0^y uv dv\right]du = x^2y^2$
+
+2) $(x, y) \in B$
+
+    $F(x, y) = 4\int\limits_0^1\left[ \int\limits_0^y uv dv\right]du = y^2$
+
+3) $(x, y) \in C$
+
+    $F(x, y) = 4\int\limits_0^x\left[ \int\limits_0^1 uv dv\right]du = x^2$
+
+4) $(x, y) \in D$
+
+    $F(x, y) = 4\int\limits_0^1\left[ \int\limits_0^1 uv dv\right]du = 1$
+
+5) $(x, y) \in E$
+
+    $F(x, y) = 0$
+
+Ostatecznie:
+
+$$F_{XY}(x, y) = \begin{cases}
+0      & E=\{(x,y): x<0 \vee y<0\}, \\
+x^2y^2 & A=\{(x,y): 0\le x<1  \wedge 0\le y<1\}, \\
+y^2    & B=\{(x,y): x\ge1  \wedge 0\le y<1\}, \\
+x^2    & C=\{(x,y): 0\le x<1  \wedge y\ge 1\}, \\
+1      & D=\{(x,y): x\ge1  \wedge y\ge 1\}, \\
+\end{cases}$$
 
 
 
