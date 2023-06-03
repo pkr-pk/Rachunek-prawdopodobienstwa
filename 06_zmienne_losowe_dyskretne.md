@@ -590,11 +590,11 @@ Druga metoda to:
 
 $\Omega = {6 \choose 3} = 20,$
 
-$P(X = 1) = \frac{{4 \choose 1} \cdot {2 \choose 2}}{20} = \frac{1}{5},$
+$P(X = 1) = \frac{ {4 \choose 1} \cdot {2 \choose 2} }{20} = \frac{1}{5},$
 
-$P(X = 2) = \frac{{4 \choose 2} \cdot {2 \choose 1}}{20} = \frac{3}{5},$
+$P(X = 2) = \frac{ {4 \choose 2} \cdot {2 \choose 1} }{20} = \frac{3}{5},$
 
-$P(X = 3) = \frac{{4 \choose 3} \cdot {2 \choose 0}}{20} = \frac{1}{5}.$
+$P(X = 3) = \frac{ {4 \choose 3} \cdot {2 \choose 0} }{20} = \frac{1}{5}.$
 
 $E(X) = \frac{1}{5} + 2\cdot\frac{3}{5} +  3\cdot\frac{1}{5}= 2,$
 
@@ -609,16 +609,16 @@ Rozwiązanie:
 
 $|\Omega| = {8 \choose 3} = 56,$
 
-$P(X = 0) = \frac{{5 \choose 0} \cdot {3 \choose 3}}{56} = \frac{1}{56},$
+$P(X = 0) = \frac{ {5 \choose 0} \cdot {3 \choose 3} }{56} = \frac{1}{56},$
 
-$P(X = 1) = \frac{{5 \choose 1} \cdot {3 \choose 2}}{56} = \frac{15}{56},$
+$P(X = 1) = \frac{ {5 \choose 1} \cdot {3 \choose 2} }{56} = \frac{15}{56},$
 
-$P(X = 2) = \frac{{5 \choose 2} \cdot {3 \choose 1}}{56} = \frac{30}{56},$
+$P(X = 2) = \frac{ {5 \choose 2} \cdot {3 \choose 1} }{56} = \frac{30}{56},$
 
-$P(X = 3) = \frac{{5 \choose 3} \cdot {3 \choose 0}}{56} = \frac{10}{56}.$
+$P(X = 3) = \frac{ {5 \choose 3} \cdot {3 \choose 0} }{56} = \frac{10}{56}.$
 
 ### Zadanie 16
-Zmienna losowa $X$ ma rozkład Poissona z parametrem $\lambda = 3$. Obliczyć $P(X ­\ge 3)$.
+Zmienna losowa $X$ ma rozkład Poissona z parametrem $\lambda = 3$. Obliczyć $P(X \ge 3)$.
 
 Rozwiązanie:
 
