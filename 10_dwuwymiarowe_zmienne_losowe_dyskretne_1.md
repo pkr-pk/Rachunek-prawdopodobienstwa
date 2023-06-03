@@ -687,7 +687,7 @@ Rozwiązanie:
 Jest to rozkład hipergeometryczny:
 
 $$P_{XY}(i, j)=\begin{cases}
-\frac{{40\choose i}{60\choose j}}{{100\choose10}} & i+j=10; \ i,j\in\mathbb{Z}; \ i,j \ge 0, \\
+\frac{ {40\choose i}{60\choose j }}{ {100\choose10} } & i+j=10; \ i,j\in\mathbb{Z}; \ i,j \ge 0, \\
 0                                                 & \text{p.p.} \\
 \end{cases}$$
 
@@ -699,7 +699,7 @@ $R_{XY}=\{(i,j)∈\mathbb{Z}^2;i,j≥0;|i−j|≤1\},$
 
 o łącznej funkcji prawdopodobieństwa:
 
-$P_{XY}(i,j)=\frac{1}{6⋅2^{\min(i,j)}}, \ \text{dla } (i,j)\in R_{XY}.$
+$P_{XY}(i,j)=\frac{1}{6⋅2^{\min(i,j)} }, \ \text{dla } (i,j)\in R_{XY}.$
 
 a) Znajdź rozkłady brzegowe $P_X(i)$ oraz $P_Y(j)$.
 
@@ -731,7 +731,7 @@ W ogólności:
 
 $$P_X(k) = P_Y(k) = \begin{cases}
 \frac{1}{3},             & k=0 \\
-\frac{1}{3\cdot2^{k-1}}, & k=1,2,3,... \\
+\frac{1}{3\cdot2^{k-1} }, & k=1,2,3,... \\
 0,                       & \text{p.p.} \\
 \end{cases}$$
 
@@ -739,7 +739,7 @@ b)
 
 $P(X=Y|X < 2)=\frac{P(X=Y,X < 2)}{P(X < 2)}$
 
-$=\frac{P_{XY}(0,0)+P_{XY}(1,1)}{P_X(0)+P_X(1)}=\frac{\frac{1}{6}+\frac{1}{12}}{\frac{1}{3}+\frac{1}{3}}=\frac{3}{8}$.
+$=\frac{P_{XY}(0,0)+P_{XY}(1,1)}{P_X(0)+P_X(1)}=\frac{\frac{1}{6}+\frac{1}{12} }{\frac{1}{3}+\frac{1}{3} }=\frac{3}{8}$.
 
 c)
 
@@ -915,12 +915,12 @@ $= \sum\limits_{j=-k+1}^\infty pq^{j+k−1}pq^{j−1} = p^2\sum\limits_{j=-k+1}^
 
 $= p^2[q^{−k}+q^{−k+2}+q^{−k+4}+\dots] = p^2q^{−k}[1+q^2+q^4+\dots]$
 
-$= \frac{p(1−p)^{-k}}{(2−p)}.$
+$= \frac{p(1−p)^{-k} }{(2−p)}.$
 
 Ostatecznie:
 
 $$P_Z(k) = \begin{cases}
-\frac{p(1−p)^{|k|}}{(2−p)}      & \text{ dla } k \in \mathbb{Z}, \\
+\frac{p(1−p)^{|k|} }{(2−p)}      & \text{ dla } k \in \mathbb{Z}, \\
 0 & \text{poza tym}. \\
 \end{cases}$$
 
@@ -946,9 +946,9 @@ $P_Z(\frac{m}{n})=\sum\limits_{k=1}^\infty P(X=mk,Y=nk)$
 
 $=\sum\limits_{k=1}^\infty P(X=mk)P(Y=nk)=\sum\limits_{k=1}^\infty pq^{mk−1}pq^{nk−1}$
 
-$=p^2q^{−2}\sum\limits_{k=1}^\infty q^{(m+n)k}=\frac{p^2 q^{m+n−2}}{1−q^{m+n}}$
+$=p^2q^{−2}\sum\limits_{k=1}^\infty q^{(m+n)k}=\frac{p^2 q^{m+n−2} }{1−q^{m+n} }$
 
-$=\frac{p^2(1−p)^{m+n−2}}{1−(1−p)^{m+n}}.$
+$=\frac{p^2(1−p)^{m+n−2} }{1−(1−p)^{m+n} }.$
 
 c)
 
@@ -964,7 +964,7 @@ $= \sum\limits_{n=1}^\infty \sum\limits_{m=1}^\infty \frac{m}{n} p^2 q^{m−1}q^
 
 $=\sum\limits_{n=1} \frac{1}{n} p^2 q^{n−1} \frac{1}{(1−q)^2} = \sum\limits_{n=1} \frac{1}{n} q^{n−1}$
 
-$= \frac{1}{q} \sum\limits_{n=1} \frac{q^n}{n}= \frac{1}{1−p} ln{\frac{1}{p}}.$
+$= \frac{1}{q} \sum\limits_{n=1} \frac{q^n}{n}= \frac{1}{1−p} ln{\frac{1}{p} }.$
 
 ### Zadanie 22
 
@@ -1004,15 +1004,15 @@ Czyli $X, Y \sim B(1, \frac{2}{5})$, rozkład zero-jedynkowy.
 
 b)
 
-$P_{X|Y}(0|0)=\frac{P_{XY}(X=0,Y=0)}{P_Y(Y=0)}=\frac{\frac{1}{5}}{\frac{3}{5}}=\frac{1}{3}$,
+$P_{X|Y}(0|0)=\frac{P_{XY}(X=0,Y=0)}{P_Y(Y=0)}=\frac{\frac{1}{5} }{\frac{3}{5} }=\frac{1}{3}$,
 
-$P_{X|Y}(1|0)=\frac{P_{XY}(X=1,Y=0)}{P_Y(Y=0)}=\frac{\frac{2}{5}}{\frac{3}{5}}=\frac{2}{3}$,
+$P_{X|Y}(1|0)=\frac{P_{XY}(X=1,Y=0)}{P_Y(Y=0)}=\frac{\frac{2}{5} }{\frac{3}{5} }=\frac{2}{3}$,
 
 Czyli $X|Y=0 \sim B(1, \frac{2}{3})$.
 
-$P_{X|Y}(0|1)=\frac{P_{XY}(X=0,Y=1)}{P_Y(Y=1)}=\frac{\frac{2}{5}}{\frac{2}{5}}=1$,
+$P_{X|Y}(0|1)=\frac{P_{XY}(X=0,Y=1)}{P_Y(Y=1)}=\frac{\frac{2}{5} }{\frac{2}{5} }=1$,
 
-$P_{X|Y}(1|1)=\frac{P_{XY}(X=1,Y=1)}{P_Y(Y=1)}=\frac{0}{\frac{2}{5}}=0$.
+$P_{X|Y}(1|1)=\frac{P_{XY}(X=1,Y=1)}{P_Y(Y=1)}=\frac{0}{\frac{2}{5} }=0$.
 
 Czyli $X|Y=1 \sim B(1, 0)$.
 
