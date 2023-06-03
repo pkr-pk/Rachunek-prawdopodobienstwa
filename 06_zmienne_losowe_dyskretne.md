@@ -837,11 +837,11 @@ Rozwiązanie:
 
 $|\Omega| = {8 \choose 2} = 28$
 
-$P(X = 0) = \frac{{5 \choose 0} \cdot {3 \choose 2}}{28} \approx 0.11$
+$P(X = 0) = \frac{ {5 \choose 0} \cdot {3 \choose 2} }{28} \approx 0.11$
 
-$P(X = 1) = \frac{{5 \choose 1} \cdot {3 \choose 1}}{28} \approx 0.54$
+$P(X = 1) = \frac{ {5 \choose 1} \cdot {3 \choose 1} }{28} \approx 0.54$
 
-$P(X = 2) = \frac{{5 \choose 2} \cdot {3 \choose 0}}{28} \approx 0.36$
+$P(X = 2) = \frac{ {5 \choose 2} \cdot {3 \choose 0} }{28} \approx 0.36$
 
 Funkcje rozkładu prawdopodobieństwa zmiennej $X$: 
 
@@ -912,11 +912,11 @@ Rozwiązanie:
 
 $|\Omega| = {10 \choose 2} = 28,$
 
-$P(X = 0) = \frac{{3 \choose 0} \cdot {7 \choose 2}}{45} \approx 0.47,$
+$P(X = 0) = \frac{ {3 \choose 0} \cdot {7 \choose 2} }{45} \approx 0.47,$
 
-$P(X = 1) = \frac{{3 \choose 1} \cdot {7 \choose 1}}{45} \approx 0.47$
+$P(X = 1) = \frac{ {3 \choose 1} \cdot {7 \choose 1} }{45} \approx 0.47$
 
-$P(X = 2) = \frac{{3 \choose 2} \cdot {7 \choose 0}}{45} \approx 0.07$
+$P(X = 2) = \frac{ {3 \choose 2} \cdot {7 \choose 0} }{45} \approx 0.07$
 
 Funkcje rozkładu prawdopodobieństwa zmiennej $X$: 
 
@@ -1061,11 +1061,11 @@ $D(X) = \sqrt{2.89} = 1.7,$
 
 $P(X > 1) = 1,$
 
-$P(X ­\ge 0.5)= 1,$
+$P(X \ge 0.5)= 1,$
 
 $P(−1 < X < 2) = 0,$
 
-$P(X \ge­ 7) = 0.1.$
+$P(X \ge 7) = 0.1.$
 
 ### Zadanie 32
 Gramy z druga osobą, na przykład z bankierem w następująca grę: jeśli w rzucie kostka wypadnie parzysta liczba oczek, bankier płaci nam tyle złotych, ile wypadło na kostce, a jeśli nieparzysta - my płacimy bankierowi tyle, ile wypadło na kostce. Znaleźć rozkład kwoty uzyskanej przez nas w pojedynczym rzucie. Obliczając jej wartość oczekiwana rozstrzygnąć, czy można przypuszczać, że gra będzie dla nas opłacalna.
