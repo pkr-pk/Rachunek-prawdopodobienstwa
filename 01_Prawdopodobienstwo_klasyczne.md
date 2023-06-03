@@ -267,7 +267,7 @@ $C = {13 \choose 2}{39 \choose 3},$
 
 stąd:
 
-$P = \frac{{13 \choose 2}{39 \choose 3}}{{52 \choose 5}} = 0.27.$
+$$P = \frac{{13 \choose 2}{39 \choose 3}}{{52 \choose 5}} = 0.27.$$
 
 Symulacja losowania metodą bootstrap:
 
